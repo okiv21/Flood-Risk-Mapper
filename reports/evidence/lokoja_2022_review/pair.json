@@ -1,0 +1,132 @@
+{
+  "case": {
+    "case_id": "lokoja_2022_review",
+    "center_lon": 6.74,
+    "center_lat": 7.79,
+    "crs": "EPSG:32632",
+    "width": 1024,
+    "height": 1024,
+    "scale_m": 10,
+    "event_candidate": {
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "reference_candidate": {
+      "start": "2021-10-01",
+      "end": "2021-11-01",
+      "selection_target": "2021-10-15"
+    },
+    "orbit_policy": "Reference must match selected event relative orbit and orbit pass",
+    "labels": "unknown; neither event window nor prior-year date establishes a flood/non-flood label",
+    "group_id": "lokoja_2022_review",
+    "mechanism": "riverine confluence stress-test; must not be treated as validation of urban pluvial warning skill",
+    "context_sources": [
+      "https://science.nasa.gov/earth/earth-observatory/flooding-inundates-southern-nigeria-150463/",
+      "https://unosat.org/products/3418"
+    ]
+  },
+  "acquisitions": {
+    "event_candidate": {
+      "settings": {
+        "center_lon": 6.74,
+        "center_lat": 7.79,
+        "crs": "EPSG:32632",
+        "width": 1024,
+        "height": 1024,
+        "scale_m": 10,
+        "start": "2022-10-01",
+        "end": "2022-11-01",
+        "selection_target": "2022-10-15"
+      },
+      "download_grid": {
+        "crs": "EPSG:32632",
+        "crs_transform": [
+          10,
+          0,
+          245640,
+          0,
+          -10,
+          866870
+        ],
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "format": "GEO_TIFF"
+      },
+      "source": {
+        "instrumentMode": "IW",
+        "orbitProperties_pass": "ASCENDING",
+        "platform_number": "A",
+        "relativeOrbitNumber_start": 30,
+        "system:index": "S1A_IW_GRDH_1SDV_20221013T174607_20221013T174632_045427_056EAB_1409",
+        "system:time_start": 1665683167000
+      },
+      "source_collection": "COPERNICUS/S1_GRD",
+      "units": "dB",
+      "bands": [
+        "VV",
+        "VH"
+      ],
+      "selection": "Closest full-footprint scene to declared target date among first 50 ordered candidates",
+      "valid_fraction": 1.0,
+      "sha256": "c4aa0316ff9d03cb56857f489e5cb96a3edbf2bf5e8f9ee7debe9048470072d7",
+      "interpretation": "Historical acquisition for engineering inspection; no confirmed flood-event label",
+      "status": "Downloaded and grid/coverage checked; model predictions and accuracy not yet evaluated"
+    },
+    "reference_candidate": {
+      "settings": {
+        "center_lon": 6.74,
+        "center_lat": 7.79,
+        "crs": "EPSG:32632",
+        "width": 1024,
+        "height": 1024,
+        "scale_m": 10,
+        "start": "2021-10-01",
+        "end": "2021-11-01",
+        "selection_target": "2021-10-15",
+        "relative_orbit": 30,
+        "orbit_pass": "ASCENDING"
+      },
+      "download_grid": {
+        "crs": "EPSG:32632",
+        "crs_transform": [
+          10,
+          0,
+          245640,
+          0,
+          -10,
+          866870
+        ],
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "format": "GEO_TIFF"
+      },
+      "source": {
+        "instrumentMode": "IW",
+        "orbitProperties_pass": "ASCENDING",
+        "platform_number": "A",
+        "relativeOrbitNumber_start": 30,
+        "system:index": "S1A_IW_GRDH_1SDV_20211018T174601_20211018T174626_040177_04C241_FF05",
+        "system:time_start": 1634579161000
+      },
+      "source_collection": "COPERNICUS/S1_GRD",
+      "units": "dB",
+      "bands": [
+        "VV",
+        "VH"
+      ],
+      "selection": "Closest full-footprint scene to declared target date among first 50 ordered candidates",
+      "valid_fraction": 1.0,
+      "sha256": "55daa0db0baaaf58d4d590e4abf0443a27772313042dec08ae3ec93226d5bda7",
+      "interpretation": "Historical acquisition for engineering inspection; no confirmed flood-event label",
+      "status": "Downloaded and grid/coverage checked; model predictions and accuracy not yet evaluated"
+    }
+  },
+  "review_status": "pending",
+  "flood_label": null,
+  "limitation": "Matched geometry/orbit reduces one acquisition confounder; seasonal, sensor and hydrological differences remain"
+}

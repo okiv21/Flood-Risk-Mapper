@@ -1,0 +1,19 @@
+{
+  "case_id": "lokoja_2022_review",
+  "center_lon": 6.74,
+  "center_lat": 7.79,
+  "crs": "EPSG:32632",
+  "width": 1024,
+  "height": 1024,
+  "scale_m": 10,
+  "event_candidate": {"start": "2022-10-01", "end": "2022-11-01", "selection_target": "2022-10-15"},
+  "reference_candidate": {"start": "2021-10-01", "end": "2021-11-01", "selection_target": "2021-10-15"},
+  "orbit_policy": "Reference must match selected event relative orbit and orbit pass",
+  "labels": "unknown; neither event window nor prior-year date establishes a flood/non-flood label",
+  "group_id": "lokoja_2022_review",
+  "mechanism": "riverine confluence stress-test; must not be treated as validation of urban pluvial warning skill",
+  "context_sources": [
+    "https://science.nasa.gov/earth/earth-observatory/flooding-inundates-southern-nigeria-150463/",
+    "https://unosat.org/products/3418"
+  ]
+}

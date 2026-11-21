@@ -205,6 +205,20 @@ WorldCover describes **2021** land cover; Open Buildings v3 was inferred in **20
 
 [Source dates, counts and verification](reports/lagos_2022/surface/README.md) · [Combined schema](reports/lagos_2022/surface/cell_schema.json) · [Executed notebook](notebooks/13_surface/13-landcover-buildings.ipynb)
 
+## Independent-label evidence: Lokoja review case
+
+A matched-orbit radar pair adds a second study area: **13 October 2022** and **18 October 2021**, relative orbit 30, ascending, on identical 10m grids. Lokoja provides a riverine stress-test, not evidence of urban pluvial warning skill. NASA/UNOSAT reports motivate the event-review window; they do not label each chip or cell.
+
+![Raw Lokoja reference/event radar pair with review-chip numbering](reports/evidence/lokoja_2022_review/radar_review_pair.png)
+
+Sixteen 256×256 review chips are queued with **blank labels** and one shared group ID. Raw imagery and independent evidence should be reviewed before model overlays; the prior-year image is not assumed flood-free.
+
+![Lokoja model water-change candidates, not confirmed flood extent](reports/evidence/lokoja_2022_review/model_change_candidates.png)
+
+The frozen model predicts 153,364 pixels as water in 2022 only. These are change candidates for investigation, not accepted flood labels or a validated area estimate. **Zero reviewed scene labels** have been accepted. The evidence validator requires reviewer details, an independent evidence reference and observed/review timing; scene-condition labels cannot automatically become pixel masks or 72-hour onset targets.
+
+[Review protocol and caveats](reports/evidence/lokoja_2022_review/README.md) · [Review queue](reports/evidence/lokoja_2022_review/review_queue.csv) · [Executed notebook](notebooks/14_evidence/14-lokoja-review-pair.ipynb)
+
 ## How prediction becomes a warning
 
 The current U-Net answers **“which pixels look like water in this radar acquisition?”** It reads preprocessed VV/VH, outputs a water score per pixel, and applies threshold 0.55. It does not use rainfall or predict future events. Its map date is the satellite acquisition date, rather than a monthly or weekly forecast period.
@@ -363,7 +377,8 @@ notebooks/
 ├── 10_water_reference/     # historical water context and limitations
 ├── 11_rainfall/            # historical rainfall and forecast input checks
 ├── 12_terrain/             # terrain/drainage layers and 100m feature cells
-└── 13_surface/             # land-cover and mapped-building features
+├── 13_surface/             # land-cover and mapped-building features
+└── 14_evidence/            # orbit-matched pair and independent-label review queue
 reports/                   # training history, artifact summaries, evaluation reports
 data/                      # small reference data placeholder
 ee/                        # Earth Engine setup guide and Lagos download plan
@@ -407,3 +422,7 @@ Future event-risk evaluation must account for sparse satellite-derived labels an
 - [Segmentation Models PyTorch](https://github.com/qubvel-org/segmentation_models.pytorch)
 
 The original local build specification, `Nigeria_Flood_Risk_Mapper_Spec.pdf`, describes the broader product and planned data sources. Source attribution and usage terms should be reviewed as those integrations are implemented.
+
+## Verification
+
+Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 19 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.

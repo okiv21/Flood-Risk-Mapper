@@ -1,0 +1,18 @@
+{
+  "scene_dates": {
+    "reference_candidate": "2021-10-18T17:46:01+00:00",
+    "event_candidate": "2022-10-13T17:46:07+00:00"
+  },
+  "pair_orbit": 30,
+  "pair_pass": "ASCENDING",
+  "review_chips": 16,
+  "reviewed_scene_labels": 0,
+  "pixel_categories": {
+    "0": 650409,
+    "1": 243852,
+    "2": 153364,
+    "3": 951,
+    "255": 0
+  },
+  "meaning": "Model-derived change candidates only; not independently reviewed flood labels, training targets or accuracy scores"
+}

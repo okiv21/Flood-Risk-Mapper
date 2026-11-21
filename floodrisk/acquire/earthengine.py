@@ -48,7 +48,16 @@ def download(project, output, settings=None):
         .filter(ee.Filter.listContains('transmitterReceiverPolarisation','VV'))
         .filter(ee.Filter.listContains('transmitterReceiverPolarisation','VH'))
         .sort('system:time_start'))
-    # Choose the earliest full-footprint scene among the first 50 candidates.
+    if settings.get('relative_orbit') is not None:
+        collection=collection.filter(ee.Filter.eq('relativeOrbitNumber_start',settings['relative_orbit']))
+    if settings.get('orbit_pass') is not None:
+        collection=collection.filter(ee.Filter.eq('orbitProperties_pass',settings['orbit_pass']))
+    if settings.get('selection_target'):
+        target=ee.Date(settings['selection_target']).millis()
+        collection=collection.map(lambda image: image.set('selection_distance_ms',
+            ee.Number(image.get('system:time_start')).subtract(target).abs())).sort('selection_distance_ms')
+    # First full-footprint candidate in the declared ordering, capped at 50.
+
     candidates=collection.limit(50).aggregate_array('system:index').getInfo()
     image=None
     for index in candidates:
@@ -87,7 +96,8 @@ def download(project, output, settings=None):
         raw_path.unlink()
         report=dict(settings=settings,download_grid=params,source=metadata,
             source_collection='COPERNICUS/S1_GRD',units='dB',bands=['VV','VH'],
-            selection='Earliest full-footprint IW dual-pol 10m scene among first 50 chronologically ordered candidates',
+            selection=('Closest full-footprint scene to declared target date among first 50 ordered candidates'
+                       if settings.get('selection_target') else 'Earliest full-footprint IW dual-pol 10m scene among first 50 chronologically ordered candidates'),
             valid_fraction=float(valid.mean()),sha256=file_hash(destination),
             interpretation='Historical acquisition for engineering inspection; no confirmed flood-event label',
             status='Downloaded and grid/coverage checked; model predictions and accuracy not yet evaluated')
