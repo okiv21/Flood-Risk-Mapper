@@ -1,0 +1,24 @@
+{
+  "run_id": "m1-s1-kaggle-365653491",
+  "epochs_recorded": 60,
+  "best_epoch_by_validation_water_iou": 49,
+  "best_validation_water_iou": 0.6895,
+  "validation_miou_at_best_epoch": 0.8227,
+  "logged_epoch_seconds_total": 624.7,
+  "checkpoint_sha256": "a08d985b110fe8096efe571a2687d93decb680a826694c03ea8f4222d3e687bc",
+  "checkpoint_bytes": 97891199,
+  "checkpoint_local_path": "best.pt",
+  "training_commit": null,
+  "test_metrics": {
+    "chips": 90,
+    "split_csv_sha256": "8b598c9438042f3ed8aed4484268387fae1aa5b660882e1c5b4c1218eba63d67",
+    "iou_water": 0.6973116020508208,
+    "miou": 0.8236338729221924
+  },
+  "bolivia_metrics": {
+    "chips": 15,
+    "split_csv_sha256": "4775d100fae1f1ca66a842b8af6d2a97b8bfc5847f29d88ff0affff2c1e22768",
+    "iou_water": 0.6907938699858661,
+    "miou": 0.8086779563529902
+  }
+}

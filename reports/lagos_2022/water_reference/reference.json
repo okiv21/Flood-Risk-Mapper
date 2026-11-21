@@ -1,0 +1,36 @@
+{
+  "source": "JRC/GSW1_4/GlobalSurfaceWater",
+  "band": "occurrence",
+  "period": "1984-2021",
+  "attribution": "Source: EC JRC/Google",
+  "native_resolution_m": 30,
+  "aligned_grid": {
+    "crs": "EPSG:32631",
+    "crs_transform": [
+      10,
+      0,
+      544630,
+      0,
+      -10,
+      729150
+    ],
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "GEO_TIFF"
+  },
+  "resampling": "Earth Engine default nearest neighbour; 10m alignment does not add source detail",
+  "reference_threshold_percent": 90,
+  "mask_sha256": "1f946d41e5f8fc647732f4b874d5354d14d1728218bf37fca4f7d27e89ff1189",
+  "reference_sha256": "eb2a5417f8cd30404d0e8a74f69c9119035d8b49a11e43d0a4ea7d3e021311ea",
+  "counts": {
+    "0": 267672,
+    "1": 694273,
+    "2": 68565,
+    "3": 18066,
+    "255": 0
+  },
+  "meaning": "Exploratory high-frequency-water exclusion; outside-reference pixels are not confirmed flooding",
+  "unavailable": "255 includes masked locations where JRC never detected water; absence is not proof of adequate observations"
+}

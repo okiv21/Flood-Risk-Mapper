@@ -1,0 +1,30 @@
+{
+  "crs": "EPSG:32631",
+  "source_sha256": "66b730b40b1ec2b7f4f54ea1a515a30e6158af9d887a83a474d6388d92b024f7",
+  "cells": 10609,
+  "cell_size_m": 100,
+  "edge_policy": "Partial edge cells retain their actual widths and heights",
+  "fields": [
+    "cell_row",
+    "cell_col",
+    "center_x",
+    "center_y",
+    "width_m",
+    "height_m",
+    "pixels",
+    "surface_elevation_m_valid_fraction",
+    "surface_elevation_m_mean",
+    "surface_elevation_m_max",
+    "slope_degrees_valid_fraction",
+    "slope_degrees_mean",
+    "slope_degrees_max",
+    "hydro_adjusted_elevation_m_valid_fraction",
+    "hydro_adjusted_elevation_m_mean",
+    "hydro_adjusted_elevation_m_max",
+    "upstream_area_km2_valid_fraction",
+    "upstream_area_km2_mean",
+    "upstream_area_km2_max"
+  ],
+  "labels_present": false,
+  "interpretation": "Feature cells only; 100m grid does not make repeated 90m source values independent samples"
+}

@@ -1,0 +1,4 @@
+# Earth Engine client for real-scene acquisition.
+earthengine-api==1.7.53
+# Compatible prebuilt package for the current Intel Mac / Python 3.12 setup.
+cryptography==46.0.7

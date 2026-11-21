@@ -1,2 +1,39 @@
 .venv/
 venv/
+
+# Local model checkpoints
+*.pt
+__pycache__/
+
+*.egg-info/
+
+# Exported model binaries
+*.onnx
+
+# Downloaded real-scene imagery
+data/scenes/
+
+# Local real-scene prediction rasters
+data/predictions/
+
+# Aligned geospatial reference rasters
+data/references/
+
+# Local rainfall acquisition snapshots
+data/rainfall/
+
+# Local terrain and feature-cell artifacts
+data/terrain/
+
+# Local land-cover, building and combined feature artifacts
+data/surface/
+
+# Generated raster artifacts (figures and manifests remain versioned)
+*.tif
+*.tiff
+
+# Machine-specific configuration and redundant downloaded history
+.vscode/
+ee/project.json
+/history.csv
+.DS_Store

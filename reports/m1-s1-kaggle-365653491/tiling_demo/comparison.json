@@ -1,0 +1,10 @@
+{
+  "fixture": "Synthetic repeated/cropped Mekong validation chip; not a real larger scene",
+  "width": 800,
+  "height": 777,
+  "missing_pixels": 10000,
+  "mask_disagreements": 1717,
+  "mean_abs_score_difference": 0.0033397822757419066,
+  "max_abs_score_difference": 0.8294352293014526,
+  "interpretation": "Context choices change predictions; no ground-truth accuracy claim"
+}

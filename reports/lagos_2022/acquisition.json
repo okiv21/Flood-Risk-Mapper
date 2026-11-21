@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "center_lon": 3.45,
+    "center_lat": 6.55,
+    "width": 1024,
+    "height": 1024,
+    "scale_m": 10,
+    "crs": "EPSG:32631",
+    "start": "2022-08-01",
+    "end": "2022-11-01"
+  },
+  "download_grid": {
+    "crs": "EPSG:32631",
+    "crs_transform": [
+      10,
+      0,
+      544630,
+      0,
+      -10,
+      729150
+    ],
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "GEO_TIFF"
+  },
+  "source": {
+    "instrumentMode": "IW",
+    "orbitProperties_pass": "ASCENDING",
+    "platform_number": "A",
+    "relativeOrbitNumber_start": 1,
+    "system:index": "S1A_IW_GRDH_1SDV_20220812T180207_20220812T180232_044523_055032_0565",
+    "system:time_start": 1660327327000
+  },
+  "source_collection": "COPERNICUS/S1_GRD",
+  "units": "dB",
+  "bands": [
+    "VV",
+    "VH"
+  ],
+  "selection": "Earliest full-footprint IW dual-pol 10m scene among first 50 chronologically ordered candidates",
+  "valid_fraction": 1.0,
+  "sha256": "1eff60b4d56fbef6856f2c48d3b0cdcb1f7a593eec5b5ebecf88ea69f6472b2c",
+  "interpretation": "Historical acquisition for engineering inspection; no confirmed flood-event label",
+  "status": "Downloaded and grid/coverage checked; model predictions and accuracy not yet evaluated"
+}

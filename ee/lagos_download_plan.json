@@ -1,0 +1,29 @@
+{
+  "status": "Executed successfully; exact acquisition recorded in reports/lagos_2022/acquisition.json",
+  "settings": {
+    "center_lon": 3.45,
+    "center_lat": 6.55,
+    "width": 1024,
+    "height": 1024,
+    "scale_m": 10,
+    "crs": "EPSG:32631",
+    "start": "2022-08-01",
+    "end": "2022-11-01"
+  },
+  "grid": {
+    "crs": "EPSG:32631",
+    "crs_transform": [
+      10,
+      0,
+      544630,
+      0,
+      -10,
+      729150
+    ],
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "GEO_TIFF"
+  }
+}

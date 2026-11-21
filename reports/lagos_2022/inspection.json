@@ -1,0 +1,46 @@
+{
+  "source_scene": {
+    "instrumentMode": "IW",
+    "orbitProperties_pass": "ASCENDING",
+    "platform_number": "A",
+    "relativeOrbitNumber_start": 1,
+    "system:index": "S1A_IW_GRDH_1SDV_20220812T180207_20220812T180232_044523_055032_0565",
+    "system:time_start": 1660327327000
+  },
+  "source_sha256": "1eff60b4d56fbef6856f2c48d3b0cdcb1f7a593eec5b5ebecf88ea69f6472b2c",
+  "shape": [
+    1024,
+    1024
+  ],
+  "crs": "EPSG:32631",
+  "pixel_size_m": 10,
+  "valid_pixels": 1048576,
+  "nodata_pixels": 0,
+  "water_pixels": {
+    "0": 783833,
+    "64": 780904
+  },
+  "mask_disagreements": 3485,
+  "mean_abs_score_difference": 0.004724170081317425,
+  "bands": {
+    "VV": {
+      "min": -35.87677001953125,
+      "max": 23.766294479370117,
+      "percentiles_1_50_99": [
+        -23.976787567138672,
+        -17.342453956604004,
+        -2.0057130455970764
+      ]
+    },
+    "VH": {
+      "min": -47.02043151855469,
+      "max": 10.503278732299805,
+      "percentiles_1_50_99": [
+        -33.531314849853516,
+        -25.82589054107666,
+        -9.892837524414062
+      ]
+    }
+  },
+  "interpretation": "Unlabelled real-scene context sensitivity; no segmentation accuracy or flood-event claim"
+}

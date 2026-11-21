@@ -1,0 +1,632 @@
+[
+  {
+    "split": "test",
+    "chip": "Ghana_313799_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_1078550_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_97059_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_359826_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_319168_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_866994_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_406026_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_53713_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_83483_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_167233_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Ghana_141271_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_900498_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_591317_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_747992_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_79637_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_952728_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_828067_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_570384_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_44475_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_80221_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_1018327_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_592446_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_772630_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_631692_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "India_399883_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Mekong_333434_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Mekong_45934_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Mekong_1443339_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Mekong_382276_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Mekong_254910_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Mekong_424793_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Nigeria_417184_S1Hand.tif",
+    "nan_pixel_fraction": 0.4034576416015625,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Nigeria_225131_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Nigeria_812045_S1Hand.tif",
+    "nan_pixel_fraction": 0.002208709716796875,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Nigeria_22088_S1Hand.tif",
+    "nan_pixel_fraction": 0.20081710815429688,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Pakistan_849790_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Pakistan_664885_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Pakistan_694942_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Pakistan_70625_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Pakistan_528249_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Pakistan_167553_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_913449_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_280900_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_790830_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_232281_S1Hand.tif",
+    "nan_pixel_fraction": 0.002872467041015625,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_271769_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_40936_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_1029191_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_59731_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_683296_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_34417_S1Hand.tif",
+    "nan_pixel_fraction": 1.0,
+    "all_input_nan": true
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_868895_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_511199_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_80102_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Paraguay_651904_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Somalia_699062_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Somalia_60129_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Somalia_685158_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Somalia_166342_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Somalia_94102_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Somalia_322855_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Spain_6860600_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Spain_7558720_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Spain_5650136_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Spain_7370579_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Spain_6095801_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Spain_7387658_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_117737_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_1049830_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_534068_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_922192_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_377277_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_649970_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_450918_S1Hand.tif",
+    "nan_pixel_fraction": 0.5299110412597656,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_849649_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "Sri-Lanka_713926_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_905409_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_430764_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_350244_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_527077_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_933610_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_66511_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_519181_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_778194_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_67102_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_1049586_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_595451_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_670826_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_504150_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "test",
+    "chip": "USA_758178_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_103757_S1Hand.tif",
+    "nan_pixel_fraction": 0.6123390197753906,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_129334_S1Hand.tif",
+    "nan_pixel_fraction": 0.002857208251953125,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_195474_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_23014_S1Hand.tif",
+    "nan_pixel_fraction": 0.26163482666015625,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_233925_S1Hand.tif",
+    "nan_pixel_fraction": 0.2460784912109375,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_242570_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_290290_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_294583_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_312675_S1Hand.tif",
+    "nan_pixel_fraction": 0.031219482421875,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_314919_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_360519_S1Hand.tif",
+    "nan_pixel_fraction": 0.043567657470703125,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_379434_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_432776_S1Hand.tif",
+    "nan_pixel_fraction": 0.19615554809570312,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_60373_S1Hand.tif",
+    "nan_pixel_fraction": 0.15569305419921875,
+    "all_input_nan": false
+  },
+  {
+    "split": "bolivia",
+    "chip": "Bolivia_76104_S1Hand.tif",
+    "nan_pixel_fraction": 0.0,
+    "all_input_nan": false
+  }
+]

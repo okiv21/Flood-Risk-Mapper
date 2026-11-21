@@ -1,0 +1,10 @@
+{
+  "source_images": 14,
+  "independent_14d_sum_roi_min_max": {
+    "precipitation_max": 0,
+    "precipitation_min": 0
+  },
+  "preceding_14d_roi_mean": {
+    "precipitation": 7.1494035720825195
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "historical": {
+    "source": "UCSB-CHG/CHIRPS/DAILY",
+    "date_start": "2022-07-29",
+    "date_end_exclusive": "2022-08-12",
+    "acquisition_time_utc": "2022-08-12T18:02:07+00:00",
+    "spatial_aggregation": "ROI mean over available native CHIRPS cells; not a rain gauge or LGA mean",
+    "native_grid_degrees": 0.05,
+    "features": {
+      "past_1d_mm": 0.0,
+      "past_3d_mm": 0.0,
+      "past_7d_mm": 0.0,
+      "past_14d_mm": 0.0,
+      "max_daily_14d_mm": 0.0
+    },
+    "availability": "Final retrospective CHIRPS; does not establish which data were available at the historical issue time"
+  },
+  "forecast": {
+    "source": "Open-Meteo Forecast API",
+    "requested_at_utc": "2026-11-20T14:07:56.544723+00:00",
+    "request": {
+      "latitude": 6.55,
+      "longitude": 3.45,
+      "hourly": "precipitation",
+      "forecast_days": 5,
+      "timezone": "UTC",
+      "precipitation_unit": "mm"
+    },
+    "returned_coordinates": {
+      "latitude": 6.572935,
+      "longitude": 3.4005039
+    },
+    "model_run_issue_time": null,
+    "window_start_utc": "2026-11-20T15:00:00+00:00",
+    "window_end_utc": "2026-11-23T15:00:00+00:00",
+    "retrieved_at_utc": "2026-11-20T14:07:57.477090+00:00",
+    "features": {
+      "next_24h_mm": 2.9,
+      "next_48h_mm": 6.6000000000000005,
+      "next_72h_mm": 7.0,
+      "max_hourly_72h_mm": 2.1
+    },
+    "convention": "72 complete hours beginning at the next UTC hour; source timestamps mark preceding-hour totals"
+  },
+  "interpretation": "Two different dates and spatial supports; current forecast must not be joined to the August 2022 target; no flood probability produced"
+}

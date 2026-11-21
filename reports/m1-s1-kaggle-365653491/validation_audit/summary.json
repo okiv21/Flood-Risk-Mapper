@@ -1,0 +1,60 @@
+{
+  "checkpoint_sha256": "a08d985b110fe8096efe571a2687d93decb680a826694c03ea8f4222d3e687bc",
+  "split_csv_sha256": "04999b82b93e393c32a54ac85b2bf8a18b671f7a6f43a9478b340e8a9b9647fb",
+  "chips": 89,
+  "threshold": 0.5,
+  "device": "cpu",
+  "torch_version": "2.2.2",
+  "environment": {
+    "torch": "2.2.2",
+    "numpy": "1.26.4",
+    "rasterio": "1.4.4",
+    "segmentation-models-pytorch": "0.6.0"
+  },
+  "label_only": "Exclude label -1 only; original benchmark protocol",
+  "finite_input": "Additionally exclude pixels with any non-finite VV/VH value, identically for both methods",
+  "results": {
+    "unet_label_only": {
+      "iou_water": 0.6894444285537218,
+      "miou": 0.8226985705714362,
+      "tp": 1807775,
+      "fp": 384470,
+      "fn": 429830,
+      "precision": 0.8246227041229425,
+      "recall": 0.8079062211605712
+    },
+    "unet_finite_input": {
+      "iou_water": 0.6912394486917526,
+      "miou": 0.8237728520710801,
+      "tp": 1806499,
+      "fp": 382214,
+      "fn": 424707,
+      "precision": 0.8253704345887286,
+      "recall": 0.8096513723968114
+    },
+    "otsu_label_only": {
+      "iou_water": 0.5056197446647244,
+      "miou": 0.7109397103881198,
+      "tp": 1601007,
+      "fp": 928820,
+      "fn": 636598,
+      "precision": 0.6328523650036149,
+      "recall": 0.7155002781992353
+    },
+    "otsu_finite_input": {
+      "iou_water": 0.5066616186886799,
+      "miou": 0.7116774304801595,
+      "tp": 1597878,
+      "fp": 922532,
+      "fn": 633328,
+      "precision": 0.6339754246332938,
+      "recall": 0.7161499207155233
+    }
+  },
+  "input_quality": {
+    "chips_with_nonfinite_input": 9,
+    "chips_with_all_input_nonfinite": 0,
+    "labelled_nonfinite_pixels": 20571,
+    "valid_label_pixels": 20294725
+  }
+}

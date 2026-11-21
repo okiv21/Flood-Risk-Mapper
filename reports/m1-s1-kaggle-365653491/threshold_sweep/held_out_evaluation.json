@@ -1,0 +1,29 @@
+{
+  "checkpoint_sha256": "a08d985b110fe8096efe571a2687d93decb680a826694c03ea8f4222d3e687bc",
+  "device": "cpu",
+  "threshold": 0.55,
+  "protocol": "Pooled pixel IoU; ignore label -1; mIoU averages water and dry IoU",
+  "torch_version": "2.2.2",
+  "environment": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "numpy": "1.26.4",
+    "rasterio": "1.4.4",
+    "segmentation-models-pytorch": "0.6.0"
+  },
+  "dataset_root": "/Users/mac/.cache/kagglehub/datasets/okimosadi/sen1floods11-handlabeled/versions/1/sen1floods11",
+  "splits": {
+    "test": {
+      "chips": 90,
+      "split_csv_sha256": "8b598c9438042f3ed8aed4484268387fae1aa5b660882e1c5b4c1218eba63d67",
+      "iou_water": 0.6984586111870893,
+      "miou": 0.8244951802542241
+    },
+    "bolivia": {
+      "chips": 15,
+      "split_csv_sha256": "4775d100fae1f1ca66a842b8af6d2a97b8bfc5847f29d88ff0affff2c1e22768",
+      "iou_water": 0.6935496118652902,
+      "miou": 0.8107705706411992
+    }
+  }
+}

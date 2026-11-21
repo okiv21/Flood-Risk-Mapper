@@ -1,0 +1,27 @@
+{
+  "input": "/Users/mac/.cache/kagglehub/datasets/okimosadi/sen1floods11-handlabeled/versions/1/sen1floods11/S1Hand/Mekong_1413877_S1Hand.tif",
+  "input_sha256": "eff3ae4d82f730563e6dc310e0d7df1e2e7a6f9d515dd48b89e12e64cfa5d915",
+  "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+  "config_sha256": "20004b9d9c766572eb0adddf0b30fd1323c9326bf058494a6d236e58bfba208e",
+  "vv_band": 1,
+  "vh_band": 2,
+  "assumed_units": "dB",
+  "threshold": 0.55,
+  "crs": "EPSG:4326",
+  "transform": [
+    8.983152841195215e-05,
+    0.0,
+    105.96958282810253,
+    0.0,
+    -8.983152841195215e-05,
+    12.096354289839828,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "valid_pixels": 262144,
+  "nodata_pixels": 0,
+  "predicted_water_pixels": 2220,
+  "input_policy": "Finite pixels unmasked in both input bands; other pixels filled with normalised mean for inference and marked no-data in outputs",
+  "output_scope": "Water segmentation; permanent water has not been removed"
+}

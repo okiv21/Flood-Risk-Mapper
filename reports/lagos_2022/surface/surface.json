@@ -1,0 +1,63 @@
+{
+  "sources": {
+    "worldcover": "ESA/WorldCover/v200",
+    "worldcover_images": [
+      "2021"
+    ],
+    "buildings": "GOOGLE/Research/open-buildings/v3/polygons"
+  },
+  "grid": {
+    "crs": "EPSG:32631",
+    "crs_transform": [
+      10,
+      0,
+      544630,
+      0,
+      -10,
+      729150
+    ],
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "GEO_TIFF"
+  },
+  "sha256": "09dfe026d628bfbc3c6df662253be7b54ba300c8e7a4a36fbdf7f5c5ca790fdf",
+  "classes": {
+    "10": "trees",
+    "20": "shrubland",
+    "30": "grassland",
+    "40": "cropland",
+    "50": "built_up",
+    "60": "bare_sparse",
+    "70": "snow_ice",
+    "80": "permanent_water",
+    "90": "wetland",
+    "95": "mangroves",
+    "100": "moss_lichen"
+  },
+  "building_confidence_min": 0.75,
+  "building_detections_with_centroid_in_roi": 17206,
+  "cells_with_building_centroids": 1342,
+  "mapped_occupied_pixels": 24998,
+  "land_cover_pixels": {
+    "10": 30562,
+    "20": 509,
+    "30": 26841,
+    "40": 2252,
+    "50": 86743,
+    "60": 3482,
+    "70": 0,
+    "80": 754814,
+    "90": 27503,
+    "95": 115870,
+    "100": 0
+  },
+  "land_cover_nodata_pixels": 0,
+  "count_rule": "Each selected detection assigned by centroid to one 100m cell within ROI; not unique occupied households",
+  "occupancy": "10m rasterization of selected intersecting polygons; occupancy is a mapping proxy, not exact footprint area",
+  "temporal": "WorldCover 2021 and Open Buildings inferred May 2023; not verified as-of August 2022 inventory",
+  "uncertainty": "Detection omissions/false positives and confidence filtering affect exposure; zero mapped buildings is not proof of no buildings",
+  "licenses": "ESA WorldCover v200 CC-BY-4.0; Open Buildings v3 CC-BY-4.0; source attribution required",
+  "interpretation": "Land-cover and exposure features only; no confirmed flood damage, population or risk score"
+}

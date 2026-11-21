@@ -1,0 +1,76 @@
+{
+  "bands": [
+    "surface_elevation_m",
+    "slope_degrees",
+    "hydro_adjusted_elevation_m",
+    "upstream_area_km2"
+  ],
+  "statistics": {
+    "surface_elevation_m": {
+      "valid_pixels": 1048576,
+      "missing_pixels": 0,
+      "min": 0.0,
+      "median": 0.0,
+      "max": 14.405298233032227
+    },
+    "slope_degrees": {
+      "valid_pixels": 1048576,
+      "missing_pixels": 0,
+      "min": 0.0,
+      "median": 0.0,
+      "max": 15.607195854187012
+    },
+    "hydro_adjusted_elevation_m": {
+      "valid_pixels": 1048576,
+      "missing_pixels": 0,
+      "min": 0.0,
+      "median": 0.0,
+      "max": 10.800000190734863
+    },
+    "upstream_area_km2": {
+      "valid_pixels": 1048576,
+      "missing_pixels": 0,
+      "min": 0.008492391556501389,
+      "median": 0.04246412217617035,
+      "max": 46343.32421875
+    }
+  },
+  "grid": {
+    "crs": "EPSG:32631",
+    "crs_transform": [
+      10,
+      0,
+      544630,
+      0,
+      -10,
+      729150
+    ],
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "format": "GEO_TIFF"
+  },
+  "sha256": "66b730b40b1ec2b7f4f54ea1a515a30e6158af9d887a83a474d6388d92b024f7",
+  "sources": {
+    "dem": "COPERNICUS/DEM/GLO30_2024_1",
+    "dem_tiles": [
+      "N06_00_E003_00"
+    ],
+    "hydro": "MERIT/Hydro/v1_0_1"
+  },
+  "resolutions": {
+    "dem_nominal_m": 30,
+    "slope_computation_m": 30,
+    "hydro_arcseconds": 3,
+    "aligned_grid_m": 10
+  },
+  "method": "30m projected DEM/slope; default nearest-neighbour alignment to 10m; no new source detail",
+  "semantics": "DSM includes buildings/vegetation; hnd retained as hydrologically adjusted elevation, not relative HAND; upa is upstream area, not river discharge",
+  "temporal": "2024_1 processed DEM edition used for feature engineering; as-of availability for 2022 not established",
+  "licenses": {
+    "merit": "CC-BY-NC 4.0 selected for noncommercial research; source redistribution restrictions apply",
+    "copernicus": "Copernicus DEM licence and attribution required"
+  },
+  "interpretation": "Feature acquisition and inspection only; no susceptibility model or risk score trained"
+}
