@@ -1,0 +1,13 @@
+{
+  "id": "okimosadi/flood-mapper-optical-comparison",
+  "title": "Flood Mapper Optical Comparison",
+  "code_file": "16-optical-comparison.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "okimosadi/sen1floods11-handlabeled"
+  ]
+}

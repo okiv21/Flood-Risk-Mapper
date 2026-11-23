@@ -20,3 +20,10 @@ Evaluated locally on 2026-11-16 using dataset version 1, CPU float32 inference, 
 [Evaluation JSON](evaluation.json) records unrounded metrics, package versions, and checkpoint/split hashes. Compared with the rounded Otsu results, test water IoU improves by approximately 15.1 percentage points; Bolivia water IoU is approximately 0.6 points lower. This is mixed evidence of geographic generalisation, not a uniform improvement.
 
 The checkpoint matches the architecture, but its exact training revision and correspondence to epoch 49 cannot be independently proved from a state dictionary alone.
+
+
+## Inference and intended use
+
+The operational artifact for historical observations is the FP32 ONNX U-Net with two input channels in VV/VH order. Apply the training-time dB clipping and normalization. The graph emits logits. Apply sigmoid outside the graph and classify scores strictly greater than 0.55 as water. The georeferenced inference path preserves missing-data masks. Radar shadow, built surfaces, permanent water and infrequent revisit times complicate flood interpretation. Use the model for dated research observations. [Configuration and artifact hashes](onnx_fp32/inference_config.json)
+
+The Nigerian subset contains four official test chips and has wide chip-bootstrap intervals. A separate Nigerian human-annotated test set remains outstanding. The static INT8 version is smaller but slower on the measured Intel CPU, so FP32 remains the default. [Nigerian subset](nigeria_subset/summary.json) · [Quantization comparison](int8_experiment/quantization.json)

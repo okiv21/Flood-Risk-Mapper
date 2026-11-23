@@ -1,0 +1,362 @@
+[
+  {
+    "site": "Lagos",
+    "observed_utc": "2022-10-18T05:30:17+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 12868,
+        "built_up_pixels": 1728,
+        "occupied_pixels": 462,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 245460,
+        "built_up_pixels": 0,
+        "occupied_pixels": 1,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 3241,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 575,
+        "built_up_pixels": 16,
+        "occupied_pixels": 1,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "ff7f0956effabed4bf8176b4dfc85a81e7f676c1872dc4c1059cdfe3ab1957ac",
+    "context_sha256": "52838e547733ff9674e8e2ffac521ca834ea0eca85c74510ea863029369f3a8c",
+    "mapped_centroids_in_scene": 324,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  },
+  {
+    "site": "Lokoja",
+    "observed_utc": "2022-10-13T17:46:07+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 158037,
+        "built_up_pixels": 115627,
+        "occupied_pixels": 29643,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 42157,
+        "built_up_pixels": 2,
+        "occupied_pixels": 12,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 41974,
+        "built_up_pixels": 152,
+        "occupied_pixels": 7,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 19976,
+        "built_up_pixels": 2120,
+        "occupied_pixels": 226,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "623a2f62e048858200dc5e315f1dca03eb351f144997aac7e6d63ac7cee45d96",
+    "context_sha256": "92a86d0b085c4cc3fc989119c6c40f0aa955d43d4243667636fe7a8051f28034",
+    "mapped_centroids_in_scene": 21284,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  },
+  {
+    "site": "Port Harcourt",
+    "observed_utc": "2022-10-13T17:45:17+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 241963,
+        "built_up_pixels": 211896,
+        "occupied_pixels": 63686,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 3490,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 12518,
+        "built_up_pixels": 1032,
+        "occupied_pixels": 24,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 4173,
+        "built_up_pixels": 2455,
+        "occupied_pixels": 151,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "27013bf6515186ab636b5229f423473ce6b363350dc4b0121386045e52789c4d",
+    "context_sha256": "2046dfdb7b15654a2c167bdaf6334b4e4b07abe6201b994e5e533c48d7a27ad3",
+    "mapped_centroids_in_scene": 27999,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  },
+  {
+    "site": "Yenagoa",
+    "observed_utc": "2022-10-13T05:22:08+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 191223,
+        "built_up_pixels": 71301,
+        "occupied_pixels": 19239,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 11258,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 18751,
+        "built_up_pixels": 31,
+        "occupied_pixels": 8,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 40912,
+        "built_up_pixels": 728,
+        "occupied_pixels": 24,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "a5cf149c78ce15f8d38a386211aabe72a392c6f067006947960f4b696d29905f",
+    "context_sha256": "34cc56705746f929d24dbe293e2eba14ad88634040a9489afc3a4ab2ab959242",
+    "mapped_centroids_in_scene": 11622,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  },
+  {
+    "site": "Anambra (Onitsha)",
+    "observed_utc": "2022-10-13T17:45:42+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 199384,
+        "built_up_pixels": 191449,
+        "occupied_pixels": 67210,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 31625,
+        "built_up_pixels": 2,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 25956,
+        "built_up_pixels": 139,
+        "occupied_pixels": 20,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 5179,
+        "built_up_pixels": 2144,
+        "occupied_pixels": 137,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "a8d67d198e2f1d1efbf2d2b841355059c814c43f597ce8f0ba904686fe60a243",
+    "context_sha256": "57065cea0f2287b811301d1cb63fbae8e46a5b44a82577fd50cb7c7e22c8f963",
+    "mapped_centroids_in_scene": 30682,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  },
+  {
+    "site": "Kano",
+    "observed_utc": "2022-10-08T17:39:09+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 256635,
+        "built_up_pixels": 231331,
+        "occupied_pixels": 68622,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 133,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 5376,
+        "built_up_pixels": 1255,
+        "occupied_pixels": 59,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "c999ecc2bb9e5be153bc7fc2642e96e81dfa5f3b4fb5f29cee421f538cbf5928",
+    "context_sha256": "c441b88fd25e6cd48636691bc33031f8591b1af46244fe52f81b84b7b0eae3cc",
+    "mapped_centroids_in_scene": 72946,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  },
+  {
+    "site": "Maiduguri",
+    "observed_utc": "2022-10-10T17:22:28+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 254167,
+        "built_up_pixels": 217481,
+        "occupied_pixels": 53756,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 1511,
+        "built_up_pixels": 113,
+        "occupied_pixels": 4,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 6466,
+        "built_up_pixels": 2152,
+        "occupied_pixels": 191,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "7c39099b1a66301cb935b22ed74b36e00df2b1c25fdd5b144e87a918c9c7310b",
+    "context_sha256": "071ee47699611b4b31edfa24fd17abf82896f463ca626fb5ac2ca10b19bcee3b",
+    "mapped_centroids_in_scene": 66362,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  },
+  {
+    "site": "Abuja",
+    "observed_utc": "2022-10-13T17:46:32+00:00",
+    "water_context": {
+      "0": {
+        "grid_pixels": 258265,
+        "built_up_pixels": 160420,
+        "occupied_pixels": 34120,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "1": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "2": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "3": {
+        "grid_pixels": 3879,
+        "built_up_pixels": 2668,
+        "occupied_pixels": 121,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      },
+      "255": {
+        "grid_pixels": 0,
+        "built_up_pixels": 0,
+        "occupied_pixels": 0,
+        "missing_cover_pixels": 0,
+        "missing_occupancy_pixels": 0
+      }
+    },
+    "surface_sha256": "057c51eca3a5c7266a26f23d4fcd9ba8b5d8df0c2435eae02cdb4e8fb3d24aa5",
+    "context_sha256": "3a5e27e33433ed6c41fc55b9a00ccec899ebded9d690e5f6f0a1d07c562db7c2",
+    "mapped_centroids_in_scene": 16843,
+    "source_timing": "WorldCover 2021 and Open Buildings v3 (2023); historical building inventory at the 2022 radar date is unverified"
+  }
+]

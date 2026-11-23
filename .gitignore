@@ -37,3 +37,7 @@ data/surface/
 ee/project.json
 /history.csv
 .DS_Store
+
+# Resumable Earth Engine event samples
+data/flood_reference/
+data/boundaries/

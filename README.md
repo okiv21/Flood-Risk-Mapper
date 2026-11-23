@@ -4,7 +4,7 @@
 
 An applied machine learning project combining Sentinel-1 radar imagery, geospatial features, and rainfall data to map flood risk across Nigeria. The planned application will provide historical flood maps, exposure estimates, and experimental 72-hour risk assessments for Nigeria’s 774 Local Government Areas (LGAs).
 
-**Status:** M1 training, held-out benchmarks, ONNX export and the first unlabelled Lagos-area scene inspection are complete. The susceptibility model, event-risk model, and public application remain planned.
+**Current release.** The historical map package contains eight dated radar observations, downloadable map tiles and an LGA lookup table. A research terrain model has spatial and event-based evaluations. A national rainfall batch covers 774 LGAs. The 72-hour flood warning model still needs time-matched outcome evidence. [Pre-app status](PRE_APP_STATUS.md)
 
 [Results](#results) · [Approach](#approach) · [Getting started](#getting-started) · [Roadmap](#roadmap)
 
@@ -36,7 +36,7 @@ At the original threshold 0.50, U-Net improves test water IoU by approximately *
 
 [Full evaluation report](reports/m1-s1-kaggle-365653491/evaluation.json) · 90 test chips · 15 Bolivia chips · CPU inference · threshold > 0.5
 
-The threshold 0.55 was selected using validation data and frozen before its held-out evaluation; its report is linked in the threshold experiment below. Test/Bolivia had already been inspected for diagnosis, so this is not an evaluation on a fresh untouched dataset. Validation scores are reported separately from held-out scores. M1 measures water segmentation, not flood forecasting or Nigeria-specific accuracy.
+The threshold 0.55 was selected using validation data and frozen before its held-out evaluation; its report is linked in the threshold experiment below. Test/Bolivia had already been inspected for diagnosis, so this is not an evaluation on a fresh untouched dataset. Validation scores are reported separately from held-out scores. M1 measures water segmentation at image acquisition time. The country breakdown follows below.
 
 ### Nigerian chips in the official test split
 
@@ -235,6 +235,35 @@ The frozen model predicts 153,364 pixels as water in 2022 only. These are change
 
 [Review protocol and caveats](reports/evidence/lokoja_2022_review/README.md) · [Review queue](reports/evidence/lokoja_2022_review/review_queue.csv) · [Executed notebook](notebooks/14_evidence/14-lokoja-review-pair.ipynb)
 
+## October 2022 hotspot observations
+
+![Eight Nigerian hotspot water observations](reports/hotspots_oct22/hotspot_observations.png)
+
+*Each panel spans 5.12 km. Blue marks predicted water where historical water occurrence was at least 90%. Green marks water below that threshold. Amber marks predicted water where the historical layer has no usable value. The date above each panel is the actual satellite pass.*
+
+The February–October pairs contain 40,570 pixels that changed from predicted dry to water in areas of lower historical water occurrence. These are candidates for review. The eight October archives contain 178 tiles, and a second set shows February–October change. A separate overlay counts grid pixels shared by mapped building footprints and predicted water. Their footprints intersect parts of 22 LGAs. The full registry includes all 774 LGAs, so an interface can distinguish an area with imagery from an area outside the sampled windows. [Map package and legend](reports/hotspots_oct22/README.md) · [Reproducible notebook](notebooks/15_hotspots/15-hotspot-observations.ipynb)
+
+## Where does water tend to appear during recorded floods?
+
+A LightGBM model used elevation, slope, adjusted elevation and upstream drainage area to rank locations in 11 recorded Nigerian flood events. The benchmark contains 22,000 samples across training, calibration and testing. The weighting restores the share of mapped water within each event before averaging across events.
+
+| Terrain evaluation | ROC-AUC | What was tested |
+|---|---:|---|
+| Five spatial folds in the training years | 0.9195 | Transfer to different 50 km blocks |
+| Held-out 2018 event, calibrated | 0.9715 | Transfer to a later event in the original flood database |
+| Lokoja 2022, prior dry or seasonal water class required | 0.3272 | Agreement with the external VIIRS map on 227 eligible points |
+| Lokoja 2022, unknown prior water class included | 0.9394 | Same comparison on a wider population of 3,228 points |
+
+A score of 0.5 corresponds to chance ranking. The model did well across the wider Lokoja landscape but poorly within the restricted water-history sample. The wider check was added after inspecting the restricted result. Both use the same frozen model. Neither evaluation measures the timing of a future flood or verifies street-level warnings. [Model card, baselines and source provenance](reports/nigeria_gfd/README.md)
+
+![Average precision of the terrain model across evaluation populations](reports/nigeria_gfd/terrain_reference_precision.png)
+
+*The gray bars show the mapped-water fraction in each evaluation. A constant score achieves that average precision. The terrain model falls below that baseline in the restricted Lokoja sample, even though it exceeds the baseline in the wider landscape.* [Executed comparison notebook](notebooks/17_terrain_evaluation/17-terrain-evaluation.ipynb)
+
+## National rainfall inputs
+
+The first complete batch archived a rainfall input row for every LGA at a common issue time on **23 November 2026**. Its forecast covers **23 November 10:00 to 26 November 10:00 UTC**. Each row combines model-estimated rainfall over the preceding 14 complete days with forecast totals for the next 24, 48 and 72 hours. These are point estimates in millimetres. The archive contains rainfall inputs only. [Batch summary](reports/rainfall/national_20261123/summary.json) · [774 input rows](reports/rainfall/national_20261123/rainfall.csv)
+
 ## How prediction becomes a warning
 
 The current U-Net answers **“which pixels look like water in this radar acquisition?”** It reads preprocessed VV/VH, outputs a water score per pixel, and applies threshold 0.55. It does not use rainfall or predict future events. Its map date is the satellite acquisition date, rather than a monthly or weekly forecast period.
@@ -256,8 +285,8 @@ The intended public app lets a user select an LGA, view Low/Elevated/High experi
 | Component | Task | Progress |
 |---|---|---|
 | **M1 · Water segmentation** | Detect water in Sentinel-1 VV/VH radar imagery using U-Net. Derive flood extent later by excluding permanent water. | Training and held-out evaluation complete. |
-| **M2 · Flood susceptibility** | Estimate where flooding tends to occur using terrain, drainage, land cover, buildings, and climate features. | Planned LightGBM model with spatial validation. |
-| **M3 · Event risk** | Combine susceptibility with recent and forecast rainfall to estimate 72-hour LGA risk. | Planned calibrated classifier with temporal validation. |
+| **M2 · Flood susceptibility** | Estimate where flooding tends to occur using terrain, drainage, land cover, buildings, and climate features. | Coarse event-conditional terrain benchmark evaluated. Full national feature model remains open. |
+| **M3 · Event risk** | Combine susceptibility with recent and forecast rainfall to estimate 72-hour LGA risk. | Temporal training and daily batch code tested on fixtures. Awaiting reviewed outcomes. |
 
 The planned product focuses on rain-driven and urban flooding: a national map at 30 m resolution, 10 m hotspot detail, LGA search, building exposure statistics, and a CPU model demo. Hotspots include Lagos, Port Harcourt, Lokoja, Yenagoa/Bayelsa, Anambra, Kano, Maiduguri, and Abuja.
 
@@ -394,11 +423,14 @@ notebooks/
 ├── 11_rainfall/            # historical rainfall and forecast input checks
 ├── 12_terrain/             # terrain/drainage layers and 100m feature cells
 ├── 13_surface/             # land-cover and mapped-building features
-└── 14_evidence/            # orbit-matched pair and independent-label review queue
+├── 14_evidence/            # orbit-matched pair and independent-label review queue
+├── 15_hotspots/            # historical radar observation maps
+├── 16_optical/             # local source for Kaggle optical comparison
+└── 17_terrain_evaluation/  # interpretation of the terrain benchmark
 reports/                   # training history, artifact summaries, evaluation reports
 data/                      # small reference data placeholder
 ee/                        # Earth Engine setup guide and Lagos download plan
-jobs/                      # daily scoring placeholder
+jobs/                      # offline daily research scoring entry point
 space/                     # model demo placeholder
 web/                       # frontend placeholder
 ```
@@ -419,14 +451,16 @@ web/                       # frontend placeholder
 - [ ] Establish independent real-scene accuracy and boundary-quality evaluation before operational mapping.
 - [x] Evaluate INT8 quantisation on the local Intel CPU.
 - [ ] Benchmark on the eventual deployment host.
-- [ ] Implement hotspot inference, permanent-water removal, and the first map/demo.
-- [ ] Train and validate M2 with spatial blocks and a temporal holdout.
+- [x] Package eight dated hotspot observations with historical water context as PMTiles.
+- [ ] Expand observation coverage and build the first map interface.
+- [x] Evaluate the coarse terrain prototype with spatial blocks, a 2018 holdout and an external Lokoja comparison.
+- [ ] Validate the full national M2 target and produce multi-season LGA aggregates.
 - [x] Acquire historical rainfall and timestamped forecast inputs; validate their time windows.
 - [ ] Train, calibrate, and evaluate M3 using forecast rainfall; implement daily scoring.
 
 ## Limitations and intended use
 
-The recorded results cover global benchmark water segmentation. Nigeria-specific accuracy, permanent-water removal, exposure estimates, and 72-hour risk predictions have not yet been established. Radar shadows, urban structures, geographic domain shift, and satellite revisit gaps can limit flood detection, especially for short-lived street flooding.
+Water segmentation has global benchmarks and a four-chip Nigerian subset. Independent Nigerian field accuracy, nationwide exposure and 72-hour warning skill remain unverified. Radar shadows, urban structures, geographic domain shift, and satellite revisit gaps can limit flood detection, especially for short-lived street flooding.
 
 Future event-risk evaluation must account for sparse satellite-derived labels and the difference between observed and forecast rainfall.
 
@@ -442,4 +476,4 @@ The original local build specification, `Nigeria_Flood_Risk_Mapper_Spec.pdf`, de
 
 ## Verification
 
-Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 19 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.
+Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 25 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.

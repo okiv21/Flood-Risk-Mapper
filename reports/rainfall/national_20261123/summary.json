@@ -1,0 +1,12 @@
+{
+  "lgas": 774,
+  "issue_utc": "2026-11-23T09:05:15.905355+00:00",
+  "window_start_utc": "2026-11-23T10:00:00+00:00",
+  "window_end_utc": "2026-11-26T10:00:00+00:00",
+  "batches": 78,
+  "support": "One interior point per LGA; model grid point rainfall. Past 14 days are as-retrieved model estimates.",
+  "source": "https://api.open-meteo.com/v1/forecast",
+  "forecast_run_id": null,
+  "unit": "mm",
+  "product": "rainfall features only"
+}

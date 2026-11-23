@@ -1,0 +1,44 @@
+{
+  "source_product": "https://unosat.org/products/3418",
+  "geometry_mirror": "https://services3.arcgis.com/iuNbZYJOrAYBrPyC/arcgis/rest/services/FL20221019NGA_SHP/FeatureServer",
+  "layer_sha256": {
+    "2": "be2053db6b54aa3d4698e44ca81cd958250acd9be90f885680cb4997d118f9d0",
+    "3": "fec28f905f3f6528762b2db3dbf39b824c1202d0c1ac3c96e1885ff109dbe864",
+    "4": "c79359e074a57e8c65c43a53c09a3448d0c1cdc9ac1dc98b296ff13f25375f95"
+  },
+  "model_sha256": "e70fc324d315b5a96192f004cef14d02f043e9d2334e222027d90c8979543954",
+  "terrain_sample_sha256": "0ccd607984874bdaebd886a215bdf65f3f6ab2f0938d89afa56a8f58495eda08",
+  "window": "2022-10-13/2022-10-17",
+  "bounds_lonlat": [
+    6.45,
+    7.5,
+    7.04,
+    8.08
+  ],
+  "samples": 3429,
+  "eligible": 3228,
+  "mapped_water": 427,
+  "prior_water_class_counts": {
+    "0": 3001,
+    "1": 151,
+    "2": 76
+  },
+  "criteria": "2021 JRC yearly class dry, seasonal or unknown; valid terrain; inside analysis extent; outside cloud obstruction",
+  "sampling": "Seed 42 random sample of 250 m UTM zone 32 grid; equal weights; vector generalisation tolerance 0.0005 degree",
+  "raw": {
+    "roc_auc": 0.9470216809486743,
+    "average_precision": 0.6330165541089419,
+    "brier": 0.12506992525583946
+  },
+  "calibrated": {
+    "roc_auc": 0.9393797129997901,
+    "average_precision": 0.63969881411867,
+    "brier": 0.11931955592491865
+  },
+  "constant_train_rate": {
+    "roc_auc": 0.5,
+    "average_precision": 0.1322800495662949,
+    "brier": 0.13092036452670636
+  },
+  "scope": "Single river confluence and event; agreement with published VIIRS mapped extent. Timing within the event, dry streets and field accuracy remain unknown."
+}

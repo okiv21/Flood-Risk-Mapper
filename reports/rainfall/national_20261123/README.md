@@ -1,0 +1,5 @@
+# National rainfall snapshot
+
+On 23 November 2026 the batch retrieved 78 groups of point forecasts, one location for each registered LGA. Each row preserves its retrieval time. The common issue time follows the last retrieval. All rows cover the same next 72 complete hours. The CSV records preceding model-estimated rain totals and forecast totals in millimetres. One interior point samples one weather grid cell and cannot capture all rainfall variation within an LGA. Model initialization times were not returned. The service uses multiple forecast runs. [Open-Meteo Forecast API](https://open-meteo.com/en/docs)
+
+Reproduce a new dated snapshot with `python -m floodrisk.acquire.lga_rainfall --registry reports/hotspots_oct22/lgas.csv --output data/rainfall/national_YYYYMMDD`. Raw JSON responses are kept locally. The pipeline verifies input location order and complete time coverage and writes the final directory after the full batch has passed. A rainfall total alone does not establish a flood risk band.

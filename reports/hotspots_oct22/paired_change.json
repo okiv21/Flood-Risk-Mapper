@@ -1,0 +1,146 @@
+[
+  {
+    "site": "Lagos",
+    "observed_utc": "2022-10-18T05:30:17+00:00",
+    "change_sha256": "c743915ee7b15813c042fe61788619b989896df8c5f2d725222eacf3c554fa18",
+    "october_source": "S1A_IW_GRDH_1SDV_20221018T053017_20221018T053046_045492_05707B_061C",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220220T053007_20220220T053036_041992_05005C_EDCC",
+    "earlier_input_sha256": "33ea246f608565c6e7a62294caf42cce883783e01aa2eb4ccf472cc1464bbc94",
+    "earlier_mask_sha256": "9d505b51088c617e20b6536f45e7625999ca0a79d85bbf615917ad5125ff3647",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 248932,
+    "earlier_water_only": 382,
+    "october_water_only_by_historical_class": {
+      "1": 149,
+      "2": 85,
+      "3": 110
+    }
+  },
+  {
+    "site": "Lokoja",
+    "observed_utc": "2022-10-13T17:46:07+00:00",
+    "change_sha256": "18fa1486aee095cbf6b514ab66b00fdec146cf92a92d49e6fdcf65a632a6a5a3",
+    "october_source": "S1A_IW_GRDH_1SDV_20221013T174607_20221013T174632_045427_056EAB_1409",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220215T174557_20220215T174622_041927_04FE12_34A2",
+    "earlier_input_sha256": "d2bb04b194cbfe586a515966383027a0daaced698de348d77f6c07734a07dc6e",
+    "earlier_mask_sha256": "7fbe2720dfa67db1e81ddd9da5a07e0912fe870f6dac0d468a3e53211ff36129",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 73587,
+    "earlier_water_only": 3588,
+    "october_water_only_by_historical_class": {
+      "1": 25,
+      "2": 18593,
+      "3": 11902
+    }
+  },
+  {
+    "site": "Port Harcourt",
+    "observed_utc": "2022-10-13T17:45:17+00:00",
+    "change_sha256": "31f6f7a57a62ad5a783cbd2bf53f3d6f6ab35a5ae4a5967df46c6de919c6ece4",
+    "october_source": "S1A_IW_GRDH_1SDV_20221013T174517_20221013T174542_045427_056EAB_1B93",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220215T174507_20220215T174532_041927_04FE12_463D",
+    "earlier_input_sha256": "c56de0dd3e7c714eacadf40a6570e869246aca5ab290a5d5762aff965caee3a2",
+    "earlier_mask_sha256": "b6e1e8dc86b49d6e03079fff71407b5c16ab199a46cc5af0e39d6f6d7fbb937e",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 16467,
+    "earlier_water_only": 4342,
+    "october_water_only_by_historical_class": {
+      "1": 136,
+      "2": 2127,
+      "3": 1451
+    }
+  },
+  {
+    "site": "Yenagoa",
+    "observed_utc": "2022-10-13T05:22:08+00:00",
+    "change_sha256": "77c4a01c70282df8367e355eabb39ba74460c8d4b01f7c5f6f6cc149adc6ea4b",
+    "october_source": "S1A_IW_GRDH_1SDV_20221013T052208_20221013T052237_045419_056E6A_3A05",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220215T052158_20220215T052227_041919_04FDCE_EEFB",
+    "earlier_input_sha256": "b74f8b4e28c118dab430ac740cc8df876aebefe00c2c7e711e9888629564014a",
+    "earlier_mask_sha256": "6a7336ad08835bc9d3b0b4a1f33d35a38cc221fafa07fcc97da9f57ab83ac7cb",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 35706,
+    "earlier_water_only": 13400,
+    "october_water_only_by_historical_class": {
+      "1": 6,
+      "2": 3244,
+      "3": 31965
+    }
+  },
+  {
+    "site": "Anambra (Onitsha)",
+    "observed_utc": "2022-10-13T17:45:42+00:00",
+    "change_sha256": "b74f33b380c76f577ba6e50e34474aff4b2f6d214db153f28b88a4b7cf747ec0",
+    "october_source": "S1A_IW_GRDH_1SDV_20221013T174542_20221013T174607_045427_056EAB_F610",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220215T174532_20220215T174557_041927_04FE12_71AB",
+    "earlier_input_sha256": "d98bc8b28d60ea4a8b6fc2c5414a111cecb658cc5b6191d3f4a285787bc31a25",
+    "earlier_mask_sha256": "1a37cd59e97fee73d16951edb4e834c434d7de4105a66e18722898392dd3e825",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 42893,
+    "earlier_water_only": 1919,
+    "october_water_only_by_historical_class": {
+      "1": 387,
+      "2": 15773,
+      "3": 3707
+    }
+  },
+  {
+    "site": "Kano",
+    "observed_utc": "2022-10-08T17:39:09+00:00",
+    "change_sha256": "2359492d21d235008c9b0d5e7cdb9c5427816771af2e0619f63266a4671c16b6",
+    "october_source": "S1A_IW_GRDH_1SDV_20221008T173909_20221008T173934_045354_056C37_BDB6",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220210T173900_20220210T173925_041854_04FB8E_F7C6",
+    "earlier_input_sha256": "75c6636020bc2f08702e4ca47d2c60bbfe3daaf60242543e975c92a5fb49508d",
+    "earlier_mask_sha256": "201f3b24b04c218c9d1cb99f0185b1e883cb8f4c60b509185cb58b2b93f9fa03",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 4500,
+    "earlier_water_only": 5323,
+    "october_water_only_by_historical_class": {
+      "1": 0,
+      "2": 14,
+      "3": 995
+    }
+  },
+  {
+    "site": "Maiduguri",
+    "observed_utc": "2022-10-10T17:22:28+00:00",
+    "change_sha256": "4e5e066f7199460c984912ac50a82d39f3bc550cd5f8588614a9d099a865d098",
+    "october_source": "S1A_IW_GRDH_1SDV_20221010T172228_20221010T172253_045383_056D2B_099E",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220212T172218_20220212T172243_041883_04FC81_E82E",
+    "earlier_input_sha256": "779c8c22d7274d41d3530ee4115beecbbfdf33b336578b28d21a08f4d819a4d6",
+    "earlier_mask_sha256": "b6cb0f19451e5dab71561116d53893e09e3026c1cd8def0d55e1458e3cda37db",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 5532,
+    "earlier_water_only": 22991,
+    "october_water_only_by_historical_class": {
+      "1": 0,
+      "2": 734,
+      "3": 1711
+    }
+  },
+  {
+    "site": "Abuja",
+    "observed_utc": "2022-10-13T17:46:32+00:00",
+    "change_sha256": "a36038e30f47897e64a0255689519a33fff771bbdfc32782e13ab63d8d45b09b",
+    "october_source": "S1A_IW_GRDH_1SDV_20221013T174632_20221013T174657_045427_056EAB_31D6",
+    "earlier_source": "S1A_IW_GRDH_1SDV_20220215T174622_20220215T174647_041927_04FE12_D8BC",
+    "earlier_input_sha256": "76ed790ec0b5999ca87a08c58fdb2c0acfd0e99a4388a8514d7bb2b785d76da8",
+    "earlier_mask_sha256": "2472ce6130e86bc88e1e4640dd2a45755491e7340002b023dc5d36fbc46b7f0a",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "paired_valid_pixels": 262144,
+    "both_water": 2896,
+    "earlier_water_only": 9496,
+    "october_water_only_by_historical_class": {
+      "1": 0,
+      "2": 0,
+      "3": 983
+    }
+  }
+]

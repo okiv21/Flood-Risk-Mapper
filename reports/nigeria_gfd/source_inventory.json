@@ -1,0 +1,275 @@
+{
+  "settings": {
+    "source": "GLOBAL_FLOOD_DB/MODIS_EVENTS/V1",
+    "country": "Nigeria",
+    "country_boundary": "USDOS/LSIB_SIMPLE/2017",
+    "quality": "stored clear_perc fraction >=0.5 and clear_views >=3; jrc_perm_water ==0; all feature bands valid",
+    "sample_scale_m": 250,
+    "projection": "EPSG:32632",
+    "requested_per_class": {
+      "0": 1500,
+      "1": 500
+    },
+    "seed": 42,
+    "target": "Published event maximum water, outside GFD permanent-water mask; coarse satellite reference, not human truth",
+    "features": [
+      "elevation_m",
+      "slope_degrees",
+      "adjusted_elevation_m",
+      "log1p_upstream_area_km2"
+    ],
+    "weighting": "Class population / actual class sample count / total valid population; equal event-mixture weighting",
+    "limitations": "Selected flood events only; no 72h onset labels, no verified event-free dates; not operational risk calibration",
+    "temporal": "Retrospective static feature products and GFD permanent-water mask; historical issue-time availability not established"
+  },
+  "event_inventory": [
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy rain",
+        "id": 2311,
+        "system:time_end": 1065916800000,
+        "system:time_start": 1060041600000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.8838582634925842
+      },
+      "population": {
+        "0": 4450200.882352942,
+        "1": 31205.023529411767
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "6a3fb9e0bea572db9f8201dc8d1ada661902d50f24ecb2ce916ed36c35bf516f"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy rain",
+        "id": 2314,
+        "system:time_end": 1065916800000,
+        "system:time_start": 1060041600000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.8700787425041199
+      },
+      "population": {
+        "0": 3165718.2549019596,
+        "1": 10592.725490196079
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "26748fe79ce420ef43dccbe2aa4fbac33a60fd75f20db3c37068ca88e9ad9244"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy rain",
+        "id": 2345,
+        "system:time_end": 1067299200000,
+        "system:time_start": 1062720000000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.8514851331710815
+      },
+      "population": {
+        "0": 5560020.03137255,
+        "1": 45363.73333333333
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "6e0d615dd34c10c8659e12a2e391017863b71c6b34b29aab7975079a6af124b2"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy rain",
+        "id": 2361,
+        "system:time_end": 1065744000000,
+        "system:time_start": 1064188800000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.84375
+      },
+      "population": {
+        "0": 4276723.505882352,
+        "1": 24443.850980392155
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "0d79e8f74e3bde2cdafbeabcae7cba03d1a7bc3239038764a66bc3d8fe226362"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy rain",
+        "id": 2721,
+        "system:time_end": 1126828800000,
+        "system:time_start": 1123372800000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.8757911324501038
+      },
+      "population": {
+        "0": 5948837.180392158,
+        "1": 40959.61176470588
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "113385c63885708a8825f1cd00167490a22f380de4a0589381441bbcc183bd72"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy rain",
+        "id": 3151,
+        "system:time_end": 1192924800000,
+        "system:time_start": 1186185600000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.9041095972061157
+      },
+      "population": {
+        "0": 11844963.529411761,
+        "1": 52974.47450980392
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "0e13c647ade6875308cb44c8d003a93e80e4bb47390f892c2f1880ca0e508260"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3555,
+        "system:time_end": 1256515200000,
+        "system:time_start": 1255996800000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.7302631735801697
+      },
+      "population": {
+        "0": 3051926.4196078433,
+        "1": 4090.847058823529
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "1f81d9d5f6e39fedce6d56a69ef3bfbc48208c98ed92c2af9a5f52b252bc2367"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3901,
+        "system:time_end": 1330300800000,
+        "system:time_start": 1329696000000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.8289473652839661
+      },
+      "population": {
+        "0": 4298014.356862743,
+        "1": 3153.0
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "6c6dfed293e3f022e5e1f3d0f91542e0d31482c8921fff88b18db4739322c1a8"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3976,
+        "system:time_end": 1348617600000,
+        "system:time_start": 1345852800000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.8567308187484741
+      },
+      "population": {
+        "0": 4217999.537254902,
+        "1": 83167.81960784315
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "e3c42ebf1713a37cc6f60a84fa8ef49d16fe02280babe765e0f22aae1cdb8b7c"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy Rain",
+        "id": 4294,
+        "system:time_end": 1441929600000,
+        "system:time_start": 1440892800000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.7833333015441895
+      },
+      "population": {
+        "0": 5982376.466666667,
+        "1": 7420.325490196079
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "4a3e3ae9c193fa51e77f73e0e7f267ad41b2c0bddb50082fbcb9827996c52e9d"
+    },
+    {
+      "metadata": {
+        "dfo_main_cause": "Heavy Rain",
+        "id": 4667,
+        "system:time_end": 1538438400000,
+        "system:time_start": 1534723200000
+      },
+      "observed_clear_fraction_range": {
+        "clear_perc_max": 1,
+        "clear_perc_min": 0.8379215002059937
+      },
+      "population": {
+        "0": 9217115.325490188,
+        "1": 119666.41176470587
+      },
+      "sample_counts": {
+        "0": 1500,
+        "1": 500
+      },
+      "samples": 2000,
+      "sha256": "b594349574725a3f585ff00fc8ecfe619bdcf591aac2f3356510f5d1b3cded2f"
+    }
+  ],
+  "events_with_samples": 11,
+  "samples": 22000,
+  "class_counts": {
+    "0": 16500,
+    "1": 5500
+  }
+}

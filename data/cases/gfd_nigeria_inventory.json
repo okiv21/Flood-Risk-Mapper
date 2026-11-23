@@ -1,0 +1,361 @@
+{
+  "type": "FeatureCollection",
+  "columns": {
+    "dfo_country": "String",
+    "dfo_main_cause": "String",
+    "id": "Float",
+    "system:index": "String",
+    "system:time_end": "Float",
+    "system:time_start": "Float"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "0",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Brief torrential rain",
+        "id": 1778,
+        "system:time_end": 1002758400000,
+        "system:time_start": 998179200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "1",
+      "properties": {
+        "dfo_country": "Guinea",
+        "dfo_main_cause": "Heavy rain",
+        "id": 1793,
+        "system:time_end": 1002585600000,
+        "system:time_start": 998092800000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "2",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2303,
+        "system:time_end": 1067731200000,
+        "system:time_start": 1059868800000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "3",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2311,
+        "system:time_end": 1065916800000,
+        "system:time_start": 1060041600000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "4",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2314,
+        "system:time_end": 1065916800000,
+        "system:time_start": 1060041600000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "5",
+      "properties": {
+        "dfo_country": "Mali",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2320,
+        "system:time_end": 1066521600000,
+        "system:time_start": 1060473600000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "6",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2345,
+        "system:time_end": 1067299200000,
+        "system:time_start": 1062720000000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "7",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2361,
+        "system:time_end": 1065744000000,
+        "system:time_start": 1064188800000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "8",
+      "properties": {
+        "dfo_country": "Togo",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2576,
+        "system:time_end": 1099526400000,
+        "system:time_start": 1097107200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "9",
+      "properties": {
+        "dfo_country": "Algeria",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2634,
+        "system:time_end": 1110326400000,
+        "system:time_start": 1110067200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "10",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2721,
+        "system:time_end": 1126828800000,
+        "system:time_start": 1123372800000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "11",
+      "properties": {
+        "dfo_country": "Burkina Faso",
+        "dfo_main_cause": "Heavy rain",
+        "id": 2947,
+        "system:time_end": 1160524800000,
+        "system:time_start": 1154563200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "12",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy rain",
+        "id": 3151,
+        "system:time_end": 1192924800000,
+        "system:time_start": 1186185600000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "13",
+      "properties": {
+        "dfo_country": "Ghana",
+        "dfo_main_cause": "Heavy rain",
+        "id": 3166,
+        "system:time_end": 1191974400000,
+        "system:time_start": 1185408000000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "14",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Heavy rain",
+        "id": 3167,
+        "system:time_end": 1187136000000,
+        "system:time_start": 1186617600000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "15",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Heavy rain",
+        "id": 3179,
+        "system:time_end": 1191196800000,
+        "system:time_start": 1188000000000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "16",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Torrential rain",
+        "id": 3348,
+        "system:time_end": 1218153600000,
+        "system:time_start": 1217635200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "17",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Heavy seasonal rains",
+        "id": 3368,
+        "system:time_end": 1219622400000,
+        "system:time_start": 1216512000000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "18",
+      "properties": {
+        "dfo_country": "Mauritania",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3534,
+        "system:time_end": 1251849600000,
+        "system:time_start": 1249862400000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "19",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3555,
+        "system:time_end": 1256515200000,
+        "system:time_start": 1255996800000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "20",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3714,
+        "system:time_end": 1284681600000,
+        "system:time_start": 1281830400000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "21",
+      "properties": {
+        "dfo_country": "Chad",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3741,
+        "system:time_end": 1288915200000,
+        "system:time_start": 1285891200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "22",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3901,
+        "system:time_end": 1330300800000,
+        "system:time_start": 1329696000000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "23",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3976,
+        "system:time_end": 1348617600000,
+        "system:time_start": 1345852800000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "24",
+      "properties": {
+        "dfo_country": "Niger",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 3994,
+        "system:time_end": 1350259200000,
+        "system:time_start": 1347667200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "25",
+      "properties": {
+        "dfo_country": "Niger",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 4175,
+        "system:time_end": 1408406400000,
+        "system:time_start": 1407888000000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "26",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 4294,
+        "system:time_end": 1441929600000,
+        "system:time_start": 1440892800000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "27",
+      "properties": {
+        "dfo_country": "Mali",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 4391,
+        "system:time_end": 1474502400000,
+        "system:time_start": 1473811200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "id": "28",
+      "properties": {
+        "dfo_country": "Nigeria",
+        "dfo_main_cause": "Heavy Rain",
+        "id": 4667,
+        "system:time_end": 1538438400000,
+        "system:time_start": 1534723200000
+      }
+    }
+  ]
+}

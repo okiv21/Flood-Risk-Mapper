@@ -68,7 +68,7 @@ def acquire(project,acquisition_path,output):
             land_cover_nodata_pixels=int((raw[0]==-9999).sum()),
             count_rule='Each selected detection assigned by centroid to one 100m cell within ROI; not unique occupied households',
             occupancy='10m rasterization of selected intersecting polygons; occupancy is a mapping proxy, not exact footprint area',
-            temporal='WorldCover 2021 and Open Buildings inferred May 2023; not verified as-of August 2022 inventory',
+            temporal='WorldCover 2021 and Open Buildings inferred May 2023; inventory availability at the radar acquisition date is unverified',
             uncertainty='Detection omissions/false positives and confidence filtering affect exposure; zero mapped buildings is not proof of no buildings',
             licenses='ESA WorldCover v200 CC-BY-4.0; Open Buildings v3 CC-BY-4.0; source attribution required',
             interpretation='Land-cover and exposure features only; no confirmed flood damage, population or risk score')

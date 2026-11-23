@@ -1,0 +1,5 @@
+lightgbm==4.7.0
+scikit-learn==1.9.1
+shapely==2.2.0
+pmtiles==3.8.1
+mercantile==1.2.1

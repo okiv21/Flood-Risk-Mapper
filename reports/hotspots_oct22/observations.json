@@ -1,0 +1,282 @@
+[
+  {
+    "site": "Lagos",
+    "settings": {
+      "center_lon": 3.45,
+      "center_lat": 6.55,
+      "crs": "EPSG:32631",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "DESCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 95,
+      "system:index": "S1A_IW_GRDH_1SDV_20221018T053017_20221018T053046_045492_05707B_061C",
+      "system:time_start": 1666071017000
+    },
+    "observed_utc": "2022-10-18T05:30:17+00:00",
+    "input_sha256": "7ec57ccfe6387615d8544a32ce7396b5869f99fb149e3f9195b74b351e124846",
+    "mask_sha256": "7cb52d2a93a882f6375ea22e44927d2cb7675aee66ad9509a5e371b0b494b9c6",
+    "context_sha256": "52838e547733ff9674e8e2ffac521ca834ea0eca85c74510ea863029369f3a8c",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 12868,
+      "1": 245460,
+      "2": 3241,
+      "3": 575,
+      "255": 0
+    }
+  },
+  {
+    "site": "Lokoja",
+    "settings": {
+      "center_lon": 6.74,
+      "center_lat": 7.79,
+      "crs": "EPSG:32632",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "ASCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 30,
+      "system:index": "S1A_IW_GRDH_1SDV_20221013T174607_20221013T174632_045427_056EAB_1409",
+      "system:time_start": 1665683167000
+    },
+    "observed_utc": "2022-10-13T17:46:07+00:00",
+    "input_sha256": "994ecaaf6939b178518ca38ab52138db4ac1353a0608dc5433b58abcf10f2d09",
+    "mask_sha256": "d171752ef9cf288ca304e69fd5281590dc63da6fc2e2b9bece1594436f287bfc",
+    "context_sha256": "92a86d0b085c4cc3fc989119c6c40f0aa955d43d4243667636fe7a8051f28034",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 158037,
+      "1": 42157,
+      "2": 41974,
+      "3": 19976,
+      "255": 0
+    }
+  },
+  {
+    "site": "Port Harcourt",
+    "settings": {
+      "center_lon": 7.04,
+      "center_lat": 4.81,
+      "crs": "EPSG:32632",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "ASCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 30,
+      "system:index": "S1A_IW_GRDH_1SDV_20221013T174517_20221013T174542_045427_056EAB_1B93",
+      "system:time_start": 1665683117000
+    },
+    "observed_utc": "2022-10-13T17:45:17+00:00",
+    "input_sha256": "f2ed56f894d190b89962e5d659dac16f54398bb0f04c6eb51d46c92c91eeceff",
+    "mask_sha256": "830f717922104b55199f083257d7784ef4c9a3822dc29a375461bcb47441aa26",
+    "context_sha256": "2046dfdb7b15654a2c167bdaf6334b4e4b07abe6201b994e5e533c48d7a27ad3",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 241963,
+      "1": 3490,
+      "2": 12518,
+      "3": 4173,
+      "255": 0
+    }
+  },
+  {
+    "site": "Yenagoa",
+    "settings": {
+      "center_lon": 6.27,
+      "center_lat": 4.93,
+      "crs": "EPSG:32632",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "DESCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 22,
+      "system:index": "S1A_IW_GRDH_1SDV_20221013T052208_20221013T052237_045419_056E6A_3A05",
+      "system:time_start": 1665638528000
+    },
+    "observed_utc": "2022-10-13T05:22:08+00:00",
+    "input_sha256": "1b2738d3bbd561780dbcbeaf516b8334cf8a31f032b8dc5dd8f546eb34e94df5",
+    "mask_sha256": "86d1db75279017eb469281614d36a9181e26a062dcf908dd97a1b5f343ffd8bf",
+    "context_sha256": "34cc56705746f929d24dbe293e2eba14ad88634040a9489afc3a4ab2ab959242",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 191223,
+      "1": 11258,
+      "2": 18751,
+      "3": 40912,
+      "255": 0
+    }
+  },
+  {
+    "site": "Anambra (Onitsha)",
+    "settings": {
+      "center_lon": 6.78,
+      "center_lat": 6.14,
+      "crs": "EPSG:32632",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "ASCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 30,
+      "system:index": "S1A_IW_GRDH_1SDV_20221013T174542_20221013T174607_045427_056EAB_F610",
+      "system:time_start": 1665683142000
+    },
+    "observed_utc": "2022-10-13T17:45:42+00:00",
+    "input_sha256": "5f5609265f74bdb9c8071d9d20943492aed67249755b4a71befacd085602f8fb",
+    "mask_sha256": "d2f6fa86405325862f029700f717e9971f1e0b3fb23406c8d50619d727a0fd30",
+    "context_sha256": "57065cea0f2287b811301d1cb63fbae8e46a5b44a82577fd50cb7c7e22c8f963",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 199384,
+      "1": 31625,
+      "2": 25956,
+      "3": 5179,
+      "255": 0
+    }
+  },
+  {
+    "site": "Kano",
+    "settings": {
+      "center_lon": 8.52,
+      "center_lat": 12.0,
+      "crs": "EPSG:32632",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "ASCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 132,
+      "system:index": "S1A_IW_GRDH_1SDV_20221008T173909_20221008T173934_045354_056C37_BDB6",
+      "system:time_start": 1665250749000
+    },
+    "observed_utc": "2022-10-08T17:39:09+00:00",
+    "input_sha256": "3b2de5f2a6b4a8b232f33a43adfda621714492c698d7a4d3e9c3f099b5930f4e",
+    "mask_sha256": "39762f2cd3bbe71d51452b6953feae0a96d947e0233481742b29b885862a147f",
+    "context_sha256": "c441b88fd25e6cd48636691bc33031f8591b1af46244fe52f81b84b7b0eae3cc",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 256635,
+      "1": 0,
+      "2": 133,
+      "3": 5376,
+      "255": 0
+    }
+  },
+  {
+    "site": "Maiduguri",
+    "settings": {
+      "center_lon": 13.15,
+      "center_lat": 11.85,
+      "crs": "EPSG:32633",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "ASCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 161,
+      "system:index": "S1A_IW_GRDH_1SDV_20221010T172228_20221010T172253_045383_056D2B_099E",
+      "system:time_start": 1665422548000
+    },
+    "observed_utc": "2022-10-10T17:22:28+00:00",
+    "input_sha256": "565da53740061ce58989c569488417f512d222243fdaf5490bc12677c99219a5",
+    "mask_sha256": "f70bbcca6acb07f694a9c4729c662bac594435fe351b9869449615e0bfa22970",
+    "context_sha256": "071ee47699611b4b31edfa24fd17abf82896f463ca626fb5ac2ca10b19bcee3b",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 254167,
+      "1": 0,
+      "2": 1511,
+      "3": 6466,
+      "255": 0
+    }
+  },
+  {
+    "site": "Abuja",
+    "settings": {
+      "center_lon": 7.49,
+      "center_lat": 9.06,
+      "crs": "EPSG:32632",
+      "width": 512,
+      "height": 512,
+      "scale_m": 10,
+      "start": "2022-10-01",
+      "end": "2022-11-01",
+      "selection_target": "2022-10-15"
+    },
+    "acquisition": {
+      "instrumentMode": "IW",
+      "orbitProperties_pass": "ASCENDING",
+      "platform_number": "A",
+      "relativeOrbitNumber_start": 30,
+      "system:index": "S1A_IW_GRDH_1SDV_20221013T174632_20221013T174657_045427_056EAB_31D6",
+      "system:time_start": 1665683192000
+    },
+    "observed_utc": "2022-10-13T17:46:32+00:00",
+    "input_sha256": "81b28336247471bd7d2820071f5e72914e2cd54078f0b4079f9e84c63276d518",
+    "mask_sha256": "d6f644e7cc0470a363e980f365f063365d7eb52cd9ead442ff659a320ab8d6d7",
+    "context_sha256": "3a5e27e33433ed6c41fc55b9a00ccec899ebded9d690e5f6f0a1d07c562db7c2",
+    "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+    "threshold": 0.55,
+    "counts": {
+      "0": 258265,
+      "1": 0,
+      "2": 0,
+      "3": 3879,
+      "255": 0
+    }
+  }
+]
