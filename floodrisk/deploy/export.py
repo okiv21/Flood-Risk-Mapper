@@ -13,6 +13,7 @@ from pathlib import Path
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, required=True)
+    parser.add_argument('--optical-cache', type=Path, help='Use RGB/NIR optical validation chips instead of the default radar inputs')
     parser.add_argument('--checkpoint', type=Path, required=True)
     parser.add_argument('--config', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
@@ -44,20 +45,28 @@ def main():
     args.output.mkdir(parents=True)
     torch.set_num_threads(args.threads)
     torch.set_num_interop_threads(1)
-    model = build_unet(pretrained=False)
+    channels = 4 if args.optical_cache else 2
+    if config.get('in_channels', channels) != channels:
+        raise ValueError('Checkpoint configuration and sensor channel count differ')
+    input_name = 'optical' if args.optical_cache else 'sar'
+    model = build_unet(pretrained=False, in_channels=channels)
     model.load_state_dict(torch.load(args.checkpoint, map_location='cpu', weights_only=True), strict=True)
     model.eval()
-    dataset = Sen1Floods11(args.root, 'valid')
+    if args.optical_cache:
+        from floodrisk.datasets.optical import OpticalChips
+        dataset = OpticalChips(args.root, 'valid', args.optical_cache)
+    else:
+        dataset = Sen1Floods11(args.root, 'valid')
     if not len(dataset):
         raise ValueError('Empty validation dataset')
     split_hash = hashlib.sha256((args.root / 'splits/flood_valid_data.csv').read_bytes()).hexdigest()
     if split_hash != config['split_csv_sha256']:
         raise ValueError('Validation split differs from selected configuration')
     sample = dataset[0][0].unsqueeze(0).contiguous()
-    target = args.output / 'm1_s1_fp32.onnx'
+    target = args.output / ('m1_s2_fp32.onnx' if args.optical_cache else 'm1_s1_fp32.onnx')
     with torch.inference_mode():
         torch.onnx.export(model, sample, str(target), opset_version=17,
-                          input_names=['sar'], output_names=['logits'],
+                          input_names=[input_name], output_names=['logits'],
                           do_constant_folding=True)
     onnx.checker.check_model(str(target))
     print('ONNX graph validated:', target, flush=True)
@@ -79,7 +88,7 @@ def main():
         x = x.unsqueeze(0).contiguous()
         with torch.inference_mode():
             expected = model(x).numpy()
-        actual = session.run(['logits'], {'sar': x.numpy()})[0]
+        actual = session.run(['logits'], {input_name: x.numpy()})[0]
         if actual.shape != expected.shape or not np.isfinite(actual).all():
             raise ValueError('Invalid ONNX output shape or non-finite output')
         pp, po = probability(expected), probability(actual)
@@ -113,7 +122,7 @@ def main():
         with torch.inference_mode():
             return model(sample)
     def run_ort():
-        return session.run(['logits'], {'sar': sample_np})
+        return session.run(['logits'], {input_name: sample_np})
     for _ in range(3):
         run_pt(); run_ort()
     timings = {'pytorch': [], 'onnxruntime': []}
@@ -133,18 +142,18 @@ def main():
         cpu = platform.processor()
     report = dict(checkpoint_sha256=checkpoint_hash, onnx_sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
                   split_csv_sha256=split_hash, threshold=config['threshold'],
-                  input_shape=[1,2,512,512], output='raw water logits', opset=17, dtype='float32',
+                  input_shape=list(sample.shape), output='raw water logits', opset=17, dtype='float32',
                   platform=platform.platform(), cpu=cpu, threads=args.threads,
                   provider=session.get_providers(), warmup_runs=3, repetitions=args.repeats,
-                  benchmark_chip=dataset.items[0][0],
+                  benchmark_chip=(dataset.items[0][0].replace('_S1Hand', '_S2Hand') if args.optical_cache else dataset.items[0][0]),
                   timing_scope='Warm in-memory forward pass only; excludes preprocessing, loading, sigmoid and mask creation',
                   environment={k:version(k) for k in ['torch','onnx','onnxruntime','numpy','segmentation-models-pytorch']},
                   bytes=dict(pytorch_checkpoint=args.checkpoint.stat().st_size,onnx_fp32=target.stat().st_size),
                   parity=parity,latency=latency)
     (args.output/'benchmark.json').write_text(json.dumps(report,indent=2)+'\n')
     metadata = dict(config, onnx_sha256=report['onnx_sha256'], input_shape=report['input_shape'],
-                    input_name='sar', output_name='logits', output_activation='sigmoid', opset=17,
-                    dtype='float32', artifact='m1_s1_fp32.onnx')
+                    input_name=input_name, output_name='logits', output_activation='sigmoid', opset=17,
+                    dtype='float32', artifact=target.name)
     (args.output/'inference_config.json').write_text(json.dumps(metadata,indent=2)+'\n')
     labels=['PyTorch FP32', 'ONNX Runtime FP32']
     fig,axes=plt.subplots(1,2,figsize=(10,4))

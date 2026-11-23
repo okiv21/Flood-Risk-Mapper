@@ -1,0 +1,67 @@
+{
+  "checkpoint_sha256": "337a08f8eb9dea2351142dbe9759783551085f0ea06e998eb21c3ae9f03053b1",
+  "onnx_sha256": "56feb3125762164681a155d9d561cd548037d9974737f7367194e09aafae9bbf",
+  "split_csv_sha256": "04999b82b93e393c32a54ac85b2bf8a18b671f7a6f43a9478b340e8a9b9647fb",
+  "threshold": 0.5,
+  "input_shape": [
+    1,
+    4,
+    512,
+    512
+  ],
+  "output": "raw water logits",
+  "opset": 17,
+  "dtype": "float32",
+  "platform": "macOS-15.8.3-x86_64-i386-64bit",
+  "cpu": "Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz",
+  "threads": 4,
+  "provider": [
+    "CPUExecutionProvider"
+  ],
+  "warmup_runs": 3,
+  "repetitions": 20,
+  "benchmark_chip": "Ghana_5079_S2Hand.tif",
+  "timing_scope": "Warm in-memory forward pass only; excludes preprocessing, loading, sigmoid and mask creation",
+  "environment": {
+    "torch": "2.2.2",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.23.2",
+    "numpy": "1.26.4",
+    "segmentation-models-pytorch": "0.6.0"
+  },
+  "bytes": {
+    "pytorch_checkpoint": 97931411,
+    "onnx_fp32": 97750965
+  },
+  "parity": {
+    "chips": 89,
+    "max_abs_logit_error": 0.00016117095947265625,
+    "max_abs_probability_error": 2.1278858184814453e-05,
+    "probability_allclose": true,
+    "atol": 0.0001,
+    "rtol": 0.0001,
+    "mask_disagreements": 1,
+    "total_pixels": 23330816,
+    "mask_disagreement_fraction": 4.286176702949438e-08,
+    "pytorch_validation": {
+      "iou_water": 0.8071757238820246,
+      "miou": 0.8906194345441447
+    },
+    "onnx_validation": {
+      "iou_water": 0.8071753960427406,
+      "miou": 0.8906192433084035
+    },
+    "reference_validation_iou_delta": 0.0,
+    "passed": true
+  },
+  "latency": {
+    "pytorch": {
+      "median_ms": 391.5521189919673,
+      "p95_ms": 462.08149151498225
+    },
+    "onnxruntime": {
+      "median_ms": 219.59854298620485,
+      "p95_ms": 242.50397995783715
+    }
+  }
+}

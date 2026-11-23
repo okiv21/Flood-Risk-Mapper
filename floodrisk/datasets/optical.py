@@ -2,6 +2,7 @@
 
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from time import sleep
 
 import numpy as np
 import rasterio
@@ -14,11 +15,11 @@ BASE = "https://storage.googleapis.com/sen1floods11/v1.1/data/flood_events/HandL
 BANDS = (4, 3, 2, 8)
 
 
-def prepare(root, cache):
+def prepare(root, cache, splits=("train", "valid", "test", "bolivia")):
     names = sorted(
         {
             name.replace("_S1Hand", "_S2Hand")
-            for split in ["train", "valid", "test", "bolivia"]
+            for split in splits
             for name, _ in read_split(root, split)
         }
     )
@@ -28,8 +29,19 @@ def prepare(root, cache):
         path = cache / name
         if path.exists():
             return
-        response = requests.get(BASE + name, timeout=(15, 120))
-        response.raise_for_status()
+        for attempt in range(3):
+            try:
+                response = requests.get(BASE + name, timeout=(15, 120))
+                response.raise_for_status()
+                break
+            except requests.RequestException as exc:
+                if attempt == 2 or (
+                    exc.response is not None
+                    and 400 <= exc.response.status_code < 500
+                    and exc.response.status_code != 429
+                ):
+                    raise
+                sleep(2**attempt)
         stage = path.with_suffix(".tmp")
         stage.write_bytes(response.content)
         with rasterio.open(stage) as src:

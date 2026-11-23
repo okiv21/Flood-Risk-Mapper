@@ -38,6 +38,18 @@ At the original threshold 0.50, U-Net improves test water IoU by approximately *
 
 The threshold 0.55 was selected using validation data and frozen before its held-out evaluation; its report is linked in the threshold experiment below. Test/Bolivia had already been inspected for diagnosis, so this is not an evaluation on a fresh untouched dataset. Validation scores are reported separately from held-out scores. M1 measures water segmentation at image acquisition time. The country breakdown follows below.
 
+### Optical comparison on Kaggle
+
+The four-band Sentinel-2 U-Net completed 60 epochs. At threshold 0.50 it scored **0.8171 water IoU** on the official test split and **0.8033** on Bolivia. These scores use valid optical inputs and human labels. Radar remains the input for the historical hotspot maps because it can observe the surface through cloud cover. [Optical model card and training record](reports/m1-s2-kaggle-v2/README.md)
+
+![Optical validation history and matched-sensor evaluation](reports/m1-s2-kaggle-v2/sensor_comparison.png)
+
+*The left panel traces 60 training epochs. The right panel compares the two models on identical valid pixels at threshold 0.50. On the 90 test chips, optical achieved 0.8172 water IoU and radar 0.6923. On the 15 Bolivia chips the scores were 0.8067 and 0.7091.* [Matched-pixel evaluation](reports/m1-s2-kaggle-v2/paired_evaluation.json)
+
+![Optical inference latency and model size](reports/m1-s2-kaggle-v2/onnx_fp32/cpu_export_comparison.png)
+
+*The FP32 optical export took 220 ms per chip on the measured Intel CPU, compared with 392 ms for PyTorch. Across 89 validation chips, one of 23,330,816 pixel classifications differed. Dynamic INT8 conversion produced a graph whose convolution operator this CPU runtime could not execute.* [Export benchmark](reports/m1-s2-kaggle-v2/onnx_fp32/benchmark.json) · [INT8 compatibility check](reports/m1-s2-kaggle-v2/dynamic_int8.json)
+
 ### Nigerian chips in the official test split
 
 Four test chips come from Nigeria. At the frozen 0.55 threshold, U-Net scored **0.8827 water IoU** and Otsu scored **0.8274**. IoU measures the overlap between predicted and labelled water divided by their combined area. Nigeria also contributed ten training chips and four validation chips. With only four test chips, the result gives little evidence about performance in a different city or flood season.
@@ -426,7 +438,8 @@ notebooks/
 ├── 14_evidence/            # orbit-matched pair and independent-label review queue
 ├── 15_hotspots/            # historical radar observation maps
 ├── 16_optical/             # local source for Kaggle optical comparison
-└── 17_terrain_evaluation/  # interpretation of the terrain benchmark
+├── 17_terrain_evaluation/  # interpretation of the terrain benchmark
+└── 18_sensor_comparison/    # optical history and matched-pixel evaluation
 reports/                   # training history, artifact summaries, evaluation reports
 data/                      # small reference data placeholder
 ee/                        # Earth Engine setup guide and Lagos download plan
@@ -476,4 +489,4 @@ The original local build specification, `Nigeria_Flood_Risk_Mapper_Spec.pdf`, de
 
 ## Verification
 
-Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 25 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.
+Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 26 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.

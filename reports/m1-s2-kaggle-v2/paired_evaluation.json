@@ -1,0 +1,56 @@
+{
+  "threshold": 0.5,
+  "radar_sha256": "a08d985b110fe8096efe571a2687d93decb680a826694c03ea8f4222d3e687bc",
+  "optical_sha256": "337a08f8eb9dea2351142dbe9759783551085f0ea06e998eb21c3ae9f03053b1",
+  "metrics": {
+    "valid": {
+      "chips": 89,
+      "common_labelled_pixels": 20271018,
+      "radar_common": {
+        "iou_water": 0.6912783318084257,
+        "miou": 0.8237925637804315
+      },
+      "optical_common": {
+        "iou_water": 0.8071142770314256,
+        "miou": 0.8906130858602119
+      },
+      "optical_native": {
+        "iou_water": 0.8071757238820246,
+        "miou": 0.8906194345441447
+      }
+    },
+    "test": {
+      "chips": 90,
+      "common_labelled_pixels": 20440638,
+      "radar_common": {
+        "iou_water": 0.6923422921789603,
+        "miou": 0.8211317293676885
+      },
+      "optical_common": {
+        "iou_water": 0.8172139739188334,
+        "miou": 0.894665840627229
+      },
+      "optical_native": {
+        "iou_water": 0.8171137037906311,
+        "miou": 0.8946189287140929
+      }
+    },
+    "bolivia": {
+      "chips": 15,
+      "common_labelled_pixels": 2819585,
+      "radar_common": {
+        "iou_water": 0.7090535978908612,
+        "miou": 0.820324444913805
+      },
+      "optical_common": {
+        "iou_water": 0.8066686346680649,
+        "miou": 0.884054798588106
+      },
+      "optical_native": {
+        "iou_water": 0.8033334016687509,
+        "miou": 0.882255747157864
+      }
+    }
+  },
+  "protocol": "CPU FP32; pooled IoU; same official chips; common masks require valid labels, valid optical and finite unmasked radar; clouds retained"
+}

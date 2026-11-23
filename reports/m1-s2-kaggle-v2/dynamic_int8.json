@@ -1,0 +1,9 @@
+{
+  "source_sha256": "56feb3125762164681a155d9d561cd548037d9974737f7367194e09aafae9bbf",
+  "onnx_sha256": "8158af24bd2a8f99f73da06cb413b77639bd125281ef39db3422d40179a4a883",
+  "bytes": 24576621,
+  "runtime": "1.23.2",
+  "provider": "CPUExecutionProvider",
+  "runnable": false,
+  "error": "[ONNXRuntimeError] : 9 : NOT_IMPLEMENTED : Could not find an implementation for ConvInteger(10) node with name '/encoder/conv1/Conv_quant'"
+}

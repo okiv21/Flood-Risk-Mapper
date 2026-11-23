@@ -1,0 +1,20 @@
+{
+  "checkpoint_sha256": "337a08f8eb9dea2351142dbe9759783551085f0ea06e998eb21c3ae9f03053b1",
+  "in_channels": 4,
+  "architecture": "unet_resnet34",
+  "bands": [
+    "B4",
+    "B3",
+    "B2",
+    "B8"
+  ],
+  "input_units": "Sen1Floods11 integer reflectance divided by 10000, clipped to [0,1]; fill missing with 0; mask output where any band missing",
+  "threshold": 0.5,
+  "comparison": "probability > threshold",
+  "selection_rule": "fixed conventional threshold for sensor comparison",
+  "split_csv_sha256": "04999b82b93e393c32a54ac85b2bf8a18b671f7a6f43a9478b340e8a9b9647fb",
+  "validation_selected": {
+    "iou_water": 0.8071757238820246,
+    "miou": 0.8906194345441447
+  }
+}
