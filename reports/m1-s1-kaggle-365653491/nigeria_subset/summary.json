@@ -1,0 +1,26 @@
+{
+  "chips": 4,
+  "scope": "Official Sen1Floods11 Nigeria test-country subset; Nigeria also appears in train/validation; not a new geographic holdout",
+  "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+  "threshold": 0.55,
+  "results": {
+    "unet_fp32_055": {
+      "iou_water": 0.8826770615044183,
+      "miou": 0.928822076132565,
+      "chip_bootstrap_95_interval": [
+        0.10088202866593164,
+        0.9188865285800256
+      ]
+    },
+    "otsu": {
+      "iou_water": 0.8273848775608491,
+      "miou": 0.895728445417934,
+      "chip_bootstrap_95_interval": [
+        0.055211419337462965,
+        0.8845902059858544
+      ]
+    }
+  },
+  "bootstrap": "10000 paired chip resamples; seed42; only4chips, event independence not established; interval is exploratory",
+  "limitation": "Does not replace a larger independent Nigerian test set; no flood forecast or urban pluvial accuracy established"
+}

@@ -1,10 +1,10 @@
 import segmentation_models_pytorch as smp
 
 
-def build_unet(encoder="resnet34", pretrained=True):
+def build_unet(encoder="resnet34", pretrained=True, in_channels=2):
     return smp.Unet(
         encoder_name=encoder,
         encoder_weights="imagenet" if pretrained else None,
-        in_channels=2,      # VV, VH
+        in_channels=in_channels,
         classes=1,          # one logit per pixel: water vs not
     )

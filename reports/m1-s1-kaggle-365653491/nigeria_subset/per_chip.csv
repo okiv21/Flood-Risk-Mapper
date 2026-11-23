@@ -1,0 +1,9 @@
+chip,method,tp,fp,fn,tn
+Nigeria_417184_S1Hand.tif,unet_fp32_055,1229,4052,155,53633
+Nigeria_417184_S1Hand.tif,otsu,1179,5979,205,51706
+Nigeria_225131_S1Hand.tif,unet_fp32_055,136,23,995,240101
+Nigeria_225131_S1Hand.tif,otsu,0,0,1131,240124
+Nigeria_812045_S1Hand.tif,unet_fp32_055,119054,9110,1064,107906
+Nigeria_812045_S1Hand.tif,otsu,110284,3771,9834,113245
+Nigeria_22088_S1Hand.tif,unet_fp32_055,47,31,582,221986
+Nigeria_22088_S1Hand.tif,otsu,205,1953,424,220064

@@ -1,0 +1,94 @@
+{
+  "checkpoint_sha256": "a08d985b110fe8096efe571a2687d93decb680a826694c03ea8f4222d3e687bc",
+  "architecture": "unet_resnet34",
+  "in_channels": 2,
+  "threshold": 0.55,
+  "comparison": "probability > threshold",
+  "selection_split": "valid",
+  "selection_rule": "max pooled validation water IoU; ties closest to 0.50, then lower threshold",
+  "grid": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "label_mask": "label != -1",
+  "split_chips": 89,
+  "split_csv_sha256": "04999b82b93e393c32a54ac85b2bf8a18b671f7a6f43a9478b340e8a9b9647fb",
+  "environment": {
+    "torch": "2.2.2",
+    "numpy": "1.26.4",
+    "rasterio": "1.4.4",
+    "segmentation-models-pytorch": "0.6.0"
+  },
+  "validation_selected": {
+    "threshold": 0.55,
+    "tp": 1793573,
+    "fp": 362712,
+    "fn": 444032,
+    "tn": 17694408,
+    "iou_water": 0.6897516725845348,
+    "miou": 0.8230733020500753,
+    "precision": 0.8317884695204948,
+    "recall": 0.8015592564371281
+  },
+  "validation_baseline": {
+    "threshold": 0.5,
+    "tp": 1807775,
+    "fp": 384470,
+    "fn": 429830,
+    "tn": 17672650,
+    "iou_water": 0.6894444285537218,
+    "miou": 0.8226985705714362,
+    "precision": 0.8246227041229425,
+    "recall": 0.8079062211605712
+  },
+  "preprocessing": {
+    "vv_clip": [
+      -30,
+      5
+    ],
+    "vh_clip": [
+      -42,
+      -5
+    ],
+    "mean": [
+      -10.394,
+      -17.232
+    ],
+    "std": [
+      4.02,
+      4.691
+    ],
+    "nan_fill_normalized": 0
+  },
+  "held_out_status": "Not evaluated for this selected threshold",
+  "onnx_sha256": "e4c2c0bb90dd5d0df69da1bd206a9714f6fcebf87cc39ff763c9b776cec8a091",
+  "input_shape": [
+    1,
+    2,
+    512,
+    512
+  ],
+  "input_name": "sar",
+  "output_name": "logits",
+  "output_activation": "sigmoid",
+  "opset": 17,
+  "dtype": "int8_qdq",
+  "artifact": "m1_s1_static_int8.onnx",
+  "accepted_on_validation": false,
+  "calibration_report": "quantization.json"
+}

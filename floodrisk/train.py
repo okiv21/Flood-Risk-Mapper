@@ -31,17 +31,17 @@ def evaluate(model, loader, device, threshold=0.5):
     return metric.compute()
 
 
-def train(root, epochs=60, batch_size=8, lr=3e-4, seed=42, out="best.pt", num_workers=2):
+def train(root, epochs=60, batch_size=8, lr=3e-4, seed=42, out="best.pt", num_workers=2, dataset=Sen1Floods11, in_channels=2):
     set_seed(seed)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print("device:", device)
 
-    train_dl = DataLoader(Sen1Floods11(root, "train", augment=True), batch_size=batch_size,
+    train_dl = DataLoader(dataset(root, "train", augment=True), batch_size=batch_size,
                           shuffle=True, num_workers=num_workers, drop_last=True)
-    valid_dl = DataLoader(Sen1Floods11(root, "valid"), batch_size=batch_size,
+    valid_dl = DataLoader(dataset(root, "valid"), batch_size=batch_size,
                           num_workers=num_workers)
 
-    model = build_unet().to(device)
+    model = build_unet(in_channels=in_channels).to(device)
     opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=epochs)
     scaler = torch.amp.GradScaler("cuda", enabled=(device == "cuda"))

@@ -38,6 +38,22 @@ At the original threshold 0.50, U-Net improves test water IoU by approximately *
 
 The threshold 0.55 was selected using validation data and frozen before its held-out evaluation; its report is linked in the threshold experiment below. Test/Bolivia had already been inspected for diagnosis, so this is not an evaluation on a fresh untouched dataset. Validation scores are reported separately from held-out scores. M1 measures water segmentation, not flood forecasting or Nigeria-specific accuracy.
 
+### Nigerian chips in the official test split
+
+Four test chips come from Nigeria. At the frozen 0.55 threshold, U-Net scored **0.8827 water IoU** and Otsu scored **0.8274**. IoU measures the overlap between predicted and labelled water divided by their combined area. Nigeria also contributed ten training chips and four validation chips. With only four test chips, the result gives little evidence about performance in a different city or flood season.
+
+![Nigerian benchmark with chip-level uncertainty](reports/m1-s1-kaggle-365653491/nigeria_subset/nigeria_subset_iou.png)
+
+*Bars show pooled overlap. Whiskers show the middle 95% of 10,000 chip bootstrap results. Resampling entire chips exposes how much the answer depends on which scenes are included.* [Chip counts and results](reports/m1-s1-kaggle-365653491/nigeria_subset/summary.json)
+
+### CPU precision experiment
+
+The INT8 export reduced model size from **97.7 MB to 24.7 MB**. Water IoU across 89 validation chips changed from 0.68975 to 0.68901. On this Intel Mac the smaller model took **211 ms** per chip versus **179 ms** for FP32. FP32 remains the default because it met the latency objective better on the measured host.
+
+![Validation overlap, CPU time and model size by precision](reports/m1-s1-kaggle-365653491/int8_experiment/quantization_tradeoff.png)
+
+*The same chip, CPU thread count and alternating inference order were used for both timings. The static INT8 calibration used 32 training chips. The deployment host will need its own timing measurement.* [Benchmark details](reports/m1-s1-kaggle-365653491/int8_experiment/quantization.json)
+
 ## Inspect model predictions
 
 Open [the local diagnostics notebook](notebooks/03_evaluate/03-prediction-diagnostics.ipynb) to compare radar input, human labels, predictions, and error maps. It reproduces the held-out scores, saves per-chip metrics, and selects low-, middle-, and high-IoU examples using a fixed rule. Examples are for diagnosis, not for tuning against the test set. [View the visual error analysis](reports/m1-s1-kaggle-365653491/diagnostics/README.md).
@@ -401,7 +417,8 @@ web/                       # frontend placeholder
 - [x] Implement streamed scene tiling and verify pixel placement on engineering fixtures.
 - [x] Compare context margins on one real Lagos-area scene and verify geospatial output.
 - [ ] Establish independent real-scene accuracy and boundary-quality evaluation before operational mapping.
-- [ ] Evaluate INT8 quantisation and benchmark on the deployment host.
+- [x] Evaluate INT8 quantisation on the local Intel CPU.
+- [ ] Benchmark on the eventual deployment host.
 - [ ] Implement hotspot inference, permanent-water removal, and the first map/demo.
 - [ ] Train and validate M2 with spatial blocks and a temporal holdout.
 - [x] Acquire historical rainfall and timestamped forecast inputs; validate their time windows.

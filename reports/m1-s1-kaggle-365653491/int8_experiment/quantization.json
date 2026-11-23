@@ -1,0 +1,78 @@
+{
+  "platform": "macOS-15.8.3-x86_64-i386-64bit",
+  "threshold": 0.55,
+  "fp32_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+  "static_int8_sha256": "e4c2c0bb90dd5d0df69da1bd206a9714f6fcebf87cc39ff763c9b776cec8a091",
+  "calibration_split": "train",
+  "calibration_seed": 42,
+  "calibration_chips": [
+    "USA_831672_S1Hand.tif",
+    "Pakistan_246718_S1Hand.tif",
+    "USA_224165_S1Hand.tif",
+    "Spain_8154154_S1Hand.tif",
+    "USA_354981_S1Hand.tif",
+    "Paraguay_215904_S1Hand.tif",
+    "Pakistan_211386_S1Hand.tif",
+    "Ghana_187318_S1Hand.tif",
+    "Ghana_597288_S1Hand.tif",
+    "Somalia_205466_S1Hand.tif",
+    "Sri-Lanka_178753_S1Hand.tif",
+    "Nigeria_78061_S1Hand.tif",
+    "India_804466_S1Hand.tif",
+    "USA_1010394_S1Hand.tif",
+    "USA_387945_S1Hand.tif",
+    "Paraguay_54421_S1Hand.tif",
+    "Nigeria_529525_S1Hand.tif",
+    "India_287642_S1Hand.tif",
+    "Sri-Lanka_916628_S1Hand.tif",
+    "Paraguay_198534_S1Hand.tif",
+    "USA_655230_S1Hand.tif",
+    "Sri-Lanka_523539_S1Hand.tif",
+    "Pakistan_1036366_S1Hand.tif",
+    "Nigeria_600295_S1Hand.tif",
+    "Spain_337094_S1Hand.tif",
+    "Somalia_886726_S1Hand.tif",
+    "India_500266_S1Hand.tif",
+    "Sri-Lanka_845821_S1Hand.tif",
+    "Spain_7856615_S1Hand.tif",
+    "Pakistan_909806_S1Hand.tif",
+    "Ghana_135389_S1Hand.tif",
+    "Paraguay_482517_S1Hand.tif"
+  ],
+  "static_method": "QDQ S8S8 per-channel MinMax; 32 training chips; graph preprocessing before quantisation",
+  "dynamic": {
+    "runnable": false,
+    "error": "[ONNXRuntimeError] : 9 : NOT_IMPLEMENTED : Could not find an implementation for ConvInteger(10) node with name '/encoder/conv1/Conv_quant'",
+    "exception_type": "NotImplemented"
+  },
+  "validation": {
+    "fp32": {
+      "iou_water": 0.689751288016038,
+      "miou": 0.8230730839189262
+    },
+    "static_int8": {
+      "iou_water": 0.6890114336200998,
+      "miou": 0.8225639487136809
+    }
+  },
+  "validation_water_iou_loss": 0.0007398543959382664,
+  "acceptance_rule": "Validation water IoU loss <=0.01, faster median CPU latency, size <=70% FP32",
+  "accepted_on_validation": false,
+  "latency": {
+    "fp32": {
+      "median_ms": 179.38974899880122,
+      "p95_ms": 181.84814625274157
+    },
+    "static_int8": {
+      "median_ms": 211.29079000093043,
+      "p95_ms": 215.4275923923706
+    }
+  },
+  "bytes": {
+    "fp32": 97725869,
+    "static_int8": 24690280
+  },
+  "timing_scope": "4 CPU threads, batch 1, same first validation chip, 3 warmups, 20 alternating forward passes; no IO or preprocessing",
+  "primary_artifact": "Existing FP32 remains the deployment default; quantised artifact requires explicit opt-in",
+  "held_out": {}
+}
