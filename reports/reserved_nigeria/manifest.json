@@ -1,0 +1,781 @@
+{
+  "target": "observed water on the radar acquisition date",
+  "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+  "threshold": 0.55,
+  "selection": "12 disjoint scene footprints; 4 adjacent chips per scene; purposive locations; no model-based selection",
+  "classes": {
+    "0": "dry",
+    "1": "water",
+    "255": "uncertain or missing"
+  },
+  "chips": [
+    {
+      "chip_id": "lagos_lagoon_1_0_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_1",
+      "image": "lagos_lagoon_1/lagos_lagoon_1_0_0.tif",
+      "sha256": "0a9b3b031e11ce23b15b165da8d813bc0a071d5cb5fe82890d61b1f04b9c2266",
+      "source": "S1A_IW_GRDH_1SDV_20240808T053017_20240808T053046_055117_06B759_231C",
+      "parent_sha256": "2569f3100d3054689ee9054a5904b8f5ee33825252ee906766a6a5a48c65c052",
+      "crs": "EPSG:32631",
+      "bounds": [
+        529150.0,
+        729540.0,
+        534270.0,
+        734660.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_1_0_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_1",
+      "image": "lagos_lagoon_1/lagos_lagoon_1_0_1.tif",
+      "sha256": "b37da5f6ed64bad2db69e9aafc9898a848fe599d0c943397aa6a320d59334946",
+      "source": "S1A_IW_GRDH_1SDV_20240808T053017_20240808T053046_055117_06B759_231C",
+      "parent_sha256": "2569f3100d3054689ee9054a5904b8f5ee33825252ee906766a6a5a48c65c052",
+      "crs": "EPSG:32631",
+      "bounds": [
+        534270.0,
+        729540.0,
+        539390.0,
+        734660.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_1_1_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_1",
+      "image": "lagos_lagoon_1/lagos_lagoon_1_1_0.tif",
+      "sha256": "247db91d47647b3451bbd7f6d13f3513f4ce158f7261e3b577e2b37bf1c7f936",
+      "source": "S1A_IW_GRDH_1SDV_20240808T053017_20240808T053046_055117_06B759_231C",
+      "parent_sha256": "2569f3100d3054689ee9054a5904b8f5ee33825252ee906766a6a5a48c65c052",
+      "crs": "EPSG:32631",
+      "bounds": [
+        529150.0,
+        724420.0,
+        534270.0,
+        729540.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_1_1_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_1",
+      "image": "lagos_lagoon_1/lagos_lagoon_1_1_1.tif",
+      "sha256": "c48b2f0686393780be7f87ba913885a7281999559925fc744fc81cdfe2ef8c94",
+      "source": "S1A_IW_GRDH_1SDV_20240808T053017_20240808T053046_055117_06B759_231C",
+      "parent_sha256": "2569f3100d3054689ee9054a5904b8f5ee33825252ee906766a6a5a48c65c052",
+      "crs": "EPSG:32631",
+      "bounds": [
+        534270.0,
+        724420.0,
+        539390.0,
+        729540.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_2_0_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_2",
+      "image": "lagos_lagoon_2/lagos_lagoon_2_0_0.tif",
+      "sha256": "f44395177de98123ebbe1222e84c4e66404e5fc7964ca434444342dcadf95db6",
+      "source": "S1A_IW_GRDH_1SDV_20240825T180209_20240825T180234_055373_06C0CE_922E",
+      "parent_sha256": "54df5c5793c823ffdead7b288795e8bb71d7f5c206384cd0e584bda6489082c1",
+      "crs": "EPSG:32631",
+      "bounds": [
+        564530.0,
+        722940.0,
+        569650.0,
+        728060.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_2_0_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_2",
+      "image": "lagos_lagoon_2/lagos_lagoon_2_0_1.tif",
+      "sha256": "eb872ff44c89feef2ef3d70bdb9f1c2c8d79b1b230e805d9f76bc47e377f0979",
+      "source": "S1A_IW_GRDH_1SDV_20240825T180209_20240825T180234_055373_06C0CE_922E",
+      "parent_sha256": "54df5c5793c823ffdead7b288795e8bb71d7f5c206384cd0e584bda6489082c1",
+      "crs": "EPSG:32631",
+      "bounds": [
+        569650.0,
+        722940.0,
+        574770.0,
+        728060.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_2_1_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_2",
+      "image": "lagos_lagoon_2/lagos_lagoon_2_1_0.tif",
+      "sha256": "db5210d5adfc3e22fffa468d61c9818b744e5818ce66810e50c11634c23302cf",
+      "source": "S1A_IW_GRDH_1SDV_20240825T180209_20240825T180234_055373_06C0CE_922E",
+      "parent_sha256": "54df5c5793c823ffdead7b288795e8bb71d7f5c206384cd0e584bda6489082c1",
+      "crs": "EPSG:32631",
+      "bounds": [
+        564530.0,
+        717820.0,
+        569650.0,
+        722940.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_2_1_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_2",
+      "image": "lagos_lagoon_2/lagos_lagoon_2_1_1.tif",
+      "sha256": "da1c62a27570a66cfed7eb8d11092eba05e4abd9502023189a924a9952b98aa8",
+      "source": "S1A_IW_GRDH_1SDV_20240825T180209_20240825T180234_055373_06C0CE_922E",
+      "parent_sha256": "54df5c5793c823ffdead7b288795e8bb71d7f5c206384cd0e584bda6489082c1",
+      "crs": "EPSG:32631",
+      "bounds": [
+        569650.0,
+        717820.0,
+        574770.0,
+        722940.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_3_0_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_3",
+      "image": "lagos_lagoon_3/lagos_lagoon_3_0_0.tif",
+      "sha256": "a6017744b3009ecefee161bd08683e357deaff8842d096ad11d73510660af545",
+      "source": "S1A_IW_GRDH_1SDV_20240906T180209_20240906T180234_055548_06C760_E33C",
+      "parent_sha256": "95b367c437d92e21b0ed7b6f766f012f75246932297dde7d993de41f8ddc403a",
+      "crs": "EPSG:32631",
+      "bounds": [
+        583320.0,
+        727390.0,
+        588440.0,
+        732510.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_3_0_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_3",
+      "image": "lagos_lagoon_3/lagos_lagoon_3_0_1.tif",
+      "sha256": "9bc4495f0454c9acf5963097fdf0f3326bc91ff07f9bc5861b90ce6773dc03e4",
+      "source": "S1A_IW_GRDH_1SDV_20240906T180209_20240906T180234_055548_06C760_E33C",
+      "parent_sha256": "95b367c437d92e21b0ed7b6f766f012f75246932297dde7d993de41f8ddc403a",
+      "crs": "EPSG:32631",
+      "bounds": [
+        588440.0,
+        727390.0,
+        593560.0,
+        732510.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_3_1_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_3",
+      "image": "lagos_lagoon_3/lagos_lagoon_3_1_0.tif",
+      "sha256": "e81a8b789a7d512cae641234a09d6076c00278c7af700b2ef7b77b9ad0e054c7",
+      "source": "S1A_IW_GRDH_1SDV_20240906T180209_20240906T180234_055548_06C760_E33C",
+      "parent_sha256": "95b367c437d92e21b0ed7b6f766f012f75246932297dde7d993de41f8ddc403a",
+      "crs": "EPSG:32631",
+      "bounds": [
+        583320.0,
+        722270.0,
+        588440.0,
+        727390.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_3_1_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_3",
+      "image": "lagos_lagoon_3/lagos_lagoon_3_1_1.tif",
+      "sha256": "e6873598969ca2f1cadec553d12a2154580ec3c5335404eeec37024a23b7660c",
+      "source": "S1A_IW_GRDH_1SDV_20240906T180209_20240906T180234_055548_06C760_E33C",
+      "parent_sha256": "95b367c437d92e21b0ed7b6f766f012f75246932297dde7d993de41f8ddc403a",
+      "crs": "EPSG:32631",
+      "bounds": [
+        588440.0,
+        722270.0,
+        593560.0,
+        727390.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_4_0_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_4",
+      "image": "lagos_lagoon_4/lagos_lagoon_4_0_0.tif",
+      "sha256": "789dc1c340001247e6036208e63ad59205c3c2d66f22c71fc3463dfe09439051",
+      "source": "S1A_IW_GRDH_1SDV_20240925T053018_20240925T053047_055817_06D20E_5212",
+      "parent_sha256": "d10d8469030ea74deef2569b4db6a91f90501915fd5fb31bea2408870fa925e4",
+      "crs": "EPSG:32631",
+      "bounds": [
+        602110.0,
+        731850.0,
+        607230.0,
+        736970.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_4_0_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_4",
+      "image": "lagos_lagoon_4/lagos_lagoon_4_0_1.tif",
+      "sha256": "4ebe599252bc9546a0c5507c0f3cd50643576ebf5e66267ef016882c927b564f",
+      "source": "S1A_IW_GRDH_1SDV_20240925T053018_20240925T053047_055817_06D20E_5212",
+      "parent_sha256": "d10d8469030ea74deef2569b4db6a91f90501915fd5fb31bea2408870fa925e4",
+      "crs": "EPSG:32631",
+      "bounds": [
+        607230.0,
+        731850.0,
+        612350.0,
+        736970.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_4_1_0",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_4",
+      "image": "lagos_lagoon_4/lagos_lagoon_4_1_0.tif",
+      "sha256": "e82500dd13f3f5d7b8513f28e5cc7565ca13d7ddcd67c2fd90bc8c86c7387c23",
+      "source": "S1A_IW_GRDH_1SDV_20240925T053018_20240925T053047_055817_06D20E_5212",
+      "parent_sha256": "d10d8469030ea74deef2569b4db6a91f90501915fd5fb31bea2408870fa925e4",
+      "crs": "EPSG:32631",
+      "bounds": [
+        602110.0,
+        726730.0,
+        607230.0,
+        731850.0
+      ]
+    },
+    {
+      "chip_id": "lagos_lagoon_4_1_1",
+      "region": "lagos_lagoon",
+      "group": "lagos_lagoon_4",
+      "image": "lagos_lagoon_4/lagos_lagoon_4_1_1.tif",
+      "sha256": "f56833b29272904a33d0ac4be0f9a4f2a5e48a37ae17c3af9f8d25597069572a",
+      "source": "S1A_IW_GRDH_1SDV_20240925T053018_20240925T053047_055817_06D20E_5212",
+      "parent_sha256": "d10d8469030ea74deef2569b4db6a91f90501915fd5fb31bea2408870fa925e4",
+      "crs": "EPSG:32631",
+      "bounds": [
+        607230.0,
+        726730.0,
+        612350.0,
+        731850.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_1_0_0",
+      "region": "niger_benue",
+      "group": "niger_benue_1",
+      "image": "niger_benue_1/niger_benue_1_0_0.tif",
+      "sha256": "d520becde4ca4e7c2c04e34b10dfe48920be44f69868c87d7163f59d36ed95b9",
+      "source": "S1A_IW_GRDH_1SDV_20240803T174607_20240803T174632_055052_06B501_34B4",
+      "parent_sha256": "d91a37a91b019edf8a2549a286880218fd82684ca59133f833e14d46de69cf53",
+      "crs": "EPSG:32632",
+      "bounds": [
+        240240.0,
+        882800.0,
+        245360.0,
+        887920.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_1_0_1",
+      "region": "niger_benue",
+      "group": "niger_benue_1",
+      "image": "niger_benue_1/niger_benue_1_0_1.tif",
+      "sha256": "aff704dd16a99b8cdb5f0df10448d59573860ccbd9e01753ad30d6b56a0a671d",
+      "source": "S1A_IW_GRDH_1SDV_20240803T174607_20240803T174632_055052_06B501_34B4",
+      "parent_sha256": "d91a37a91b019edf8a2549a286880218fd82684ca59133f833e14d46de69cf53",
+      "crs": "EPSG:32632",
+      "bounds": [
+        245360.0,
+        882800.0,
+        250480.0,
+        887920.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_1_1_0",
+      "region": "niger_benue",
+      "group": "niger_benue_1",
+      "image": "niger_benue_1/niger_benue_1_1_0.tif",
+      "sha256": "1bb986a07f90e4e498b7f9ba78e7657519a6c706fb8829231f7f2cfadb76af88",
+      "source": "S1A_IW_GRDH_1SDV_20240803T174607_20240803T174632_055052_06B501_34B4",
+      "parent_sha256": "d91a37a91b019edf8a2549a286880218fd82684ca59133f833e14d46de69cf53",
+      "crs": "EPSG:32632",
+      "bounds": [
+        240240.0,
+        877680.0,
+        245360.0,
+        882800.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_1_1_1",
+      "region": "niger_benue",
+      "group": "niger_benue_1",
+      "image": "niger_benue_1/niger_benue_1_1_1.tif",
+      "sha256": "fbe90e471414e2c6d89c1553338b3150e8fa6f1956b61c195a51d01bbbaf40db",
+      "source": "S1A_IW_GRDH_1SDV_20240803T174607_20240803T174632_055052_06B501_34B4",
+      "parent_sha256": "d91a37a91b019edf8a2549a286880218fd82684ca59133f833e14d46de69cf53",
+      "crs": "EPSG:32632",
+      "bounds": [
+        245360.0,
+        877680.0,
+        250480.0,
+        882800.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_2_0_0",
+      "region": "niger_benue",
+      "group": "niger_benue_2",
+      "image": "niger_benue_2/niger_benue_2_0_0.tif",
+      "sha256": "51c4d83dd41bbbc96b149a104a611532ea45cbae9e79e3018467c2624cb69911",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "9d4a4437d265780b7bd70d61f8486e5ea9f1fb118b98ec95fe24efcf94790d6b",
+      "crs": "EPSG:32632",
+      "bounds": [
+        264410.0,
+        864970.0,
+        269530.0,
+        870090.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_2_0_1",
+      "region": "niger_benue",
+      "group": "niger_benue_2",
+      "image": "niger_benue_2/niger_benue_2_0_1.tif",
+      "sha256": "e47ff4f7267bda5c92fba41112d63b0945bb5497b9b02549a3815b7a43d363f0",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "9d4a4437d265780b7bd70d61f8486e5ea9f1fb118b98ec95fe24efcf94790d6b",
+      "crs": "EPSG:32632",
+      "bounds": [
+        269530.0,
+        864970.0,
+        274650.0,
+        870090.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_2_1_0",
+      "region": "niger_benue",
+      "group": "niger_benue_2",
+      "image": "niger_benue_2/niger_benue_2_1_0.tif",
+      "sha256": "a272bee71d02410b0f4f5e3890c536411e4efe3bb169382ea6e82a42177d913a",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "9d4a4437d265780b7bd70d61f8486e5ea9f1fb118b98ec95fe24efcf94790d6b",
+      "crs": "EPSG:32632",
+      "bounds": [
+        264410.0,
+        859850.0,
+        269530.0,
+        864970.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_2_1_1",
+      "region": "niger_benue",
+      "group": "niger_benue_2",
+      "image": "niger_benue_2/niger_benue_2_1_1.tif",
+      "sha256": "02052c99f6160d01202983321caf46970fdbcd10f2c88626799424490d24cabc",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "9d4a4437d265780b7bd70d61f8486e5ea9f1fb118b98ec95fe24efcf94790d6b",
+      "crs": "EPSG:32632",
+      "bounds": [
+        269530.0,
+        859850.0,
+        274650.0,
+        864970.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_3_0_0",
+      "region": "niger_benue",
+      "group": "niger_benue_3",
+      "image": "niger_benue_3/niger_benue_3_0_0.tif",
+      "sha256": "4d0326e49caaed348cb3c0a47b700537d42eaffa183aa44c41d76de5fc23cbb4",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "e7ed327730cfc3fa511297fea79829be910007769d3f1fd63fffd75ca59dfbe7",
+      "crs": "EPSG:32632",
+      "bounds": [
+        246630.0,
+        840720.0,
+        251750.0,
+        845840.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_3_0_1",
+      "region": "niger_benue",
+      "group": "niger_benue_3",
+      "image": "niger_benue_3/niger_benue_3_0_1.tif",
+      "sha256": "abf3a18a9ef89524a517234a011720d06a5e2ed811e175671a27dcba5116a767",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "e7ed327730cfc3fa511297fea79829be910007769d3f1fd63fffd75ca59dfbe7",
+      "crs": "EPSG:32632",
+      "bounds": [
+        251750.0,
+        840720.0,
+        256870.0,
+        845840.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_3_1_0",
+      "region": "niger_benue",
+      "group": "niger_benue_3",
+      "image": "niger_benue_3/niger_benue_3_1_0.tif",
+      "sha256": "227fd21786981d3e06a43109362e8552f41bbf79244378a06d97d8306f4c138d",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "e7ed327730cfc3fa511297fea79829be910007769d3f1fd63fffd75ca59dfbe7",
+      "crs": "EPSG:32632",
+      "bounds": [
+        246630.0,
+        835600.0,
+        251750.0,
+        840720.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_3_1_1",
+      "region": "niger_benue",
+      "group": "niger_benue_3",
+      "image": "niger_benue_3/niger_benue_3_1_1.tif",
+      "sha256": "c070f277c2fe2c5ff498d5ebf0307e2a1b41e3d1bf8aa6fbf74517865cf2c1c3",
+      "source": "S1A_IW_GRDH_1SDV_20240827T174607_20240827T174632_055402_06C1E5_5903",
+      "parent_sha256": "e7ed327730cfc3fa511297fea79829be910007769d3f1fd63fffd75ca59dfbe7",
+      "crs": "EPSG:32632",
+      "bounds": [
+        251750.0,
+        835600.0,
+        256870.0,
+        840720.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_4_0_0",
+      "region": "niger_benue",
+      "group": "niger_benue_4",
+      "image": "niger_benue_4/niger_benue_4_0_0.tif",
+      "sha256": "00e90b92ff43d732e36aee99071f93130cf6611ace8e530c4363af0185a050af",
+      "source": "S1A_IW_GRDH_1SDV_20240920T174608_20240920T174633_055752_06CF78_EEF8",
+      "parent_sha256": "b49b3755999770e10380263bb858f8618451600235a99cfceb2401334413a540",
+      "crs": "EPSG:32632",
+      "bounds": [
+        241000.0,
+        819730.0,
+        246120.0,
+        824850.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_4_0_1",
+      "region": "niger_benue",
+      "group": "niger_benue_4",
+      "image": "niger_benue_4/niger_benue_4_0_1.tif",
+      "sha256": "587aaf735cefc5e938a200bfecd39bab1c1b4bf904bc659fca58004648c43340",
+      "source": "S1A_IW_GRDH_1SDV_20240920T174608_20240920T174633_055752_06CF78_EEF8",
+      "parent_sha256": "b49b3755999770e10380263bb858f8618451600235a99cfceb2401334413a540",
+      "crs": "EPSG:32632",
+      "bounds": [
+        246120.0,
+        819730.0,
+        251240.0,
+        824850.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_4_1_0",
+      "region": "niger_benue",
+      "group": "niger_benue_4",
+      "image": "niger_benue_4/niger_benue_4_1_0.tif",
+      "sha256": "05532ba030a84f2cd268543120f7ec0bfea7f631737a6290c6e53d5af6f24c37",
+      "source": "S1A_IW_GRDH_1SDV_20240920T174608_20240920T174633_055752_06CF78_EEF8",
+      "parent_sha256": "b49b3755999770e10380263bb858f8618451600235a99cfceb2401334413a540",
+      "crs": "EPSG:32632",
+      "bounds": [
+        241000.0,
+        814610.0,
+        246120.0,
+        819730.0
+      ]
+    },
+    {
+      "chip_id": "niger_benue_4_1_1",
+      "region": "niger_benue",
+      "group": "niger_benue_4",
+      "image": "niger_benue_4/niger_benue_4_1_1.tif",
+      "sha256": "26d6b7f071e36f0bf22be460135af003fc9d191365b5d3bacd7eefe08e3b5e74",
+      "source": "S1A_IW_GRDH_1SDV_20240920T174608_20240920T174633_055752_06CF78_EEF8",
+      "parent_sha256": "b49b3755999770e10380263bb858f8618451600235a99cfceb2401334413a540",
+      "crs": "EPSG:32632",
+      "bounds": [
+        246120.0,
+        814610.0,
+        251240.0,
+        819730.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_1_0_0",
+      "region": "bayelsa",
+      "group": "bayelsa_1",
+      "image": "bayelsa_1/bayelsa_1_0_0.tif",
+      "sha256": "3152a5f9f151ed41a6bcabc95e19c2b3fa78e7b29541eece7d47fe1f75394c4d",
+      "source": "S1A_IW_GRDH_1SDV_20240808T175332_20240808T175357_055125_06B7A6_BAD2",
+      "parent_sha256": "8f9f8e2d496f78459bf39c952449685d7eae11acf3c52776e0649807ae5cfdba",
+      "crs": "EPSG:32632",
+      "bounds": [
+        172130.0,
+        547850.0,
+        177250.0,
+        552970.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_1_0_1",
+      "region": "bayelsa",
+      "group": "bayelsa_1",
+      "image": "bayelsa_1/bayelsa_1_0_1.tif",
+      "sha256": "68a972c11cad917888861184335786a230aef655edb2b60a3a89a0fe1a9c5774",
+      "source": "S1A_IW_GRDH_1SDV_20240808T175332_20240808T175357_055125_06B7A6_BAD2",
+      "parent_sha256": "8f9f8e2d496f78459bf39c952449685d7eae11acf3c52776e0649807ae5cfdba",
+      "crs": "EPSG:32632",
+      "bounds": [
+        177250.0,
+        547850.0,
+        182370.0,
+        552970.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_1_1_0",
+      "region": "bayelsa",
+      "group": "bayelsa_1",
+      "image": "bayelsa_1/bayelsa_1_1_0.tif",
+      "sha256": "8a8d5c7c7cecc2a96b4fbb441885a3713ae1d46a15b97c390f83d88842c76f98",
+      "source": "S1A_IW_GRDH_1SDV_20240808T175332_20240808T175357_055125_06B7A6_BAD2",
+      "parent_sha256": "8f9f8e2d496f78459bf39c952449685d7eae11acf3c52776e0649807ae5cfdba",
+      "crs": "EPSG:32632",
+      "bounds": [
+        172130.0,
+        542730.0,
+        177250.0,
+        547850.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_1_1_1",
+      "region": "bayelsa",
+      "group": "bayelsa_1",
+      "image": "bayelsa_1/bayelsa_1_1_1.tif",
+      "sha256": "65b5f04eb29ae64943c93e9f2527a6317036a6148c0dc7f3a858b294462e63f2",
+      "source": "S1A_IW_GRDH_1SDV_20240808T175332_20240808T175357_055125_06B7A6_BAD2",
+      "parent_sha256": "8f9f8e2d496f78459bf39c952449685d7eae11acf3c52776e0649807ae5cfdba",
+      "crs": "EPSG:32632",
+      "bounds": [
+        177250.0,
+        542730.0,
+        182370.0,
+        547850.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_2_0_0",
+      "region": "bayelsa",
+      "group": "bayelsa_2",
+      "image": "bayelsa_2/bayelsa_2_0_0.tif",
+      "sha256": "b53fbc2bb6ee1d2bafe513669a863f72459b2b27933e0eaa0e4f3f6cc9874aa1",
+      "source": "S1A_IW_GRDH_1SDV_20240820T175332_20240820T175357_055300_06BE08_1006",
+      "parent_sha256": "74d9a3145bcf3e3527ac91cfd5d46b160c64e90cadb1a4d4f7d1464a3fd70f9f",
+      "crs": "EPSG:32632",
+      "bounds": [
+        205490.0,
+        563200.0,
+        210610.0,
+        568320.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_2_0_1",
+      "region": "bayelsa",
+      "group": "bayelsa_2",
+      "image": "bayelsa_2/bayelsa_2_0_1.tif",
+      "sha256": "be5f0d7f50eff417791b4354059c30c24526ae08555058cff1ed105ee12f861e",
+      "source": "S1A_IW_GRDH_1SDV_20240820T175332_20240820T175357_055300_06BE08_1006",
+      "parent_sha256": "74d9a3145bcf3e3527ac91cfd5d46b160c64e90cadb1a4d4f7d1464a3fd70f9f",
+      "crs": "EPSG:32632",
+      "bounds": [
+        210610.0,
+        563200.0,
+        215730.0,
+        568320.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_2_1_0",
+      "region": "bayelsa",
+      "group": "bayelsa_2",
+      "image": "bayelsa_2/bayelsa_2_1_0.tif",
+      "sha256": "73ab7e562784111a861635398b19f4998fab95502fe8da484df0d955b7a4600a",
+      "source": "S1A_IW_GRDH_1SDV_20240820T175332_20240820T175357_055300_06BE08_1006",
+      "parent_sha256": "74d9a3145bcf3e3527ac91cfd5d46b160c64e90cadb1a4d4f7d1464a3fd70f9f",
+      "crs": "EPSG:32632",
+      "bounds": [
+        205490.0,
+        558080.0,
+        210610.0,
+        563200.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_2_1_1",
+      "region": "bayelsa",
+      "group": "bayelsa_2",
+      "image": "bayelsa_2/bayelsa_2_1_1.tif",
+      "sha256": "111bfaa6aa7851e324a63896d87e207b92a32b1b22969f088bbc89533cdff1f0",
+      "source": "S1A_IW_GRDH_1SDV_20240820T175332_20240820T175357_055300_06BE08_1006",
+      "parent_sha256": "74d9a3145bcf3e3527ac91cfd5d46b160c64e90cadb1a4d4f7d1464a3fd70f9f",
+      "crs": "EPSG:32632",
+      "bounds": [
+        210610.0,
+        558080.0,
+        215730.0,
+        563200.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_3_0_0",
+      "region": "bayelsa",
+      "group": "bayelsa_3",
+      "image": "bayelsa_3/bayelsa_3_0_0.tif",
+      "sha256": "4b7ba6e7661a70c271ae4f8d2ce7ec926425050655e9c661821821f13650c58e",
+      "source": "S1A_IW_GRDH_1SDV_20240908T052237_20240908T052302_055569_06C846_FD55",
+      "parent_sha256": "baa23e33fc6d6b09c88dd2a748d4f3a88742c35d0ed7d3f2aa51a7134e68fd08",
+      "crs": "EPSG:32632",
+      "bounds": [
+        184250.0,
+        526770.0,
+        189370.0,
+        531890.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_3_0_1",
+      "region": "bayelsa",
+      "group": "bayelsa_3",
+      "image": "bayelsa_3/bayelsa_3_0_1.tif",
+      "sha256": "68a247a35a2cb4a24327a8a4ff56b61e2fcfa27567b5fa894132365c1ce76548",
+      "source": "S1A_IW_GRDH_1SDV_20240908T052237_20240908T052302_055569_06C846_FD55",
+      "parent_sha256": "baa23e33fc6d6b09c88dd2a748d4f3a88742c35d0ed7d3f2aa51a7134e68fd08",
+      "crs": "EPSG:32632",
+      "bounds": [
+        189370.0,
+        526770.0,
+        194490.0,
+        531890.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_3_1_0",
+      "region": "bayelsa",
+      "group": "bayelsa_3",
+      "image": "bayelsa_3/bayelsa_3_1_0.tif",
+      "sha256": "2b5c26cd55bca3134aa5c08a2ecaf06fb7201a7e74f0815c2433f7fac52d3f6f",
+      "source": "S1A_IW_GRDH_1SDV_20240908T052237_20240908T052302_055569_06C846_FD55",
+      "parent_sha256": "baa23e33fc6d6b09c88dd2a748d4f3a88742c35d0ed7d3f2aa51a7134e68fd08",
+      "crs": "EPSG:32632",
+      "bounds": [
+        184250.0,
+        521650.0,
+        189370.0,
+        526770.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_3_1_1",
+      "region": "bayelsa",
+      "group": "bayelsa_3",
+      "image": "bayelsa_3/bayelsa_3_1_1.tif",
+      "sha256": "209877f84b218d91b685d3f01d97fe8669b4825c1d5421800a6caeff2fe002c8",
+      "source": "S1A_IW_GRDH_1SDV_20240908T052237_20240908T052302_055569_06C846_FD55",
+      "parent_sha256": "baa23e33fc6d6b09c88dd2a748d4f3a88742c35d0ed7d3f2aa51a7134e68fd08",
+      "crs": "EPSG:32632",
+      "bounds": [
+        189370.0,
+        521650.0,
+        194490.0,
+        526770.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_4_0_0",
+      "region": "bayelsa",
+      "group": "bayelsa_4",
+      "image": "bayelsa_4/bayelsa_4_0_0.tif",
+      "sha256": "1ab57960a40b9210e41e5f3490bee37043b6f9993642c063ada14362ed3ee0a9",
+      "source": "S1A_IW_GRDH_1SDV_20240925T175333_20240925T175358_055825_06D25B_5400",
+      "parent_sha256": "92adfb9c5c79cf916a151d2d857eff355e591d69d43170d90eceb1aaeff36d62",
+      "crs": "EPSG:32632",
+      "bounds": [
+        206460.0,
+        527780.0,
+        211580.0,
+        532900.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_4_0_1",
+      "region": "bayelsa",
+      "group": "bayelsa_4",
+      "image": "bayelsa_4/bayelsa_4_0_1.tif",
+      "sha256": "4e7c47464a9eaaf50eb6a7d98c5d563f7212d5a08a558aff120cc9f074fa13e5",
+      "source": "S1A_IW_GRDH_1SDV_20240925T175333_20240925T175358_055825_06D25B_5400",
+      "parent_sha256": "92adfb9c5c79cf916a151d2d857eff355e591d69d43170d90eceb1aaeff36d62",
+      "crs": "EPSG:32632",
+      "bounds": [
+        211580.0,
+        527780.0,
+        216700.0,
+        532900.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_4_1_0",
+      "region": "bayelsa",
+      "group": "bayelsa_4",
+      "image": "bayelsa_4/bayelsa_4_1_0.tif",
+      "sha256": "6f7adf577a93dd0b5d036d7cc5083c5db94bba962099d95709450171d8fcf983",
+      "source": "S1A_IW_GRDH_1SDV_20240925T175333_20240925T175358_055825_06D25B_5400",
+      "parent_sha256": "92adfb9c5c79cf916a151d2d857eff355e591d69d43170d90eceb1aaeff36d62",
+      "crs": "EPSG:32632",
+      "bounds": [
+        206460.0,
+        522660.0,
+        211580.0,
+        527780.0
+      ]
+    },
+    {
+      "chip_id": "bayelsa_4_1_1",
+      "region": "bayelsa",
+      "group": "bayelsa_4",
+      "image": "bayelsa_4/bayelsa_4_1_1.tif",
+      "sha256": "25da12bd90505a8d4c796e4b261afcb285b70336a6565a642fe2264e8a0eab1f",
+      "source": "S1A_IW_GRDH_1SDV_20240925T175333_20240925T175358_055825_06D25B_5400",
+      "parent_sha256": "92adfb9c5c79cf916a151d2d857eff355e591d69d43170d90eceb1aaeff36d62",
+      "crs": "EPSG:32632",
+      "bounds": [
+        211580.0,
+        522660.0,
+        216700.0,
+        527780.0
+      ]
+    }
+  ]
+}

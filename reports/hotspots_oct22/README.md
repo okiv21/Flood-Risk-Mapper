@@ -12,7 +12,7 @@ Each site covers a 512 × 512 pixel grid at 10 m spacing. The closest eligible f
 
 EC JRC/Google supplies historical occurrence for 1984–2021. The source is 30 m and is aligned to the 10 m radar grid. Water can be seasonal, tidal or permanent. A single pass does not establish a flood onset or building damage.
 
-The LGA crosswalk uses the 2022 GRID3 Nigeria boundaries distributed by geoBoundaries under CC BY 4.0. The registry stores 774 unique shape IDs with their names and one interior point each. A point may sit away from the most populated part of an LGA. The pixel table assigns by pixel centre and keeps points outside the polygons separate. Multiplying counts by 100 gives nominal square metres on the projected grid. Only the parts of 22 LGAs within the observation windows contribute counts. [Boundary metadata and attribution](../../data/cases/nga_adm2_source.json)
+The LGA crosswalk uses the 2022 GRID3 Nigeria boundaries distributed by geoBoundaries under CC BY 4.0. The registry stores 774 unique shape IDs with their names, parent state or Federal Capital Territory, and one interior point each. Each point matched exactly one of 37 GRID3 ADM1 polygons. Five pairs of LGAs share a name, including Surulere in Lagos and Surulere in Oyo. A point may sit away from the most populated part of an LGA. The pixel table assigns by pixel centre and keeps points outside the polygons separate. Multiplying counts by 100 gives nominal square metres on the projected grid. Only the parts of 22 LGAs within the observation windows contribute counts. [LGA boundary metadata](../../data/cases/nga_adm2_source.json) · [State boundary metadata](../../data/cases/nga_adm1_source.json)
 
 [Tile index, spatial bounds and hashes](tiles/index.json) · [Dated scene manifests](observations.json) · [LGA registry](lgas.csv) · [Pixel counts by LGA](observed_pixels_by_lga.csv)
 
@@ -29,7 +29,8 @@ python -m floodrisk.acquire.hotspots --project "$EE_PROJECT" --root "$root" --mo
 python -m floodrisk.deploy.hotspot_tiles --root "$root" --observations "$out/observations.json" --output "$out/tiles"
 mkdir -p data/boundaries
 curl -fL 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/NGA/ADM2/geoBoundaries-NGA-ADM2.geojson' -o data/boundaries/nga_adm2_verified.geojson
-python -m floodrisk.features.lga_observations --boundaries data/boundaries/nga_adm2_verified.geojson --observations "$out/observations.json" --root "$root" --output "$out"
+curl -fL 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/NGA/ADM1/geoBoundaries-NGA-ADM1.geojson' -o data/boundaries/nga_adm1_verified.geojson
+python -m floodrisk.features.lga_observations --states data/boundaries/nga_adm1_verified.geojson --boundaries data/boundaries/nga_adm2_verified.geojson --observations "$out/observations.json" --root "$root" --output "$out"
 python -m floodrisk.features.hotspot_surface --project "$EE_PROJECT" --root "$root" --observations "$out/observations.json" --output "$out/surface_overlap.json"
 ```
 

@@ -58,6 +58,8 @@ Four test chips come from Nigeria. At the frozen 0.55 threshold, U-Net scored **
 
 *Bars show pooled overlap. Whiskers show the middle 95% of 10,000 chip bootstrap results. Resampling entire chips exposes how much the answer depends on which scenes are included.* [Chip counts and results](reports/m1-s1-kaggle-365653491/nigeria_subset/summary.json)
 
+A separate blind review set now contains **48 reserved 512 × 512 Nigerian radar chips** from Lagos lagoon edges, the Niger–Benue area and Bayelsa. The 12 non-overlapping windows come from 11 distinct 2024 acquisitions. The source hashes, model and threshold are frozen. **Zero masks have been reviewed**, so the four-chip benchmark above remains the available Nigerian accuracy measurement. [Review packet, annotation protocol and evaluation command](reports/reserved_nigeria/README.md)
+
 ### CPU precision experiment
 
 The INT8 export reduced model size from **97.7 MB to 24.7 MB**. Water IoU across 89 validation chips changed from 0.68975 to 0.68901. On this Intel Mac the smaller model took **211 ms** per chip versus **179 ms** for FP32. FP32 remains the default because it met the latency objective better on the measured host.
@@ -253,7 +255,7 @@ The frozen model predicts 153,364 pixels as water in 2022 only. These are change
 
 *Each panel spans 5.12 km. Blue marks predicted water where historical water occurrence was at least 90%. Green marks water below that threshold. Amber marks predicted water where the historical layer has no usable value. The date above each panel is the actual satellite pass.*
 
-The February–October pairs contain 40,570 pixels that changed from predicted dry to water in areas of lower historical water occurrence. These are candidates for review. The eight October archives contain 178 tiles, and a second set shows February–October change. A separate overlay counts grid pixels shared by mapped building footprints and predicted water. Their footprints intersect parts of 22 LGAs. The full registry includes all 774 LGAs, so an interface can distinguish an area with imagery from an area outside the sampled windows. [Map package and legend](reports/hotspots_oct22/README.md) · [Reproducible notebook](notebooks/15_hotspots/15-hotspot-observations.ipynb)
+The February–October pairs contain 40,570 pixels that changed from predicted dry to water in areas of lower historical water occurrence. These are candidates for review. The eight October archives contain 178 tiles, and a second set shows February–October change. A separate overlay counts grid pixels shared by mapped building footprints and predicted water. Their footprints intersect parts of 22 LGAs. The full registry identifies all 774 LGAs by name and parent state or FCT, so an interface can distinguish an area with imagery from an area outside the sampled windows. [Map package and legend](reports/hotspots_oct22/README.md) · [Reproducible notebook](notebooks/15_hotspots/15-hotspot-observations.ipynb)
 
 ## Where does water tend to appear during recorded floods?
 
@@ -456,7 +458,8 @@ web/                       # frontend placeholder
 - [x] Archive training history and checkpoint fingerprint.
 - [x] Evaluate the trained checkpoint on test and Bolivia splits.
 - [x] Adapt exploration notebooks for local execution.
-- [ ] Build a reserved Nigerian test set; report uncertainty.
+- [x] Reserve 48 Nigerian chips and freeze a blind pixel-mask evaluation protocol.
+- [ ] Collect independent masks and report Nigerian IoU with a scene-bootstrap interval.
 - [x] Export FP32 ONNX, verify validation predictions, and benchmark local CPU latency.
 - [x] Implement single-chip georeferenced ONNX inference with explicit no-data outputs.
 - [x] Implement streamed scene tiling and verify pixel placement on engineering fixtures.
@@ -489,4 +492,4 @@ The original local build specification, `Nigeria_Flood_Risk_Mapper_Spec.pdf`, de
 
 ## Verification
 
-Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 26 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.
+Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 27 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.
