@@ -1,0 +1,43 @@
+name: Data freshness
+on:
+  schedule:
+    - cron: '37 */2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests
+      - name: Read latest successful publication times
+        run: |
+          for kind in forecast recent_rain satellite sources; do
+            python -m jobs.refresh_archive --repository "$GITHUB_REPOSITORY" --kind "$kind"
+          done
+          python -m jobs.refresh status
+      - name: Flag stale or missing products
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          report=json.loads(Path('data/refresh/status.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              for row in report['products']:
+                  f.write(f"- {row['kind']}: {row['status']} (issued {row.get('issue_utc','never')})\n")
+          if any(row['status']!='fresh' for row in report['products']):
+              raise SystemExit('One or more required data products are stale or missing')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: freshness-${{ github.run_id }}
+          path: data/refresh/status.json
+          retention-days: 30

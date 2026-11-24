@@ -34,6 +34,8 @@ def publish(root, kind, snapshot, now=None):
     timestamp = utc(summary["issue_utc"])
     if not timedelta(0) <= now - timestamp <= timedelta(hours=MAX_AGE_HOURS[kind]):
         raise ValueError("Snapshot too old or dated in the future")
+    if summary.get("window_end_utc") and utc(summary["window_end_utc"]) <= now:
+        raise ValueError("Cannot publish an expired forecast")
     manifest = {
         str(p.relative_to(snapshot)): hashlib.sha256(p.read_bytes()).hexdigest()
         for p in sorted(snapshot.rglob("*"))

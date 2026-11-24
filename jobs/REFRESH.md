@@ -13,6 +13,8 @@ The recent-rainfall job derives preceding 1/3/7/14-day estimates from the latest
 
 Each successful job publishes a prerelease containing an immutable ZIP archive with source responses, derived tables, timestamps and file hashes. A later run restores the latest successful archive and verifies its hashes. Failed acquisition leaves the prior archive intact. GitHub diagnostic artifacts expire after 30 days, while release assets remain available until explicitly deleted. These small research archives will need storage monitoring as they accumulate.
 
+The Data freshness workflow independently checks all four products every two hours and fails if any is missing or overdue.
+
 Run `python -m jobs.refresh status` after restoring archives to calculate their age at the current time. Snapshot timestamps are preserved across failures. A missing or stale product must be displayed as such by its eventual consumer. Workflow schedules can be delayed, and GitHub disables scheduled jobs in inactive public repositories after 60 days. The Actions status and calculated age must be monitored. [GitHub schedule behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 
 ## Credentials
