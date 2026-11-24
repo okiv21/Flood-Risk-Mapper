@@ -41,3 +41,7 @@ ee/project.json
 # Resumable Earth Engine event samples
 data/flood_reference/
 data/boundaries/
+
+# Scheduled input archives
+data/refresh/
+snapshot.zip

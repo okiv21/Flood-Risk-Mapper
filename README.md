@@ -493,3 +493,11 @@ The original local build specification, `Nigeria_Flood_Risk_Mapper_Spec.pdf`, de
 ## Verification
 
 Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 27 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.
+
+## Evaluation and refresh review
+
+The 24 November audit rechecked saved sensor metrics and identified the remaining forecasting and data freshness work. Automatic refresh is pending. Forecast rainfall needs a substantially shorter refresh interval than one week for the planned 72-hour horizon. [Review findings and proposed update schedule](reports/pre_app/review_20261124.md)
+
+## Automatic refresh
+
+The refresh workflow schedules six-hourly forecast rainfall, daily recent-rainfall extraction and radar inventory checks, and monthly static-source release checks. It preserves timestamps and hashes in durable release archives. [Schedules, freshness policy and setup](jobs/REFRESH.md)

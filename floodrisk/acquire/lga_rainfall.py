@@ -91,6 +91,17 @@ def fetch(registry, output):
                     raise ValueError("Location order mismatch")
                 results.append((location, item, received.isoformat()))
         issue = datetime.now(timezone.utc)
+        if any(
+            issue - datetime.fromisoformat(received) > timedelta(hours=3)
+            for _, _, received in results
+        ):
+            raise ValueError(
+                "Batch contains rainfall older than three hours; retry to refresh cached inputs"
+            )
+        if len(results) != len(locations) or len(
+            {r[0]["lga_id"] for r in results}
+        ) != len(locations):
+            raise ValueError("Incomplete or duplicated rainfall locations")
         rows = []
         for location, item, received in results:
             forecast = forecast_features(item, issue)

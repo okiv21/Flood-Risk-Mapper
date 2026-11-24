@@ -1,0 +1,95 @@
+name: Refresh data
+on:
+  schedule:
+    - cron: '17 0,6,12,18 * * *'
+    - cron: '47 1 * * *'
+    - cron: '47 2 * * *'
+    - cron: '47 3 1 * *'
+  workflow_dispatch:
+    inputs:
+      product:
+        type: choice
+        options: [forecast, recent_rain, satellite, sources]
+        default: forecast
+        required: true
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GH_TOKEN: ${{ github.token }}
+      EE_PROJECT: manifest-ivy-453612-b3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Choose product
+        id: product
+        env:
+          REQUESTED: ${{ inputs.product }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          product="$REQUESTED"
+          if [ -z "$product" ]; then
+            case "$SCHEDULE" in
+              '17 0,6,12,18 * * *') product=forecast ;;
+              '47 1 * * *') product=recent_rain ;;
+              '47 2 * * *') product=satellite ;;
+              '47 3 1 * *') product=sources ;;
+              *) exit 1 ;;
+            esac
+          fi
+          echo "name=$product" >> "$GITHUB_OUTPUT"
+      - run: python -m pip install requests numpy rasterio earthengine-api
+      - name: Authenticate Earth Engine
+        if: steps.product.outputs.name == 'satellite'
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.EE_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.EE_SERVICE_ACCOUNT }}
+      - name: Restore prior successful snapshot
+        env:
+          PRODUCT: ${{ steps.product.outputs.name }}
+        run: |
+          python -m jobs.refresh_archive --repository "$GITHUB_REPOSITORY" --kind "$PRODUCT"
+          if [ "$PRODUCT" = recent_rain ]; then
+            python -m jobs.refresh_archive --repository "$GITHUB_REPOSITORY" --kind forecast
+          fi
+      - name: Acquire and validate
+        env:
+          PRODUCT: ${{ steps.product.outputs.name }}
+        run: python -m jobs.refresh "$PRODUCT" --project "$EE_PROJECT"
+      - name: Publish durable snapshot
+        env:
+          PRODUCT: ${{ steps.product.outputs.name }}
+        run: |
+          python - "$PRODUCT" <<'PY'
+          import json,sys,zipfile
+          from pathlib import Path
+          root=Path('data/refresh');kind=sys.argv[1]
+          latest=root/kind/'latest.json'
+          entry=json.loads(latest.read_text())
+          with zipfile.ZipFile('snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in [latest,root/kind/'attempt.json',*(root/entry['snapshot']).rglob('*')]:
+                  if p.is_file() and p.name!='batch.lock': z.write(p,p.relative_to(root))
+          PY
+          tag="refresh-$PRODUCT-$(date -u +%Y%m%dT%H%M%SZ)-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          gh release create "$tag" snapshot.zip --target "$GITHUB_SHA" --prerelease --title "$PRODUCT snapshot" --notes 'Timestamped research inputs. See the archived summary for coverage and validity.'
+      - name: Record freshness
+        if: always()
+        run: python -m jobs.refresh status
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: refresh-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            data/refresh/status.json
+            data/refresh/*/attempt.json
+          retention-days: 30
