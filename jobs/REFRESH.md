@@ -19,7 +19,7 @@ Run `python -m jobs.refresh status` after restoring archives to calculate their 
 
 ## Credentials
 
-Rainfall and release-catalog checks use public sources. Satellite queries use Google Workload Identity Federation. Configure repository variables `EE_WORKLOAD_IDENTITY_PROVIDER` and `EE_SERVICE_ACCOUNT` with the Google provider resource and service-account email. The provider must restrict the GitHub repository identity to this repository. The service account needs Earth Engine access in `manifest-ivy-453612-b3`. Private keys are unnecessary with this method.
+Rainfall and release-catalog checks use public sources. Satellite queries use Google Workload Identity Federation. Configure repository variables `EE_WORKLOAD_IDENTITY_PROVIDER` and `EE_SERVICE_ACCOUNT` with the Google provider resource and service-account email. The provider must restrict the GitHub repository identity to this repository. The service account needs Earth Engine access in `manifest-ivy-453612-b3`. The configured identity is `flood-refresh@manifest-ivy-453612-b3.iam.gserviceaccount.com`, with Earth Engine Viewer and Service Usage Consumer access. The provider restricts the repository ID, owner ID, main branch and refresh workflow path. This setup uses short-lived credentials. The Cloud Resource Manager, IAM and STS APIs were enabled in the existing project during setup.
 
 ## Manual execution
 

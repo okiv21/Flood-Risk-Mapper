@@ -129,6 +129,14 @@ def collect(kind, project, root, output, now):
                     ]
                 ).getInfo()
                 items.append({"site": obs["site"], **item})
+    previous = root / "satellite/latest.json"
+    seen = set()
+    if previous.exists():
+        pointer = json.loads(previous.read_text())
+        prior = json.loads((root / pointer["snapshot"] / "scenes.json").read_text())
+        seen = {(item["site"], item["system:index"]) for item in prior}
+    new = [item for item in items if (item["site"], item["system:index"]) not in seen]
+    atomic_json(output / "new_scenes.json", new)
     atomic_json(output / "scenes.json", items)
     atomic_json(
         output / "summary.json",
@@ -137,6 +145,7 @@ def collect(kind, project, root, output, now):
             "window_start_utc": start,
             "sites": len(observations),
             "eligible_scenes": len(items),
+            "new_since_previous_inventory": len(new),
             "scope": "Full-footprint dual-polarization scenes in the last 30 days; inventory for incremental processing",
         },
     )
