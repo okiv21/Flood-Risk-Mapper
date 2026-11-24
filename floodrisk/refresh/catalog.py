@@ -16,6 +16,8 @@ def collect(kind, project, root, output, now):
         # The authoritative catalog tree exposes new collection/version identifiers.
         url = "https://api.github.com/repos/google/earthengine-catalog/git/trees/main"
         session = requests.Session()
+        if os.environ.get("GH_TOKEN"):
+            session.headers["Authorization"] = "Bearer " + os.environ["GH_TOKEN"]
         session.mount(
             "https://",
             HTTPAdapter(
