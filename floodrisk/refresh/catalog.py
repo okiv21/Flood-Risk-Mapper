@@ -5,6 +5,8 @@ import json
 import os
 from pathlib import Path
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from floodrisk.refresh.state import atomic_json
 
 
@@ -13,7 +15,18 @@ def collect(kind, project, root, output, now):
     if kind == "sources":
         # The authoritative catalog tree exposes new collection/version identifiers.
         url = "https://api.github.com/repos/google/earthengine-catalog/git/trees/main"
-        response = requests.get(url, params={"recursive": "1"}, timeout=90)
+        session = requests.Session()
+        session.mount(
+            "https://",
+            HTTPAdapter(
+                max_retries=Retry(
+                    total=3,
+                    backoff_factor=2,
+                    status_forcelist=[429, 500, 502, 503, 504],
+                )
+            ),
+        )
+        response = session.get(url, params={"recursive": "1"}, timeout=90)
         response.raise_for_status()
         tree = response.json()
         if tree.get("truncated") or "tree" not in tree:
