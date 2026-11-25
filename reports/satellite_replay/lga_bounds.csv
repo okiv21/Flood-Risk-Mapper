@@ -1,0 +1,24 @@
+site,observed_utc,lga_id,lga_name,grid_pixels,known_gained_pixels,known_gained_km2,unknown_pixels,lga_target
+Lagos,2022-10-18T05:30:17+00:00,,,248252,59,0.0059,10,unassigned
+Lagos,2022-10-18T05:30:17+00:00,59680162B53104406185271,Ikorodu,13892,26,0.0026,100,unresolved_partial_coverage
+Lokoja,2022-10-13T17:46:07+00:00,59680162B66680936539808,Bassa,465,0,0.0,40,unresolved_partial_coverage
+Lokoja,2022-10-13T17:46:07+00:00,59680162B326996000256,Lokoja,198901,18437,1.8437,10380,above
+Lokoja,2022-10-13T17:46:07+00:00,59680162B23949108035203,Ajaokuta,62778,156,0.0156,1482,unresolved_partial_coverage
+Port Harcourt,2022-10-13T17:45:17+00:00,59680162B90615098764032,Okrika,1099,7,0.0007,0,unresolved_partial_coverage
+Port Harcourt,2022-10-13T17:45:17+00:00,59680162B27901935497545,Port-Harcourt,165030,1276,0.1276,1200,unresolved_partial_coverage
+Port Harcourt,2022-10-13T17:45:17+00:00,59680162B6299894636493,Obio/Akpor,96015,844,0.0844,251,unresolved_partial_coverage
+Yenagoa,2022-10-13T05:22:08+00:00,59680162B64829234996535,Yenegoa,262144,3244,0.3244,31965,unresolved_partial_coverage
+Anambra (Onitsha),2022-10-13T17:45:42+00:00,59680162B59497895637604,Onitsha South,83606,7730,0.773,1959,above
+Anambra (Onitsha),2022-10-13T17:45:42+00:00,59680162B93345317219884,Idemili North,218,0,0.0,0,unresolved_partial_coverage
+Anambra (Onitsha),2022-10-13T17:45:42+00:00,59680162B73411137510562,Onitsha North,87279,1122,0.1122,473,unresolved_partial_coverage
+Anambra (Onitsha),2022-10-13T17:45:42+00:00,59680162B97395677882832,Ogbaru,72718,512,0.0512,504,unresolved_partial_coverage
+Anambra (Onitsha),2022-10-13T17:45:42+00:00,59680162B32979491305099,Oshimili South,18323,6409,0.6409,771,above
+Kano,2022-10-08T17:39:09+00:00,59680162B98184498564097,Nassarawa,6468,0,0.0,0,unresolved_partial_coverage
+Kano,2022-10-08T17:39:09+00:00,59680162B24316958669382,Fagge,64816,0,0.0,134,unresolved_partial_coverage
+Kano,2022-10-08T17:39:09+00:00,59680162B24840578600877,Tarauni,8645,0,0.0,17,unresolved_partial_coverage
+Kano,2022-10-08T17:39:09+00:00,59680162B28367664307560,Kano Municipal,88255,0,0.0,462,unresolved_partial_coverage
+Kano,2022-10-08T17:39:09+00:00,59680162B56865757670534,Dala,58653,14,0.0014,281,unresolved_partial_coverage
+Kano,2022-10-08T17:39:09+00:00,59680162B24203265637376,Gwale,35307,0,0.0,101,unresolved_partial_coverage
+Maiduguri,2022-10-10T17:22:28+00:00,59680162B20780696540875,Maiduguri,247731,734,0.0734,1705,unresolved_partial_coverage
+Maiduguri,2022-10-10T17:22:28+00:00,59680162B64727590098747,Jere,14413,0,0.0,6,unresolved_partial_coverage
+Abuja,2022-10-13T17:46:32+00:00,59680162B38183120701356,Municipal Area Council,262144,0,0.0,983,unresolved_partial_coverage

@@ -1,0 +1,2306 @@
+[
+  {
+    "hour": 6,
+    "key": "Lagos|24",
+    "mm": 3.3125,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F006",
+    "valid_ms": 1665986400000
+  },
+  {
+    "hour": 12,
+    "key": "Lagos|24",
+    "mm": 0.125,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F012",
+    "valid_ms": 1666008000000
+  },
+  {
+    "hour": 18,
+    "key": "Lagos|24",
+    "mm": 1.1875,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F018",
+    "valid_ms": 1666029600000
+  },
+  {
+    "hour": 24,
+    "key": "Lagos|24",
+    "mm": 0.1875,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F024",
+    "valid_ms": 1666051200000
+  },
+  {
+    "hour": 30,
+    "key": "Lagos|24",
+    "mm": 2.1875,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F030",
+    "valid_ms": 1666072800000
+  },
+  {
+    "hour": 36,
+    "key": "Lagos|24",
+    "mm": 0,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F036",
+    "valid_ms": 1666094400000
+  },
+  {
+    "hour": 42,
+    "key": "Lagos|24",
+    "mm": 0.1875,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F042",
+    "valid_ms": 1666116000000
+  },
+  {
+    "hour": 48,
+    "key": "Lagos|24",
+    "mm": 1.8125,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F048",
+    "valid_ms": 1666137600000
+  },
+  {
+    "hour": 54,
+    "key": "Lagos|24",
+    "mm": 0.625,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F054",
+    "valid_ms": 1666159200000
+  },
+  {
+    "hour": 60,
+    "key": "Lagos|24",
+    "mm": 0.0625,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F060",
+    "valid_ms": 1666180800000
+  },
+  {
+    "hour": 66,
+    "key": "Lagos|24",
+    "mm": 0.3125,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F066",
+    "valid_ms": 1666202400000
+  },
+  {
+    "hour": 72,
+    "key": "Lagos|24",
+    "mm": 3.25,
+    "run_ms": 1665964800000,
+    "source_id": "2022101700F072",
+    "valid_ms": 1666224000000
+  },
+  {
+    "hour": 6,
+    "key": "Lagos|48",
+    "mm": 0.4375,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F006",
+    "valid_ms": 1665900000000
+  },
+  {
+    "hour": 12,
+    "key": "Lagos|48",
+    "mm": 0.0625,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F012",
+    "valid_ms": 1665921600000
+  },
+  {
+    "hour": 18,
+    "key": "Lagos|48",
+    "mm": 0.1875,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F018",
+    "valid_ms": 1665943200000
+  },
+  {
+    "hour": 24,
+    "key": "Lagos|48",
+    "mm": 1.375,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F024",
+    "valid_ms": 1665964800000
+  },
+  {
+    "hour": 30,
+    "key": "Lagos|48",
+    "mm": 0,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F030",
+    "valid_ms": 1665986400000
+  },
+  {
+    "hour": 36,
+    "key": "Lagos|48",
+    "mm": 0.25,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F036",
+    "valid_ms": 1666008000000
+  },
+  {
+    "hour": 42,
+    "key": "Lagos|48",
+    "mm": 0.0625,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F042",
+    "valid_ms": 1666029600000
+  },
+  {
+    "hour": 48,
+    "key": "Lagos|48",
+    "mm": 0,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F048",
+    "valid_ms": 1666051200000
+  },
+  {
+    "hour": 54,
+    "key": "Lagos|48",
+    "mm": 0,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F054",
+    "valid_ms": 1666072800000
+  },
+  {
+    "hour": 60,
+    "key": "Lagos|48",
+    "mm": 0,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F060",
+    "valid_ms": 1666094400000
+  },
+  {
+    "hour": 66,
+    "key": "Lagos|48",
+    "mm": 0,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F066",
+    "valid_ms": 1666116000000
+  },
+  {
+    "hour": 72,
+    "key": "Lagos|48",
+    "mm": 0,
+    "run_ms": 1665878400000,
+    "source_id": "2022101600F072",
+    "valid_ms": 1666137600000
+  },
+  {
+    "hour": 6,
+    "key": "Lagos|72",
+    "mm": 2.25,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F006",
+    "valid_ms": 1665813600000
+  },
+  {
+    "hour": 12,
+    "key": "Lagos|72",
+    "mm": 1.3125,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F012",
+    "valid_ms": 1665835200000
+  },
+  {
+    "hour": 18,
+    "key": "Lagos|72",
+    "mm": 6.6875,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F018",
+    "valid_ms": 1665856800000
+  },
+  {
+    "hour": 24,
+    "key": "Lagos|72",
+    "mm": 7,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F024",
+    "valid_ms": 1665878400000
+  },
+  {
+    "hour": 30,
+    "key": "Lagos|72",
+    "mm": 0.3125,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F030",
+    "valid_ms": 1665900000000
+  },
+  {
+    "hour": 36,
+    "key": "Lagos|72",
+    "mm": 0,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F036",
+    "valid_ms": 1665921600000
+  },
+  {
+    "hour": 42,
+    "key": "Lagos|72",
+    "mm": 0.0625,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F042",
+    "valid_ms": 1665943200000
+  },
+  {
+    "hour": 48,
+    "key": "Lagos|72",
+    "mm": 2,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F048",
+    "valid_ms": 1665964800000
+  },
+  {
+    "hour": 54,
+    "key": "Lagos|72",
+    "mm": 0,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F054",
+    "valid_ms": 1665986400000
+  },
+  {
+    "hour": 60,
+    "key": "Lagos|72",
+    "mm": 0,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F060",
+    "valid_ms": 1666008000000
+  },
+  {
+    "hour": 66,
+    "key": "Lagos|72",
+    "mm": 0.125,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F066",
+    "valid_ms": 1666029600000
+  },
+  {
+    "hour": 72,
+    "key": "Lagos|72",
+    "mm": 0,
+    "run_ms": 1665792000000,
+    "source_id": "2022101500F072",
+    "valid_ms": 1666051200000
+  },
+  {
+    "hour": 6,
+    "key": "Lokoja|24",
+    "mm": 0.4375,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F006",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 12,
+    "key": "Lokoja|24",
+    "mm": 4.875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F012",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 18,
+    "key": "Lokoja|24",
+    "mm": 1.9375,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F018",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 24,
+    "key": "Lokoja|24",
+    "mm": 0.0625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F024",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 30,
+    "key": "Lokoja|24",
+    "mm": 3.5625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F030",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 36,
+    "key": "Lokoja|24",
+    "mm": 12.125,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F036",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 42,
+    "key": "Lokoja|24",
+    "mm": 4.25,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F042",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 48,
+    "key": "Lokoja|24",
+    "mm": 0.6875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F048",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 54,
+    "key": "Lokoja|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F054",
+    "valid_ms": 1665770400000
+  },
+  {
+    "hour": 60,
+    "key": "Lokoja|24",
+    "mm": 0.0625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F060",
+    "valid_ms": 1665792000000
+  },
+  {
+    "hour": 66,
+    "key": "Lokoja|24",
+    "mm": 0.375,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F066",
+    "valid_ms": 1665813600000
+  },
+  {
+    "hour": 72,
+    "key": "Lokoja|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F072",
+    "valid_ms": 1665835200000
+  },
+  {
+    "hour": 6,
+    "key": "Lokoja|48",
+    "mm": 0.0625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F006",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 12,
+    "key": "Lokoja|48",
+    "mm": 5,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F012",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 18,
+    "key": "Lokoja|48",
+    "mm": 4.1875,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F018",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 24,
+    "key": "Lokoja|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F024",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 30,
+    "key": "Lokoja|48",
+    "mm": 1.8125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F030",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 36,
+    "key": "Lokoja|48",
+    "mm": 5.25,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F036",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 42,
+    "key": "Lokoja|48",
+    "mm": 0.375,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F042",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 48,
+    "key": "Lokoja|48",
+    "mm": 0.625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F048",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 54,
+    "key": "Lokoja|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F054",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 60,
+    "key": "Lokoja|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F060",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 66,
+    "key": "Lokoja|48",
+    "mm": 0.25,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F066",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 72,
+    "key": "Lokoja|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F072",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 6,
+    "key": "Lokoja|72",
+    "mm": 2.1875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F006",
+    "valid_ms": 1665424800000
+  },
+  {
+    "hour": 12,
+    "key": "Lokoja|72",
+    "mm": 1.25,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F012",
+    "valid_ms": 1665446400000
+  },
+  {
+    "hour": 18,
+    "key": "Lokoja|72",
+    "mm": 2.3125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F018",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 24,
+    "key": "Lokoja|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F024",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 30,
+    "key": "Lokoja|72",
+    "mm": 0.125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F030",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 36,
+    "key": "Lokoja|72",
+    "mm": 0.375,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F036",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 42,
+    "key": "Lokoja|72",
+    "mm": 4.375,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F042",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 48,
+    "key": "Lokoja|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F048",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 54,
+    "key": "Lokoja|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F054",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 60,
+    "key": "Lokoja|72",
+    "mm": 0.25,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F060",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 66,
+    "key": "Lokoja|72",
+    "mm": 2.125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F066",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 72,
+    "key": "Lokoja|72",
+    "mm": 1.375,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F072",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 6,
+    "key": "Port Harcourt|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F006",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 12,
+    "key": "Port Harcourt|24",
+    "mm": 0.0625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F012",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 18,
+    "key": "Port Harcourt|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F018",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 24,
+    "key": "Port Harcourt|24",
+    "mm": 2.75,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F024",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 30,
+    "key": "Port Harcourt|24",
+    "mm": 1.6875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F030",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 36,
+    "key": "Port Harcourt|24",
+    "mm": 2.6875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F036",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 42,
+    "key": "Port Harcourt|24",
+    "mm": 10.5,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F042",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 48,
+    "key": "Port Harcourt|24",
+    "mm": 5.1875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F048",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 54,
+    "key": "Port Harcourt|24",
+    "mm": 2.4375,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F054",
+    "valid_ms": 1665770400000
+  },
+  {
+    "hour": 60,
+    "key": "Port Harcourt|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F060",
+    "valid_ms": 1665792000000
+  },
+  {
+    "hour": 66,
+    "key": "Port Harcourt|24",
+    "mm": 0.8125,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F066",
+    "valid_ms": 1665813600000
+  },
+  {
+    "hour": 72,
+    "key": "Port Harcourt|24",
+    "mm": 2.5625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F072",
+    "valid_ms": 1665835200000
+  },
+  {
+    "hour": 6,
+    "key": "Port Harcourt|48",
+    "mm": 5.125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F006",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 12,
+    "key": "Port Harcourt|48",
+    "mm": 3.125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F012",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 18,
+    "key": "Port Harcourt|48",
+    "mm": 6.4375,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F018",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 24,
+    "key": "Port Harcourt|48",
+    "mm": 0.5,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F024",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 30,
+    "key": "Port Harcourt|48",
+    "mm": 0.0625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F030",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 36,
+    "key": "Port Harcourt|48",
+    "mm": 2.5,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F036",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 42,
+    "key": "Port Harcourt|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F042",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 48,
+    "key": "Port Harcourt|48",
+    "mm": 6.75,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F048",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 54,
+    "key": "Port Harcourt|48",
+    "mm": 4.375,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F054",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 60,
+    "key": "Port Harcourt|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F060",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 66,
+    "key": "Port Harcourt|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F066",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 72,
+    "key": "Port Harcourt|48",
+    "mm": 1.9375,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F072",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 6,
+    "key": "Port Harcourt|72",
+    "mm": 3.25,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F006",
+    "valid_ms": 1665424800000
+  },
+  {
+    "hour": 12,
+    "key": "Port Harcourt|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F012",
+    "valid_ms": 1665446400000
+  },
+  {
+    "hour": 18,
+    "key": "Port Harcourt|72",
+    "mm": 5.25,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F018",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 24,
+    "key": "Port Harcourt|72",
+    "mm": 0.375,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F024",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 30,
+    "key": "Port Harcourt|72",
+    "mm": 1.875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F030",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 36,
+    "key": "Port Harcourt|72",
+    "mm": 1.3125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F036",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 42,
+    "key": "Port Harcourt|72",
+    "mm": 2.5,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F042",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 48,
+    "key": "Port Harcourt|72",
+    "mm": 9.9375,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F048",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 54,
+    "key": "Port Harcourt|72",
+    "mm": 0.0625,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F054",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 60,
+    "key": "Port Harcourt|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F060",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 66,
+    "key": "Port Harcourt|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F066",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 72,
+    "key": "Port Harcourt|72",
+    "mm": 0.5625,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F072",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 6,
+    "key": "Yenagoa|24",
+    "mm": 2.9375,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F006",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 12,
+    "key": "Yenagoa|24",
+    "mm": 1.3125,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F012",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 18,
+    "key": "Yenagoa|24",
+    "mm": 0.875,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F018",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 24,
+    "key": "Yenagoa|24",
+    "mm": 0.625,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F024",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 30,
+    "key": "Yenagoa|24",
+    "mm": 0.3125,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F030",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 36,
+    "key": "Yenagoa|24",
+    "mm": 5.4375,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F036",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 42,
+    "key": "Yenagoa|24",
+    "mm": 11.3125,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F042",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 48,
+    "key": "Yenagoa|24",
+    "mm": 0.5,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F048",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 54,
+    "key": "Yenagoa|24",
+    "mm": 0,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F054",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 60,
+    "key": "Yenagoa|24",
+    "mm": 0.9375,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F060",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 66,
+    "key": "Yenagoa|24",
+    "mm": 6.875,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F066",
+    "valid_ms": 1665770400000
+  },
+  {
+    "hour": 72,
+    "key": "Yenagoa|24",
+    "mm": 0,
+    "run_ms": 1665532800000,
+    "source_id": "2022101200F072",
+    "valid_ms": 1665792000000
+  },
+  {
+    "hour": 6,
+    "key": "Yenagoa|48",
+    "mm": 0,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F006",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 12,
+    "key": "Yenagoa|48",
+    "mm": 0.375,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F012",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 18,
+    "key": "Yenagoa|48",
+    "mm": 9.6875,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F018",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 24,
+    "key": "Yenagoa|48",
+    "mm": 0,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F024",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 30,
+    "key": "Yenagoa|48",
+    "mm": 2.5,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F030",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 36,
+    "key": "Yenagoa|48",
+    "mm": 5.75,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F036",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 42,
+    "key": "Yenagoa|48",
+    "mm": 2.375,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F042",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 48,
+    "key": "Yenagoa|48",
+    "mm": 0.9375,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F048",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 54,
+    "key": "Yenagoa|48",
+    "mm": 2.25,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F054",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 60,
+    "key": "Yenagoa|48",
+    "mm": 14.0625,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F060",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 66,
+    "key": "Yenagoa|48",
+    "mm": 28,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F066",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 72,
+    "key": "Yenagoa|48",
+    "mm": 1.6875,
+    "run_ms": 1665446400000,
+    "source_id": "2022101100F072",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 6,
+    "key": "Yenagoa|72",
+    "mm": 0.0625,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F006",
+    "valid_ms": 1665381600000
+  },
+  {
+    "hour": 12,
+    "key": "Yenagoa|72",
+    "mm": 2.3125,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F012",
+    "valid_ms": 1665403200000
+  },
+  {
+    "hour": 18,
+    "key": "Yenagoa|72",
+    "mm": 12.375,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F018",
+    "valid_ms": 1665424800000
+  },
+  {
+    "hour": 24,
+    "key": "Yenagoa|72",
+    "mm": 1.875,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F024",
+    "valid_ms": 1665446400000
+  },
+  {
+    "hour": 30,
+    "key": "Yenagoa|72",
+    "mm": 2.3125,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F030",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 36,
+    "key": "Yenagoa|72",
+    "mm": 0.1875,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F036",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 42,
+    "key": "Yenagoa|72",
+    "mm": 1.75,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F042",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 48,
+    "key": "Yenagoa|72",
+    "mm": 0,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F048",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 54,
+    "key": "Yenagoa|72",
+    "mm": 4.1875,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F054",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 60,
+    "key": "Yenagoa|72",
+    "mm": 5.125,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F060",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 66,
+    "key": "Yenagoa|72",
+    "mm": 1,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F066",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 72,
+    "key": "Yenagoa|72",
+    "mm": 0,
+    "run_ms": 1665360000000,
+    "source_id": "2022101000F072",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 6,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F006",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 12,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 0.125,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F012",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 18,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 0.0625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F018",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 24,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 0.3125,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F024",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 30,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 5.5,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F030",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 36,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 8.6875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F036",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 42,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 6.75,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F042",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 48,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 0.5,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F048",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 54,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 0.875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F054",
+    "valid_ms": 1665770400000
+  },
+  {
+    "hour": 60,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 1.375,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F060",
+    "valid_ms": 1665792000000
+  },
+  {
+    "hour": 66,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 5.0625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F066",
+    "valid_ms": 1665813600000
+  },
+  {
+    "hour": 72,
+    "key": "Anambra (Onitsha)|24",
+    "mm": 1.1875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F072",
+    "valid_ms": 1665835200000
+  },
+  {
+    "hour": 6,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 1.875,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F006",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 12,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 3.25,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F012",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 18,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 7.0625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F018",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 24,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 0.3125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F024",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 30,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 0.0625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F030",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 36,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 1.8125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F036",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 42,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 4.1875,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F042",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 48,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 0.5625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F048",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 54,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 10.4375,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F054",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 60,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 3.125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F060",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 66,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F066",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 72,
+    "key": "Anambra (Onitsha)|48",
+    "mm": 0.125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F072",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 6,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 2.875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F006",
+    "valid_ms": 1665424800000
+  },
+  {
+    "hour": 12,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 1,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F012",
+    "valid_ms": 1665446400000
+  },
+  {
+    "hour": 18,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F018",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 24,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 0.5,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F024",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 30,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 6.4375,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F030",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 36,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 0.0625,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F036",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 42,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 3.875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F042",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 48,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 2.25,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F048",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 54,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 0.5,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F054",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 60,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 1.1875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F060",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 66,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 14.8125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F066",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 72,
+    "key": "Anambra (Onitsha)|72",
+    "mm": 6.1875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F072",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 6,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F006",
+    "valid_ms": 1665165600000
+  },
+  {
+    "hour": 12,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F012",
+    "valid_ms": 1665187200000
+  },
+  {
+    "hour": 18,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F018",
+    "valid_ms": 1665208800000
+  },
+  {
+    "hour": 24,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F024",
+    "valid_ms": 1665230400000
+  },
+  {
+    "hour": 30,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F030",
+    "valid_ms": 1665252000000
+  },
+  {
+    "hour": 36,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F036",
+    "valid_ms": 1665273600000
+  },
+  {
+    "hour": 42,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F042",
+    "valid_ms": 1665295200000
+  },
+  {
+    "hour": 48,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F048",
+    "valid_ms": 1665316800000
+  },
+  {
+    "hour": 54,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F054",
+    "valid_ms": 1665338400000
+  },
+  {
+    "hour": 60,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F060",
+    "valid_ms": 1665360000000
+  },
+  {
+    "hour": 66,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F066",
+    "valid_ms": 1665381600000
+  },
+  {
+    "hour": 72,
+    "key": "Kano|24",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F072",
+    "valid_ms": 1665403200000
+  },
+  {
+    "hour": 6,
+    "key": "Kano|48",
+    "mm": 0.0625,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F006",
+    "valid_ms": 1665079200000
+  },
+  {
+    "hour": 12,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F012",
+    "valid_ms": 1665100800000
+  },
+  {
+    "hour": 18,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F018",
+    "valid_ms": 1665122400000
+  },
+  {
+    "hour": 24,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F024",
+    "valid_ms": 1665144000000
+  },
+  {
+    "hour": 30,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F030",
+    "valid_ms": 1665165600000
+  },
+  {
+    "hour": 36,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F036",
+    "valid_ms": 1665187200000
+  },
+  {
+    "hour": 42,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F042",
+    "valid_ms": 1665208800000
+  },
+  {
+    "hour": 48,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F048",
+    "valid_ms": 1665230400000
+  },
+  {
+    "hour": 54,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F054",
+    "valid_ms": 1665252000000
+  },
+  {
+    "hour": 60,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F060",
+    "valid_ms": 1665273600000
+  },
+  {
+    "hour": 66,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F066",
+    "valid_ms": 1665295200000
+  },
+  {
+    "hour": 72,
+    "key": "Kano|48",
+    "mm": 0,
+    "run_ms": 1665057600000,
+    "source_id": "2022100612F072",
+    "valid_ms": 1665316800000
+  },
+  {
+    "hour": 6,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F006",
+    "valid_ms": 1664992800000
+  },
+  {
+    "hour": 12,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F012",
+    "valid_ms": 1665014400000
+  },
+  {
+    "hour": 18,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F018",
+    "valid_ms": 1665036000000
+  },
+  {
+    "hour": 24,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F024",
+    "valid_ms": 1665057600000
+  },
+  {
+    "hour": 30,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F030",
+    "valid_ms": 1665079200000
+  },
+  {
+    "hour": 36,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F036",
+    "valid_ms": 1665100800000
+  },
+  {
+    "hour": 42,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F042",
+    "valid_ms": 1665122400000
+  },
+  {
+    "hour": 48,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F048",
+    "valid_ms": 1665144000000
+  },
+  {
+    "hour": 54,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F054",
+    "valid_ms": 1665165600000
+  },
+  {
+    "hour": 60,
+    "key": "Kano|72",
+    "mm": 0.0625,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F060",
+    "valid_ms": 1665187200000
+  },
+  {
+    "hour": 66,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F066",
+    "valid_ms": 1665208800000
+  },
+  {
+    "hour": 72,
+    "key": "Kano|72",
+    "mm": 0,
+    "run_ms": 1664971200000,
+    "source_id": "2022100512F072",
+    "valid_ms": 1665230400000
+  },
+  {
+    "hour": 6,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F006",
+    "valid_ms": 1665338400000
+  },
+  {
+    "hour": 12,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F012",
+    "valid_ms": 1665360000000
+  },
+  {
+    "hour": 18,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F018",
+    "valid_ms": 1665381600000
+  },
+  {
+    "hour": 24,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F024",
+    "valid_ms": 1665403200000
+  },
+  {
+    "hour": 30,
+    "key": "Maiduguri|24",
+    "mm": 0.3125,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F030",
+    "valid_ms": 1665424800000
+  },
+  {
+    "hour": 36,
+    "key": "Maiduguri|24",
+    "mm": 2.625,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F036",
+    "valid_ms": 1665446400000
+  },
+  {
+    "hour": 42,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F042",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 48,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F048",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 54,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F054",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 60,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F060",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 66,
+    "key": "Maiduguri|24",
+    "mm": 0.3125,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F066",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 72,
+    "key": "Maiduguri|24",
+    "mm": 0,
+    "run_ms": 1665316800000,
+    "source_id": "2022100912F072",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 6,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F006",
+    "valid_ms": 1665252000000
+  },
+  {
+    "hour": 12,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F012",
+    "valid_ms": 1665273600000
+  },
+  {
+    "hour": 18,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F018",
+    "valid_ms": 1665295200000
+  },
+  {
+    "hour": 24,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F024",
+    "valid_ms": 1665316800000
+  },
+  {
+    "hour": 30,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F030",
+    "valid_ms": 1665338400000
+  },
+  {
+    "hour": 36,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F036",
+    "valid_ms": 1665360000000
+  },
+  {
+    "hour": 42,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F042",
+    "valid_ms": 1665381600000
+  },
+  {
+    "hour": 48,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F048",
+    "valid_ms": 1665403200000
+  },
+  {
+    "hour": 54,
+    "key": "Maiduguri|48",
+    "mm": 2.4375,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F054",
+    "valid_ms": 1665424800000
+  },
+  {
+    "hour": 60,
+    "key": "Maiduguri|48",
+    "mm": 2.4375,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F060",
+    "valid_ms": 1665446400000
+  },
+  {
+    "hour": 66,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F066",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 72,
+    "key": "Maiduguri|48",
+    "mm": 0,
+    "run_ms": 1665230400000,
+    "source_id": "2022100812F072",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 6,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F006",
+    "valid_ms": 1665165600000
+  },
+  {
+    "hour": 12,
+    "key": "Maiduguri|72",
+    "mm": 0.0625,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F012",
+    "valid_ms": 1665187200000
+  },
+  {
+    "hour": 18,
+    "key": "Maiduguri|72",
+    "mm": 0.25,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F018",
+    "valid_ms": 1665208800000
+  },
+  {
+    "hour": 24,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F024",
+    "valid_ms": 1665230400000
+  },
+  {
+    "hour": 30,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F030",
+    "valid_ms": 1665252000000
+  },
+  {
+    "hour": 36,
+    "key": "Maiduguri|72",
+    "mm": 0.0625,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F036",
+    "valid_ms": 1665273600000
+  },
+  {
+    "hour": 42,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F042",
+    "valid_ms": 1665295200000
+  },
+  {
+    "hour": 48,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F048",
+    "valid_ms": 1665316800000
+  },
+  {
+    "hour": 54,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F054",
+    "valid_ms": 1665338400000
+  },
+  {
+    "hour": 60,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F060",
+    "valid_ms": 1665360000000
+  },
+  {
+    "hour": 66,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F066",
+    "valid_ms": 1665381600000
+  },
+  {
+    "hour": 72,
+    "key": "Maiduguri|72",
+    "mm": 0,
+    "run_ms": 1665144000000,
+    "source_id": "2022100712F072",
+    "valid_ms": 1665403200000
+  },
+  {
+    "hour": 6,
+    "key": "Abuja|24",
+    "mm": 6.0625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F006",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 12,
+    "key": "Abuja|24",
+    "mm": 0.375,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F012",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 18,
+    "key": "Abuja|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F018",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 24,
+    "key": "Abuja|24",
+    "mm": 0.8125,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F024",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 30,
+    "key": "Abuja|24",
+    "mm": 8.8125,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F030",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 36,
+    "key": "Abuja|24",
+    "mm": 13.5625,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F036",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 42,
+    "key": "Abuja|24",
+    "mm": 3.875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F042",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 48,
+    "key": "Abuja|24",
+    "mm": 0.1875,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F048",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 54,
+    "key": "Abuja|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F054",
+    "valid_ms": 1665770400000
+  },
+  {
+    "hour": 60,
+    "key": "Abuja|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F060",
+    "valid_ms": 1665792000000
+  },
+  {
+    "hour": 66,
+    "key": "Abuja|24",
+    "mm": 0,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F066",
+    "valid_ms": 1665813600000
+  },
+  {
+    "hour": 72,
+    "key": "Abuja|24",
+    "mm": 0.125,
+    "run_ms": 1665576000000,
+    "source_id": "2022101212F072",
+    "valid_ms": 1665835200000
+  },
+  {
+    "hour": 6,
+    "key": "Abuja|48",
+    "mm": 0.4375,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F006",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 12,
+    "key": "Abuja|48",
+    "mm": 0.8125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F012",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 18,
+    "key": "Abuja|48",
+    "mm": 0.5625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F018",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 24,
+    "key": "Abuja|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F024",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 30,
+    "key": "Abuja|48",
+    "mm": 2.125,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F030",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 36,
+    "key": "Abuja|48",
+    "mm": 1,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F036",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 42,
+    "key": "Abuja|48",
+    "mm": 1.0625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F042",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 48,
+    "key": "Abuja|48",
+    "mm": 2,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F048",
+    "valid_ms": 1665662400000
+  },
+  {
+    "hour": 54,
+    "key": "Abuja|48",
+    "mm": 16.1875,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F054",
+    "valid_ms": 1665684000000
+  },
+  {
+    "hour": 60,
+    "key": "Abuja|48",
+    "mm": 0.375,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F060",
+    "valid_ms": 1665705600000
+  },
+  {
+    "hour": 66,
+    "key": "Abuja|48",
+    "mm": 0.625,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F066",
+    "valid_ms": 1665727200000
+  },
+  {
+    "hour": 72,
+    "key": "Abuja|48",
+    "mm": 0,
+    "run_ms": 1665489600000,
+    "source_id": "2022101112F072",
+    "valid_ms": 1665748800000
+  },
+  {
+    "hour": 6,
+    "key": "Abuja|72",
+    "mm": 2.1875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F006",
+    "valid_ms": 1665424800000
+  },
+  {
+    "hour": 12,
+    "key": "Abuja|72",
+    "mm": 0.625,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F012",
+    "valid_ms": 1665446400000
+  },
+  {
+    "hour": 18,
+    "key": "Abuja|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F018",
+    "valid_ms": 1665468000000
+  },
+  {
+    "hour": 24,
+    "key": "Abuja|72",
+    "mm": 0.1875,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F024",
+    "valid_ms": 1665489600000
+  },
+  {
+    "hour": 30,
+    "key": "Abuja|72",
+    "mm": 3.375,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F030",
+    "valid_ms": 1665511200000
+  },
+  {
+    "hour": 36,
+    "key": "Abuja|72",
+    "mm": 0.3125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F036",
+    "valid_ms": 1665532800000
+  },
+  {
+    "hour": 42,
+    "key": "Abuja|72",
+    "mm": 0.75,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F042",
+    "valid_ms": 1665554400000
+  },
+  {
+    "hour": 48,
+    "key": "Abuja|72",
+    "mm": 0,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F048",
+    "valid_ms": 1665576000000
+  },
+  {
+    "hour": 54,
+    "key": "Abuja|72",
+    "mm": 4.3125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F054",
+    "valid_ms": 1665597600000
+  },
+  {
+    "hour": 60,
+    "key": "Abuja|72",
+    "mm": 0.125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F060",
+    "valid_ms": 1665619200000
+  },
+  {
+    "hour": 66,
+    "key": "Abuja|72",
+    "mm": 0.125,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F066",
+    "valid_ms": 1665640800000
+  },
+  {
+    "hour": 72,
+    "key": "Abuja|72",
+    "mm": 0.0625,
+    "run_ms": 1665403200000,
+    "source_id": "2022101012F072",
+    "valid_ms": 1665662400000
+  }
+]
