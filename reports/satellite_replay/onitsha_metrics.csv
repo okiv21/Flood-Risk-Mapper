@@ -1,0 +1,13 @@
+period,lead_h,rule,tp,fn,fp,tn,excluded
+validation,24,rainfall_rule,0,1,0,1,0
+validation,24,calendar_rule,0,1,0,1,0
+validation,48,rainfall_rule,0,1,0,1,0
+validation,48,calendar_rule,0,1,0,1,0
+validation,72,rainfall_rule,0,1,0,1,0
+validation,72,calendar_rule,0,1,0,1,0
+test,24,rainfall_rule,0,3,0,3,0
+test,24,calendar_rule,0,3,0,3,0
+test,48,rainfall_rule,0,3,0,3,0
+test,48,calendar_rule,0,3,0,3,0
+test,72,rainfall_rule,0,3,0,3,0
+test,72,calendar_rule,0,3,0,3,0

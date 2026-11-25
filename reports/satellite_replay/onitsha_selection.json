@@ -1,0 +1,246 @@
+{
+  "boundary_sha256": "bef7f2cfa45e012f4772eaa61c7b99e5188aeba4d5c6badae7e9f9aae8c02fcd",
+  "occurrence_sha256": "527d2d7be7ad3eaf9bf06b4716a49074f46df9a164a4d80b9455afec295331ea",
+  "seasons": [
+    {
+      "year": 2018,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20180212T174508_20180212T174533_020577_02336C_A529",
+      "time_ms": 1518457508000,
+      "candidates": 2,
+      "mask_sha256": "0a433902d3a5b5ee5c069f3f7b16f9b7ef39a0c399a36ba1145299c1efc64bf5",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2018,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20180718T174514_20180718T174539_022852_027A5B_75F9",
+      "time_ms": 1531935914000,
+      "candidates": 3,
+      "mask_sha256": "a122f709a7de720ce210516591ccded046bb4d71ea8130cfad963e5fae5b97bc",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2018,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20181010T174518_20181010T174543_024077_02A1AD_11BF",
+      "time_ms": 1539193518000,
+      "candidates": 2,
+      "mask_sha256": "d7b0bc0921bed6134a431e2776eed97c784a7ea09d6e180a49716d71be289f4b",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2019,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20190219T174514_20190219T174539_026002_02E5D0_6D5B",
+      "time_ms": 1550598314000,
+      "candidates": 2,
+      "mask_sha256": "a60b85aac23d3b5a07ff54d90732ccd9c766daff9455a01cdf336d42ab7f0026",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2019,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20190713T174520_20190713T174545_028102_032C7B_59BC",
+      "time_ms": 1563039920000,
+      "candidates": 3,
+      "mask_sha256": "e12abde441b840e5d680aaa8edac62d6c5d9ee357dc7c995382281bbf8e4b016",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2019,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20191017T174524_20191017T174549_029502_035B62_0961",
+      "time_ms": 1571334324000,
+      "candidates": 3,
+      "mask_sha256": "7befee02f318aa12e500e82043be0695d299be5411ffc4056ee22b14855ed62e",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2020,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20200214T174521_20200214T174546_031252_03982E_C1FD",
+      "time_ms": 1581702321000,
+      "candidates": 2,
+      "mask_sha256": "8f5adfebc4d53c9739773158cd60c293ee386fd0c6d5967791f096997f6fda07",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2020,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20200719T174527_20200719T174552_033527_03E290_4AD1",
+      "time_ms": 1595180727000,
+      "candidates": 3,
+      "mask_sha256": "ee85cf5bf79da848be10cd1ec68cb63b079b5d0989365ba8365042ecbe13c253",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20201011T174531_20201011T174556_034752_040C98_77DB",
+      "time_ms": 1602438331000,
+      "candidates": 2,
+      "mask_sha256": "494cd771b659838e0541d7776187783d372fa75f8ff7d02f1032d0ccd258757e",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2021,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20210220T174527_20210220T174552_036677_044F60_D3AF",
+      "time_ms": 1613843127000,
+      "candidates": 2,
+      "mask_sha256": "57c28b6b4b6890d48f1ec7c9e9bc1d975fb8b44969cec244e0ef82ad84c0ede5",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2021,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20210714T174533_20210714T174558_038777_049359_1F38",
+      "time_ms": 1626284733000,
+      "candidates": 2,
+      "mask_sha256": "3a6cafcda62bd6f1c024f3b3182c3f2866dc245200a4fd7daaa80d9fbfcb8cac",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2021,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20211018T174536_20211018T174601_040177_04C241_A29C",
+      "time_ms": 1634579136000,
+      "candidates": 3,
+      "mask_sha256": "ef2939264283b6a9706740a89d801f862adf69709b071d227044fc637e626c60",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20220215T174532_20220215T174557_041927_04FE12_71AB",
+      "time_ms": 1644947132000,
+      "candidates": 3,
+      "mask_sha256": "6d1e83c5aae45e6141020bcb16a58bef70c941e2710652da8051fe14813c9068",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20220709T174538_20220709T174603_044027_054157_F77C",
+      "time_ms": 1657388738000,
+      "candidates": 2,
+      "mask_sha256": "5da6985018146aa623781c6d39a6c90892e2f62154fb261b927cb65af4361702",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20221013T174542_20221013T174607_045427_056EAB_F610",
+      "time_ms": 1665683142000,
+      "candidates": 2,
+      "mask_sha256": "52a8dd82aa487f8cd5d1d5cfc2d5c239e66574b802e9861b3d34bd941cc76087",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20230210T174538_20230210T174603_047177_05A91A_B639",
+      "time_ms": 1676051138000,
+      "candidates": 2,
+      "mask_sha256": "3e18d7aedc2b642a6249e8b2e483abcdb3df2c1e51a8987000a56e6955bcf5ac",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20230716T174544_20230716T174609_049452_05F252_E284",
+      "time_ms": 1689529544000,
+      "candidates": 3,
+      "mask_sha256": "28711b9b9380e081026b818e50b695b959ac6ee9a36b8e876d385e21c61bc8c2",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20231020T174547_20231020T174612_050852_06211E_C604",
+      "time_ms": 1697823947000,
+      "candidates": 2,
+      "mask_sha256": "fb148d9b48d8f2d51090242bc677c8b00e094f043e6c659e214d3bab368d549c",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20240217T174543_20240217T174608_052602_065D03_3F45",
+      "time_ms": 1708191943000,
+      "candidates": 2,
+      "mask_sha256": "a25ccdb0117bc5525086ac093e49e1ed0078b585da562dfeee03764e189b5b71",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20240710T174542_20240710T174607_054702_06A8E8_9D78",
+      "time_ms": 1720633542000,
+      "candidates": 2,
+      "mask_sha256": "777f755ec37d9764deb174bdfa3f8576ed95255b9685c3386247d816d0d79c82",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20241014T174544_20241014T174609_056102_06DD49_75AF",
+      "time_ms": 1728927944000,
+      "candidates": 3,
+      "mask_sha256": "0e435d94213c1760cb1e7db6c10b05e67a01a11c14ee6efb4de136ef862718b4",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20250223T174542_20250223T174607_058027_0729DE_5412",
+      "time_ms": 1740332742000,
+      "candidates": 1,
+      "mask_sha256": "0e7d7e0a01e31dfbf7d851a2cb5c5f8cc1513d1782ffb960ddc745e8a08566ff",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20250717T174534_20250717T174559_060127_077880_79A8",
+      "time_ms": 1752774334000,
+      "candidates": 3,
+      "mask_sha256": "5990a73532e1705b739290a4431deb3dbb98099024bb8d20238ebfad5fc8dcfe",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "status": "selected",
+      "source_id": "S1A_IW_GRDH_1SDV_20251009T174535_20251009T174600_061352_07A7D2_96A7",
+      "time_ms": 1760031935000,
+      "candidates": 2,
+      "mask_sha256": "aa0830c23ecc7ca2a9e7a3c2a34c2962f3ee374a07996d60d8bef192d7d29f05",
+      "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08"
+    }
+  ]
+}
