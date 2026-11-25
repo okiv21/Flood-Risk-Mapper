@@ -511,3 +511,7 @@ For each eligible Sentinel-1 scene in the eight monitored windows, the daily sat
 *Lagos study window, 21 November 2026 at 05:29 UTC. The left panel shows radar brightness. Blue on the right marks predicted surface water at the 0.55 threshold (249,377 of 262,144 valid pixels). Permanent water is included. Flood extent and accuracy require independent observations.* [Example provenance](reports/radar_refresh/lagos_example.json)
 
 The [first hosted mapping run](https://github.com/okiv21/Flood-Risk-Mapper/actions/runs/45581906069) published 43 site-and-scene archives across all eight windows. [Download the Lagos example](https://github.com/okiv21/Flood-Risk-Mapper/releases/tag/water-m1-v1-lagos-S1D_IW_GRDH_1SDV_20261121T052920_20261121T052949_005561_00AA5E_214E).
+
+## Historical rainfall replay
+
+Original ECMWF runs initialized before the Mokwa (2025) and Maiduguri (2024) floods are now archived alongside dated NEMA, UNICEF and UNOSAT evidence. The final pre-anchor runs predicted 5.6 mm and 11.1 mm over 72 hours at the respective LGA points. Both cities experienced documented flooding. These cases illustrate the limits of interpreting a point rainfall total as local flood risk, especially where upstream conditions or dam failure contribute. [Case evidence, method and six forecast runs](reports/event_replay/README.md)
