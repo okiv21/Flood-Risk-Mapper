@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import ee
+from floodrisk.acquire.earthengine import initialize
 import numpy as np
 import rasterio
 from rasterio.features import geometry_mask
@@ -52,7 +53,7 @@ def main(project):
     _, grid_bounds = grid_settings(settings)
     if not box(*grid_bounds).covers(shape(geom)):
         raise ValueError("Incomplete LGA")
-    ee.Initialize(project=project)
+    initialize(project)
     roi = ee.Geometry.Rectangle(grid_bounds, proj=CRS, geodesic=False)
     collection = (
         ee.ImageCollection("COPERNICUS/S1_GRD")

@@ -28,6 +28,18 @@ def grid_settings(settings):
                 dimensions=[w,h],format='GEO_TIFF'), [left,top-h*scale,left+w*scale,top]
 
 
+def initialize(project):
+    import ee
+    import os
+    if os.getenv("GOOGLE_APPLICATION_CREDENTIALS"):
+        import google.auth
+        credentials, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+        ee.Initialize(credentials=credentials, project=project)
+    else:
+        ee.Initialize(project=project)
+    ee.data.setDeadline(120_000)
+
+
 def download(project, output, settings=None):
     import ee
     import numpy as np
@@ -39,14 +51,7 @@ def download(project, output, settings=None):
     output=Path(output)
     if output.exists():raise ValueError('Output directory already exists')
     # Authentication is a separate interactive step; never initiate it silently.
-    import os
-    if os.getenv("GOOGLE_APPLICATION_CREDENTIALS"):
-        import google.auth
-        credentials, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
-        ee.Initialize(credentials=credentials, project=project)
-    else:
-        ee.Initialize(project=project)
-    ee.data.setDeadline(120_000)
+    initialize(project)
     roi=ee.Geometry.Rectangle(bounds,proj=settings['crs'],geodesic=False)
     collection=(ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(roi)
         .filterDate(settings['start'],settings['end'])

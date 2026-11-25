@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 import ee
+from floodrisk.acquire.earthengine import initialize
 import numpy as np
 import rasterio
 
@@ -18,7 +19,7 @@ HOURS = list(range(6, 73, 6))
 
 
 def fetch(project, targets):
-    ee.Initialize(project=project)
+    initialize(project)
     sets = []
     for row in targets:
         location = ee.Geometry.Point([row["lon"], row["lat"]])
