@@ -25,7 +25,7 @@ Rainfall and release-catalog checks use public sources. Satellite queries use Go
 
 Use Actions → Refresh data → Run workflow to choose a product. Local commands are `python -m jobs.refresh forecast`, `python -m jobs.refresh recent_rain`, `python -m jobs.refresh satellite`, and `python -m jobs.refresh sources`. Local satellite execution can reuse the authenticated Earth Engine session. Archived data live under ignored `data/refresh/`.
 
-Satellite inventories cover suitable full-footprint VV/VH images available in the past 30 days. Acquisition time is preserved separately from check time. A fresh inventory can contain older imagery. The inventory identifies scenes available for processing; publication of updated prediction maps requires the frozen model artifact and incremental inference integration. Static-source changes are recorded for review before adoption. Retraining requires reviewed evidence and validation.
+Satellite inventories cover suitable full-footprint VV/VH images available in the past 30 days. Acquisition time is preserved separately from check time. A fresh inventory can contain older imagery. After a successful inventory, the water-maps job runs the frozen radar model for each unpublished site and scene in the rolling window. Each map release includes acquisition time, radar input, water scores, mask and provenance. Static-source changes are recorded for review before adoption. Retraining requires reviewed evidence and validation.
 
 ## Verification on 24 November 2026
 

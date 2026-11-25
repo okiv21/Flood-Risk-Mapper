@@ -501,3 +501,11 @@ The 24 November audit rechecked saved sensor metrics and identified the remainin
 ## Automatic refresh
 
 The refresh workflow runs six-hourly forecast rainfall, daily recent-rainfall extraction and radar inventory checks, and monthly static-source release checks. An independent two-hourly health job flags stale or missing products. It preserves timestamps and hashes in durable release archives. [Schedules, freshness policy and setup](jobs/REFRESH.md)
+
+## Daily radar water mapping
+
+For each eligible Sentinel-1 scene in the eight monitored windows, the daily satellite workflow downloads the exact VV/VH image, verifies the Kaggle-trained ONNX model against its recorded hash and saves georeferenced water scores and a binary mask. Each completed site and scene gets a separate release archive containing the radar input, predictions and acquisition metadata. Repeat runs skip published maps and retry outstanding scenes in the rolling 30-day inventory.
+
+![Lagos radar input and predicted water overlay](reports/radar_refresh/lagos_example.png)
+
+*Lagos study window, 21 November 2026 at 05:29 UTC. The left panel shows radar brightness. Blue on the right marks predicted surface water at the 0.55 threshold (249,377 of 262,144 valid pixels). Permanent water is included. Flood extent and accuracy require independent observations.* [Example provenance](reports/radar_refresh/lagos_example.json)

@@ -39,7 +39,13 @@ def download(project, output, settings=None):
     output=Path(output)
     if output.exists():raise ValueError('Output directory already exists')
     # Authentication is a separate interactive step; never initiate it silently.
-    ee.Initialize(project=project)
+    import os
+    if os.getenv("GOOGLE_APPLICATION_CREDENTIALS"):
+        import google.auth
+        credentials, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+        ee.Initialize(credentials=credentials, project=project)
+    else:
+        ee.Initialize(project=project)
     roi=ee.Geometry.Rectangle(bounds,proj=settings['crs'],geodesic=False)
     collection=(ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(roi)
         .filterDate(settings['start'],settings['end'])
@@ -48,6 +54,8 @@ def download(project, output, settings=None):
         .filter(ee.Filter.listContains('transmitterReceiverPolarisation','VV'))
         .filter(ee.Filter.listContains('transmitterReceiverPolarisation','VH'))
         .sort('system:time_start'))
+    if settings.get('source_index'):
+        collection=collection.filter(ee.Filter.eq('system:index',settings['source_index']))
     if settings.get('relative_orbit') is not None:
         collection=collection.filter(ee.Filter.eq('relativeOrbitNumber_start',settings['relative_orbit']))
     if settings.get('orbit_pass') is not None:

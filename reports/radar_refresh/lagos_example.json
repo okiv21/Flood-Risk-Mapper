@@ -1,0 +1,22 @@
+{
+  "site": "Lagos",
+  "observed_utc": "2026-11-21T05:29:20+00:00",
+  "source": {
+    "site": "Lagos",
+    "orbitProperties_pass": "DESCENDING",
+    "relativeOrbitNumber_start": 95,
+    "system:index": "S1D_IW_GRDH_1SDV_20261121T052920_20261121T052949_005561_00AA5E_214E",
+    "system:time_start": 1795238960000
+  },
+  "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+  "threshold": 0.55,
+  "predicted_water_pixels": 249377,
+  "valid_pixels": 262144,
+  "files": {
+    "input/acquisition.json": "812f1d35553678e84119b99e0b7d145d98bd1fe9aa1a51d8cdc30f7af705463b",
+    "input/sentinel1_vv_vh_db.tif": "f1ea1913f3f715ee389dc6f64ee3c61f1d97e68ab29b63bc7d3c5af2161745de",
+    "prediction/prediction.json": "52daa781b05f6940411ae441dbc96de476585b8d15df08df096699550f4e45dd",
+    "prediction/water_score.tif": "6a1d7d1115ce77f9d7261c61459ad76524602c7d3f96195a7909e890d1c36bbc",
+    "prediction/water_mask.tif": "7bd6a508bb4128b3a07889c71115d5a82f756578a600f6a579e4fdb163f353ad"
+  }
+}
