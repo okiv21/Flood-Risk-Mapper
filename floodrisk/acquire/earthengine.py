@@ -46,6 +46,7 @@ def download(project, output, settings=None):
         ee.Initialize(credentials=credentials, project=project)
     else:
         ee.Initialize(project=project)
+    ee.data.setDeadline(120_000)
     roi=ee.Geometry.Rectangle(bounds,proj=settings['crs'],geodesic=False)
     collection=(ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(roi)
         .filterDate(settings['start'],settings['end'])

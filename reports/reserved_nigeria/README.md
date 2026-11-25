@@ -20,3 +20,9 @@ python -m floodrisk.eval.reviewed_masks --manifest "$report/manifest.json" --rev
 ```
 
 [Sealed chip IDs and provenance](manifest.json) · [Review form](review.csv)
+
+## Optical evidence available to reviewers
+
+The [candidate table](optical_candidates.csv) lists full-footprint Sentinel-2 surface-reflectance observations acquired within 72 hours of each sealed radar chip. It contains the Earth Engine asset ID, acquisition time, offset from radar time, and share of the chip assigned vegetation, bare ground or water by the 20 m scene classifier. Candidates are ranked within each chip by that share, then by proximity in time. The classifier supplies a visibility screen; a person still has to inspect whether water boundaries are interpretable.
+
+In the 76 chip–image matches, all 48 chips had at least one candidate, but 30 had zero qualifying pixels even in their best candidate. Only two best candidates exceeded 50%, and none reached 80%. An image shortly before or after a radar pass can also show a different water boundary. The review CSV remains blank until independent annotation. Rebuild the catalogue with `python -m jobs.blind_optical_evidence --project YOUR_EE_PROJECT`.
