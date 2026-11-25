@@ -77,15 +77,25 @@ def download(project, output, settings=None):
     metadata=image.toDictionary(['system:index','system:time_start','orbitProperties_pass',
         'relativeOrbitNumber_start','platform_number','instrumentMode']).getInfo()
     selected=image.select(['VV','VH']).toFloat().unmask(-9999,sameFootprint=False)
-    url=selected.getDownloadURL(dict(params))
+    use_pixels = bool(settings.get("source_index"))
+    if not use_pixels:
+        url=selected.getDownloadURL(dict(params))
     output.parent.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='.s1-download-',dir=output.parent) as temp:
         stage=Path(temp)/'complete';stage.mkdir()
         raw_path=stage/'download.tif'
-        with requests.get(url,stream=True,timeout=(30,180)) as response:
-            response.raise_for_status()
-            with raw_path.open('wb') as f:
-                for block in response.iter_content(1024*1024):f.write(block)
+        if use_pixels:
+            scale_x, shear_x, left, shear_y, scale_y, top = params['crs_transform']
+            grid = dict(dimensions=dict(width=settings['width'], height=settings['height']),
+                        crsCode=settings['crs'], affineTransform=dict(scaleX=scale_x,
+                        shearX=shear_x, translateX=left, shearY=shear_y, scaleY=scale_y, translateY=top))
+            raw_path.write_bytes(ee.data.computePixels(dict(expression=selected,
+                fileFormat='GEO_TIFF', grid=grid, bandIds=['VV','VH'])))
+        else:
+            with requests.get(url,stream=True,timeout=(30,180)) as response:
+                response.raise_for_status()
+                with raw_path.open('wb') as f:
+                    for block in response.iter_content(1024*1024):f.write(block)
         destination=stage/'sentinel1_vv_vh_db.tif'
         with rasterio.open(raw_path) as src:
             if src.count!=2 or (src.width,src.height)!=(settings['width'],settings['height']):
