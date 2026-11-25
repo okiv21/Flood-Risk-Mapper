@@ -1,0 +1,5 @@
+basin,grdc_id_in_header,first_observation,last_observation,observed_days,missing_rows,complete_three_day_blocks,observed_days_from_2023,sha256,source
+Hadejia,1837410,1963-04-01,2005-01-31,9794,14678,9754,0,22bbad489caeba7f76fd17c21f813170aac46931d073389a182cc3fbbd53bc4f,https://bonndata.uni-bonn.de/api/access/datafile/11450
+Jamaare,1837250,1975-07-01,1998-11-10,5556,18916,5510,0,3e300e9de6993ff49e20cacc8b98cfc55064b1a76d874c08f84802c70297e222,https://bonndata.uni-bonn.de/api/access/datafile/11449
+Kaduna,1837572,1987-07-01,2014-05-31,2275,7952,1851,0,4c66dc4ba757938384706da4fa726bcad9ca397a03aa5ebfc85b58cda0ec1044,https://bonndata.uni-bonn.de/api/access/datafile/11446
+Oroo,1837572,2012-01-01,2018-12-31,2557,0,2555,0,5f2a78a93e85274381b7c83884393af5b414707c05d6f78a4ffd924549812a47,https://bonndata.uni-bonn.de/api/access/datafile/11447

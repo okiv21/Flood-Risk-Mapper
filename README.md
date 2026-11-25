@@ -519,3 +519,5 @@ Original ECMWF runs initialized before the Mokwa (2025) and Maiduguri (2024) flo
 ![Maiduguri radar water maps and changes for September 2024](reports/event_replay/maiduguri_change.png)
 
 *Matched-orbit Sentinel-1 views of the same 5.12 km square before and after the documented Maiduguri flood. Dark blue marks predicted water in each individual map. In the change panel, bright blue marks 0.279 km² newly classified as water, and brown marks 0.243 km² that changed to dry. The 12-day interval includes the flood and possible recession before the second pass. It cannot establish peak extent or onset time.* [Acquisition and model records](reports/event_replay/maiduguri_change.json)
+
+An [independent gauge coverage audit](reports/gauge_review/README.md) checked the actual observation dates in four Nigerian river discharge files. None covers the held-out period beginning in 2023, so the project continues to report warning accuracy as unevaluated.
