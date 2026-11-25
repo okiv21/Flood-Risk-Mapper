@@ -9,7 +9,7 @@ on:
     inputs:
       product:
         type: choice
-        options: [forecast, recent_rain, satellite, sources]
+        options: [forecast, recent_rain, satellite, sources, onitsha_replay]
         default: forecast
         required: true
 permissions:
@@ -17,6 +17,7 @@ permissions:
   id-token: write
 jobs:
   refresh:
+    if: inputs.product != 'onitsha_replay'
     concurrency: refresh-data-${{ inputs.product || github.event.schedule }}
     outputs:
       product: ${{ steps.product.outputs.name }}
@@ -118,3 +119,38 @@ jobs:
           python -m jobs.refresh_archive --repository "$GITHUB_REPOSITORY" --kind satellite
           inventory=$(jq -r .snapshot data/refresh/satellite/latest.json)
           python -m jobs.radar_maps "data/refresh/$inventory/scenes.json" --project manifest-ivy-453612-b3
+
+  onitsha-replay:
+    if: github.event_name == 'workflow_dispatch' && inputs.product == 'onitsha_replay'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.EE_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.EE_SERVICE_ACCOUNT }}
+      - run: python -m pip install numpy rasterio shapely requests earthengine-api onnxruntime
+      - name: Acquire pinned study inputs
+        run: |
+          mkdir -p data/boundaries
+          curl -fLsS --retry 3 "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/NGA/ADM2/geoBoundaries-NGA-ADM2.geojson" -o data/boundaries/nga_adm2_verified.geojson
+          mkdir -p data/predictions/onitsha_south_cohort/reference
+          unzip -oq data/cases/onitsha_occurrence.zip -d data/predictions/onitsha_south_cohort/reference
+          gh release download model-m1-s1-fp32 -p m1_s1_fp32.onnx -D reports/m1-s1-kaggle-365653491/onnx_fp32
+      - name: Generate radar targets and evaluate fixed baselines
+        run: |
+          python -u -m jobs.onitsha_cohort --project manifest-ivy-453612-b3
+          python -u -m jobs.onitsha_baseline --project manifest-ivy-453612-b3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: onitsha-replay
+          path: reports/satellite_replay/onitsha*
