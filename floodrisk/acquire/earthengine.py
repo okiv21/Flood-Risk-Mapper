@@ -114,7 +114,8 @@ def download(project, output, settings=None):
         raw_path.unlink()
         report=dict(settings=settings,download_grid=params,source=metadata,
             source_collection='COPERNICUS/S1_GRD',units='dB',bands=['VV','VH'],
-            selection=('Closest full-footprint scene to declared target date among first 50 ordered candidates'
+            selection=('Exact inventory source index with full-footprint check' if settings.get('source_index') else
+                       'Closest full-footprint scene to declared target date among first 50 ordered candidates'
                        if settings.get('selection_target') else 'Earliest full-footprint IW dual-pol 10m scene among first 50 chronologically ordered candidates'),
             valid_fraction=float(valid.mean()),sha256=file_hash(destination),
             interpretation='Historical acquisition for engineering inspection; no confirmed flood-event label',

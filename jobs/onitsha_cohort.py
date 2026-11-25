@@ -1,7 +1,6 @@
 """Measure a whole-LGA satellite proxy with a fixed seasonal sampling rule."""
 
 import argparse
-import calendar
 import csv
 import json
 from datetime import datetime, timezone
@@ -14,7 +13,7 @@ from rasterio.features import geometry_mask
 from rasterio.warp import transform, transform_geom
 from shapely.geometry import shape, box
 
-from jobs.radar_maps import build
+from jobs.radar_maps import build, CONFIG
 from floodrisk.acquire.earthengine import grid_settings
 from floodrisk.acquire.water_reference import compare
 from floodrisk.deploy.tiled import file_hash
@@ -74,7 +73,9 @@ def main(project):
         .get("list")
         .getInfo()
     )
+    expected_model = json.loads(CONFIG.read_text())["onnx_sha256"]
     rows = []
+    selections = []
     for year in range(2018, 2026):
         masks = {}
         ids = {}
@@ -87,6 +88,9 @@ def main(project):
                 == anchor.strftime("%Y-%m")
             ]
             if not possible:
+                selections.append(
+                    dict(year=year, month=month, status="no_eligible_scene")
+                )
                 continue
             _, idx, t = min(possible)
             folder = CACHE / idx
@@ -105,6 +109,7 @@ def main(project):
             image = folder / "prediction/water_mask.tif"
             if (
                 meta["source"]["system:index"] != idx
+                or meta["model_sha256"] != expected_model
                 or file_hash(image) != meta["files"]["prediction/water_mask.tif"]
             ):
                 raise ValueError("Invalid cached mask")
@@ -124,6 +129,18 @@ def main(project):
                 inside = geometry_mask([geom], src.shape, src.transform, invert=True)
                 masks[month] = src.read(1)
                 occ = hist.read(1)
+            selections.append(
+                dict(
+                    year=year,
+                    month=month,
+                    status="selected",
+                    source_id=idx,
+                    time_ms=t,
+                    candidates=len(possible),
+                    mask_sha256=meta["files"]["prediction/water_mask.tif"],
+                    model_sha256=expected_model,
+                )
+            )
             ids[month] = (idx, meta["observed_utc"])
             if month == 2 or 2 not in masks:
                 continue
@@ -152,6 +169,19 @@ def main(project):
                 )
             )
             print(year, month, rows[-1]["proxy"], flush=True)
+    (OUT / "onitsha_selection.json").write_text(
+        json.dumps(
+            dict(
+                boundary_sha256=BOUNDARY_SHA,
+                occurrence_sha256=file_hash(
+                    CACHE / "reference/historical_occurrence.tif"
+                ),
+                seasons=selections,
+            ),
+            indent=2,
+        )
+        + "\n"
+    )
     if not rows:
         raise ValueError("No paired scenes")
     with (OUT / "onitsha_south.csv").open("w", newline="") as f:
