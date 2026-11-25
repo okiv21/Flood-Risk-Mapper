@@ -492,7 +492,7 @@ The original local build specification, `Nigeria_Flood_Risk_Mapper_Spec.pdf`, de
 
 ## Verification
 
-Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 29 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.
+Run `python -m unittest discover -s tests -v` in the project environment. The current local suite has 30 passing tests. Real-model integration tests require the local ONNX export and skip explicitly when it is absent. GitHub Actions runs offline checks and notebook/Python validation without credentials, imagery or model binaries; passing CI does not replace local model or live-acquisition checks.
 
 ## Evaluation and refresh review
 
@@ -509,3 +509,5 @@ For each eligible Sentinel-1 scene in the eight monitored windows, the daily sat
 ![Lagos radar input and predicted water overlay](reports/radar_refresh/lagos_example.png)
 
 *Lagos study window, 21 November 2026 at 05:29 UTC. The left panel shows radar brightness. Blue on the right marks predicted surface water at the 0.55 threshold (249,377 of 262,144 valid pixels). Permanent water is included. Flood extent and accuracy require independent observations.* [Example provenance](reports/radar_refresh/lagos_example.json)
+
+The [first hosted mapping run](https://github.com/okiv21/Flood-Risk-Mapper/actions/runs/45581906069) published 43 site-and-scene archives across all eight windows. [Download the Lagos example](https://github.com/okiv21/Flood-Risk-Mapper/releases/tag/water-m1-v1-lagos-S1D_IW_GRDH_1SDV_20261121T052920_20261121T052949_005561_00AA5E_214E).
