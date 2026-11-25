@@ -515,3 +515,7 @@ The [first hosted mapping run](https://github.com/okiv21/Flood-Risk-Mapper/actio
 ## Historical rainfall replay
 
 Original ECMWF runs initialized before the Mokwa (2025) and Maiduguri (2024) floods are now archived alongside dated NEMA, UNICEF and UNOSAT evidence. The final pre-anchor runs predicted 5.6 mm and 11.1 mm over 72 hours at the respective LGA points. Both cities experienced documented flooding. These cases illustrate the limits of interpreting a point rainfall total as local flood risk, especially where upstream conditions or dam failure contribute. [Case evidence, method and six forecast runs](reports/event_replay/README.md)
+
+![Maiduguri radar water maps and changes for September 2024](reports/event_replay/maiduguri_change.png)
+
+*Matched-orbit Sentinel-1 views of the same 5.12 km square before and after the documented Maiduguri flood. Dark blue marks predicted water in each individual map. In the change panel, bright blue marks 0.279 km² newly classified as water, and brown marks 0.243 km² that changed to dry. The 12-day interval includes the flood and possible recession before the second pass. It cannot establish peak extent or onset time.* [Acquisition and model records](reports/event_replay/maiduguri_change.json)

@@ -1,0 +1,69 @@
+{
+  "inputs": [
+    {
+      "acquisition": {
+        "instrumentMode": "IW",
+        "orbitProperties_pass": "DESCENDING",
+        "platform_number": "A",
+        "relativeOrbitNumber_start": 153,
+        "system:index": "S1A_IW_GRDH_1SDV_20240905T045539_20240905T045604_055525_06C676_AAD8",
+        "system:time_start": 1725512139000
+      },
+      "prediction": {
+        "site": "Maiduguri",
+        "observed_utc": "2024-09-05T04:55:39+00:00",
+        "source": {
+          "site": "Maiduguri",
+          "system:index": "S1A_IW_GRDH_1SDV_20240905T045539_20240905T045604_055525_06C676_AAD8",
+          "system:time_start": 1725512139000
+        },
+        "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+        "threshold": 0.55,
+        "predicted_water_pixels": 8875,
+        "valid_pixels": 262144,
+        "files": {
+          "input/acquisition.json": "4d3c40f85108eadba6f3c1987aa6cc9fcc3bed27c570167b56d847df78d26ffc",
+          "input/sentinel1_vv_vh_db.tif": "404912dfc353de2c10caf05e11d81160305ad7b3c82c1ef2b8f15017bf2390ba",
+          "prediction/prediction.json": "3954fe269dd0cbd6744ca64650d81a7706ad05434bf3650b504f089a33781bf3",
+          "prediction/water_score.tif": "fe1ebf748028c49ffba3d51eb901d80e42725f539ba97cbc688f2b3b635c07a5",
+          "prediction/water_mask.tif": "71bf8e1eb72595c7a35c244507b06cdf5a25fe21e9b5ed7009c926a2ac629613"
+        }
+      }
+    },
+    {
+      "acquisition": {
+        "instrumentMode": "IW",
+        "orbitProperties_pass": "DESCENDING",
+        "platform_number": "A",
+        "relativeOrbitNumber_start": 153,
+        "system:index": "S1A_IW_GRDH_1SDV_20240917T045540_20240917T045605_055700_06CD64_64BE",
+        "system:time_start": 1726548940000
+      },
+      "prediction": {
+        "site": "Maiduguri",
+        "observed_utc": "2024-09-17T04:55:40+00:00",
+        "source": {
+          "site": "Maiduguri",
+          "system:index": "S1A_IW_GRDH_1SDV_20240917T045540_20240917T045605_055700_06CD64_64BE",
+          "system:time_start": 1726548940000
+        },
+        "model_sha256": "73fb31bbf88120a8f1e1cee20fd7c8b7f78add716a1954afaaa213f1e5bcdb08",
+        "threshold": 0.55,
+        "predicted_water_pixels": 9236,
+        "valid_pixels": 262144,
+        "files": {
+          "input/acquisition.json": "15ce64b4c29186cf592a6ea5f39c3ba679900eb0099152b6e60f993de68dd1d4",
+          "input/sentinel1_vv_vh_db.tif": "55b1b1cd06610b283b046fb5f51f4b423d1cb5dd8bef563a6b3810c9ad722683",
+          "prediction/prediction.json": "98345da9ec8cf362f096c02efdb8e65e38cf76f842ccdcf2f17449c6f7b9999a",
+          "prediction/water_score.tif": "4466f8a5f96c5abf9f285cb42cffb628d491cceaf38cb931ea7b8ee10777e238",
+          "prediction/water_mask.tif": "f831ef93a23d636fcb7020ec48b43b612a354fd57fe982246e0bb3360d96fb2a"
+        }
+      }
+    }
+  ],
+  "valid_pixels": 262144,
+  "gained_pixels": 2790,
+  "lost_pixels": 2429,
+  "both_water": 6446,
+  "pixel_area_m2": 100.0
+}
